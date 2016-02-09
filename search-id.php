@@ -7,7 +7,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>Marital an Wedding Category Flat Bootstarp Resposive Website Template | Search :: w3layouts</title>
+<title>Marital an Wedding Category Flat Bootstarp Resposive Website Template | Search-id :: w3layouts</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Marital Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
@@ -51,15 +51,15 @@ $(document).ready(function(){
 				<li class="green">
 					<a href="#" class="icon-home"></a>
 					<ul>
-						<li><a href="login.html">Login</a></li>
-					    <li><a href="register.html">Register</a></li>
-					    <li><a href="index.html">Logout</a></li>
+						<li><a href="login.php">Login</a></li>
+					    <li><a href="register.php">Register</a></li>
+					    <li><a href="index.php">Logout</a></li>
 					</ul>
 				</li>
 			   </ul>
              </nav>
            </div>
-           <a class="brand" href="index.html"><img src="images/logo.png" alt="logo"></a>
+           <a class="brand" href="index.php"><img src="images/logo.png" alt="logo"></a>
            <div class="pull-right">
           	<nav class="navbar nav_bottom" role="navigation">
  
@@ -76,39 +76,39 @@ $(document).ready(function(){
 		   <!-- Collect the nav links, forms, and other content for toggling -->
 		    <div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
 		        <ul class="nav navbar-nav nav_1">
-		            <li><a href="index.html">Home</a></li>
-		            <li><a href="about.html">About</a></li>
+		            <li><a href="index.php">Home</a></li>
+		            <li><a href="about.php">About</a></li>
 		    		<li class="dropdown">
 		              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Matches<span class="caret"></span></a>
 		              <ul class="dropdown-menu" role="menu">
-		                <li><a href="matches.html">New Matches</a></li>
-		                <li><a href="viewed-profile.html">Who Viewed my Profile</a></li>
-		                <li><a href="viewed-not_contacted.html">Viewed & not Contacted</a></li>
-		                <li><a href="members.html">Premium Members</a></li>
-		                <li><a href="shortlisted.html">Shortlisted Profile</a></li>
+		                <li><a href="matches.php">New Matches</a></li>
+		                <li><a href="viewed-profile.php">Who Viewed my Profile</a></li>
+		                <li><a href="viewed-not_contacted.php">Viewed & not Contacted</a></li>
+		                <li><a href="members.php">Premium Members</a></li>
+		                <li><a href="shortlisted.php">Shortlisted Profile</a></li>
 		              </ul>
 		            </li>
 					<li class="dropdown">
 		              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Search<span class="caret"></span></a>
 		              <ul class="dropdown-menu" role="menu">
-		                <li><a href="search.html">Regular Search</a></li>
-		                <li><a href="profile.html">Recently Viewed Profiles</a></li>
-		                <li><a href="search-id.html">Search By Profile ID</a></li>
-		                <li><a href="faq.html">Faq</a></li>
-		                <li><a href="shortcodes.html">Shortcodes</a></li>
+		                <li><a href="search.php">Regular Search</a></li>
+		                <li><a href="profile.php">Recently Viewed Profiles</a></li>
+		                <li><a href="search-id.php">Search By Profile ID</a></li>
+		                <li><a href="faq.php">Faq</a></li>
+		                <li><a href="shortcodes.php">Shortcodes</a></li>
 		              </ul>
 		            </li>
 		            <li class="dropdown">
 		              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Messages<span class="caret"></span></a>
 		              <ul class="dropdown-menu" role="menu">
-		                <li><a href="inbox.html">Inbox</a></li>
-		                <li><a href="inbox.html">New</a></li>
-		                <li><a href="inbox.html">Accepted</a></li>
-		                <li><a href="sent.html">Sent</a></li>
-		                <li><a href="upgrade.html">Upgrade</a></li>
+		                <li><a href="inbox.php">Inbox</a></li>
+		                <li><a href="inbox.php">New</a></li>
+		                <li><a href="inbox.php">Accepted</a></li>
+		                <li><a href="sent.php">Sent</a></li>
+		                <li><a href="upgrade.php">Upgrade</a></li>
 		              </ul>
 		            </li>
-		            <li class="last"><a href="contact.html">Contacts</a></li>
+		            <li class="last"><a href="contact.php">Contacts</a></li>
 		        </ul>
 		     </div><!-- /.navbar-collapse -->
 		    </nav>
@@ -122,234 +122,32 @@ $(document).ready(function(){
   <div class="container">
    <div class="breadcrumb1">
      <ul>
-        <a href="index.html"><i class="fa fa-home home_1"></i></a>
+        <a href="index.php"><i class="fa fa-home home_1"></i></a>
         <span class="divider">&nbsp;|&nbsp;</span>
-        <li class="current-page">Regular Search</li>
+        <li class="current-page">Search By Profile ID</li>
      </ul>
    </div>
-   <!--<script type="text/javascript">
-    $(function () {
-     $('#btnRadio').click(function () {
-          var checkedradio = $('[name="gr"]:radio:checked').val();
-          $("#sel").html("Selected Value: " + checkedradio);
-      });
-    });
-   </script>-->
-<div class="col-md-9 search_left">
-  <form>	
-   <div class="form_but1">
-	<label class="col-sm-5 control-lable1" for="sex">Gender : </label>
-	<div class="col-sm-7 form_radios">
-		<input type="radio" class="radio_1" /> Male &nbsp;&nbsp;
-		<input type="radio" class="radio_1" checked="checked" /> Female
-		
-		<!--<hr />
-		<p id="sel"></p><br />
-		<input id="btnRadio" type="button" value="Get Selected Value" />-->
-	</div>
-	<div class="clearfix"> </div>
-  </div>
-  <div class="form_but1">
-	<label class="col-sm-5 control-lable1" for="sex">Marital Status : </label>
-	<div class="col-sm-7 form_radios">
-		<input type="checkbox" class="radio_1" /> Single &nbsp;&nbsp;
-		<input type="checkbox" class="radio_1" checked="checked" /> Divorced &nbsp;&nbsp;
-		<input type="checkbox" class="radio_1" value="Cheese" /> Widowed &nbsp;&nbsp;
-		<input type="checkbox" class="radio_1" value="Cheese" /> Separated &nbsp;&nbsp;
-		<input type="checkbox" class="radio_1" value="Cheese" /> Any
-	</div>
-	<div class="clearfix"> </div>
-  </div>
-  <div class="form_but1">
-    <label class="col-sm-5 control-lable1" for="sex">Country : </label>
-    <div class="col-sm-7 form_radios">
-      <div class="select-block1">
-        <select>
-            <option value="">Country</option>
-            <option value="">Japan</option>
-            <option value="">Kenya</option>
-            <option value="">Dubai</option>
-            <option value="">Italy</option>
-            <option value="">Greece</option> 
-            <option value="">Iceland</option> 
-            <option value="">China</option> 
-            <option value="">Doha</option> 
-            <option value="">Irland</option> 
-            <option value="">Srilanka</option> 
-            <option value="">Russia</option> 
-            <option value="">Hong Kong</option> 
-            <option value="">Germany</option>
-            <option value="">Canada</option>  
-            <option value="">Mexico</option> 
-            <option value="">Nepal</option>
-            <option value="">Norway</option> 
-            <option value="">Oman</option>
-            <option value="">Pakistan</option>  
-            <option value="">Kuwait</option> 
-            <option value="">Indonesia</option>  
-            <option value="">Spain</option>
-            <option value="">Thailand</option>  
-            <option value="">Saudi Arabia</option> 
-            <option value="">Poland</option> 
-        </select>
-      </div>
-    </div>
-    <div class="clearfix"> </div>
-  </div>
-  <div class="form_but1">
-    <label class="col-sm-5 control-lable1" for="sex">District / City : </label>
-    <div class="col-sm-7 form_radios">
-      <div class="select-block1">
-        <select>
-            <option value="">District / City</option>
-            <option value="">Japan</option>
-            <option value="">Kenya</option>
-            <option value="">Dubai</option>
-            <option value="">Italy</option>
-            <option value="">Greece</option> 
-            <option value="">Iceland</option> 
-            <option value="">China</option> 
-            <option value="">Doha</option> 
-            <option value="">Irland</option> 
-            <option value="">Srilanka</option> 
-            <option value="">Russia</option> 
-            <option value="">Hong Kong</option> 
-            <option value="">Germany</option>
-            <option value="">Canada</option>  
-            <option value="">Mexico</option> 
-            <option value="">Nepal</option>
-            <option value="">Norway</option> 
-            <option value="">Oman</option>
-            <option value="">Pakistan</option>  
-            <option value="">Kuwait</option> 
-            <option value="">Indonesia</option>  
-            <option value="">Spain</option>
-            <option value="">Thailand</option>  
-            <option value="">Saudi Arabia</option> 
-            <option value="">Poland</option> 
-        </select>
-      </div>
-    </div>
-    <div class="clearfix"> </div>
-  </div>
-  <div class="form_but1">
-    <label class="col-sm-5 control-lable1" for="sex">State : </label>
-    <div class="col-sm-7 form_radios">
-      <div class="select-block1">
-        <select>
-            <option value="">State</option>
-            <option value="">Japan</option>
-            <option value="">Kenya</option>
-            <option value="">Dubai</option>
-            <option value="">Italy</option>
-            <option value="">Greece</option> 
-            <option value="">Iceland</option> 
-            <option value="">China</option> 
-            <option value="">Doha</option> 
-            <option value="">Irland</option> 
-            <option value="">Srilanka</option> 
-            <option value="">Russia</option> 
-            <option value="">Hong Kong</option> 
-            <option value="">Germany</option>
-            <option value="">Canada</option>  
-            <option value="">Mexico</option> 
-            <option value="">Nepal</option>
-            <option value="">Norway</option> 
-            <option value="">Oman</option>
-            <option value="">Pakistan</option>  
-            <option value="">Kuwait</option> 
-            <option value="">Indonesia</option>  
-            <option value="">Spain</option>
-            <option value="">Thailand</option>  
-            <option value="">Saudi Arabia</option> 
-            <option value="">Poland</option> 
-        </select>
-      </div>
-    </div>
-    <div class="clearfix"> </div>
-  </div>
-  <div class="form_but1">
-    <label class="col-sm-5 control-lable1" for="sex">Religion : </label>
-    <div class="col-sm-7 form_radios">
-      <div class="select-block1">
-        <select>
-            <option value="">Hindu</option>
-            <option value="">Sikh</option>
-            <option value="">Jain-All</option>
-            <option value="">Jain-Digambar</option>
-            <option value="">Jain-Others</option>
-            <option value="">Muslim-All</option> 
-            <option value="">Muslim-Shia</option> 
-            <option value="">Muslim-Sunni</option> 
-            <option value="">Muslim-Others</option> 
-            <option value="">Christian-All</option> 
-            <option value="">Christian-Catholic</option> 
-            <option value="">Jewish</option> 
-            <option value="">Inter-Religion</option> 
-        </select>
-      </div>
-    </div>
-    <div class="clearfix"> </div>
-  </div>
-  <div class="form_but1">
-    <label class="col-sm-5 control-lable1" for="sex">Mother Tongue : </label>
-    <div class="col-sm-7 form_radios">
-      <div class="select-block1">
-        <select>
-            <option value="">English</option>
-            <option value="">French</option>
-            <option value="">Telugu</option>
-            <option value="">Bengali</option>
-            <option value="">Bihari</option>
-            <option value="">Hindi</option> 
-            <option value="">Koshali</option> 
-            <option value="">Khasi</option> 
-            <option value="">Tamil</option> 
-            <option value="">Urdu</option> 
-            <option value="">Manipuri</option> 
-        </select>
-      </div>
-    </div>
-    <div class="clearfix"> </div>
-  </div>
-  <div class="form_but1">
-	<label class="col-sm-5 control-lable1" for="sex">Show Profile : </label>
-	<div class="col-sm-7 form_radios">
-		<input type="checkbox" class="radio_1" /> with Photo &nbsp;&nbsp;
-		<input type="checkbox" class="radio_1" checked="checked" /> with Horoscope
-	</div>
-	<div class="clearfix"> </div>
-  </div>
-  <div class="form_but1">
-	<label class="col-sm-5 control-lable1" for="sex">Don't Show : </label>
-	<div class="col-sm-7 form_radios">
-		<input type="checkbox" class="radio_1" /> Ignored Profiles &nbsp;&nbsp;
-		<input type="checkbox" class="radio_1" checked="checked" /> Profiles already Contacted
-	</div>
-	<div class="clearfix"> </div>
-  </div>
-  <div class="form_but1">
-	<label class="col-sm-5 control-lable1" for="sex">Age : </label>
-	<div class="col-sm-7 form_radios">
-	  <div class="col-sm-5 input-group1">
-        <input class="form-control has-dark-background" name="28" id="slider-name" placeholder="28" type="text" required="">
-      </div>
-      <div class="col-sm-5 input-group1">
-        <input class="form-control has-dark-background" name="40" id="slider-name" placeholder="40" type="text" required="">
-      </div>
-      <div class="clearfix"> </div>
-	</div>
-	<div class="clearfix"> </div>
-  </div>
- </form>
+   <div class="col-md-9 profile_left">
+     <form>	
+	  <div class="form_but1">
+		<label class="col-sm-5 control-lable1" for="sex">Profile ID : </label>
+		<div class="col-sm-7 form_radios">
+		  <div class="input-group1">
+	        <input type="text" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}">
+	        <input type="submit" value="Submit">
+	      </div>
+	    </div>
+		<div class="clearfix"> </div>
+	 </div>
+    </form>
  <div class="paid_people">
    <h1>Paid People</h1>
    <div class="row_1">
 	   <div class="col-sm-6 paid_people-left">
 	 	<ul class="profile_item">
-		  <a href="view_profile.html">
+		  <a href="#">
 		   <li class="profile_item-img">
-		   	  <img src="images/a5.jpg" class="img-responsive" alt=""/>
+		   	  <img src="images/a8.jpg" class="img-responsive" alt=""/>
 		   </li>
 		   <li class="profile_item-desc">
 		   	  <h4>2458741</h4>
@@ -362,7 +160,106 @@ $(document).ready(function(){
 	   </div>
 	   <div class="col-sm-6">
 	 	<ul class="profile_item">
-		  <a href="view_profile.html">
+		  <a href="#">
+		   <li class="profile_item-img">
+		   	  <img src="images/a7.jpg" class="img-responsive" alt=""/>
+		   </li>
+		   <li class="profile_item-desc">
+		   	  <h4>2458741</h4>
+		   	  <p>29 Yrs, 5Ft 5in Christian</p>
+		   	  <h5>View Full Profile</h5>
+		   </li>
+		   <div class="clearfix"> </div>
+		  </a>
+	     </ul>
+	   </div>
+	   <div class="clearfix"> </div>
+   </div>
+   <div class="row_1">
+	   <div class="col-sm-6 paid_people-left">
+	 	<ul class="profile_item">
+		  <a href="#">
+		   <li class="profile_item-img">
+		   	  <img src="images/a6.jpg" class="img-responsive" alt=""/>
+		   </li>
+		   <li class="profile_item-desc">
+		   	  <h4>2458741</h4>
+		   	  <p>29 Yrs, 5Ft 5in Christian</p>
+		   	  <h5>View Full Profile</h5>
+		   </li>
+		   <div class="clearfix"> </div>
+		  </a>
+	     </ul>
+	   </div>
+	   <div class="col-sm-6">
+	 	<ul class="profile_item">
+		  <a href="#">
+		   <li class="profile_item-img">
+		   	  <img src="images/a5.jpg" class="img-responsive" alt=""/>
+		   </li>
+		   <li class="profile_item-desc">
+		   	  <h4>2458741</h4>
+		   	  <p>29 Yrs, 5Ft 5in Christian</p>
+		   	  <h5>View Full Profile</h5>
+		   </li>
+		   <div class="clearfix"> </div>
+		  </a>
+	     </ul>
+	   </div>
+	   <div class="clearfix"> </div>
+   </div>
+   <div class="row_1">
+	   <div class="col-sm-6 paid_people-left">
+	 	<ul class="profile_item">
+		  <a href="#">
+		   <li class="profile_item-img">
+		   	  <img src="images/a4.jpg" class="img-responsive" alt=""/>
+		   </li>
+		   <li class="profile_item-desc">
+		   	  <h4>2458741</h4>
+		   	  <p>29 Yrs, 5Ft 5in Christian</p>
+		   	  <h5>View Full Profile</h5>
+		   </li>
+		   <div class="clearfix"> </div>
+		  </a>
+	     </ul>
+	   </div>
+	   <div class="col-sm-6">
+	 	<ul class="profile_item">
+		  <a href="#">
+		   <li class="profile_item-img">
+		   	  <img src="images/a8.jpg" class="img-responsive" alt=""/>
+		   </li>
+		   <li class="profile_item-desc">
+		   	  <h4>2458741</h4>
+		   	  <p>29 Yrs, 5Ft 5in Christian</p>
+		   	  <h5>View Full Profile</h5>
+		   </li>
+		   <div class="clearfix"> </div>
+		  </a>
+	     </ul>
+	   </div>
+	   <div class="clearfix"> </div>
+   </div>
+   <div class="row_1">
+	   <div class="col-sm-6 paid_people-left">
+	 	<ul class="profile_item">
+		  <a href="#">
+		   <li class="profile_item-img">
+		   	  <img src="images/a7.jpg" class="img-responsive" alt=""/>
+		   </li>
+		   <li class="profile_item-desc">
+		   	  <h4>2458741</h4>
+		   	  <p>29 Yrs, 5Ft 5in Christian</p>
+		   	  <h5>View Full Profile</h5>
+		   </li>
+		   <div class="clearfix"> </div>
+		  </a>
+	     </ul>
+	   </div>
+	   <div class="col-sm-6">
+	 	<ul class="profile_item">
+		  <a href="#">
 		   <li class="profile_item-img">
 		   	  <img src="images/a6.jpg" class="img-responsive" alt=""/>
 		   </li>
@@ -380,9 +277,9 @@ $(document).ready(function(){
    <div class="row_1">
 	   <div class="col-sm-6 paid_people-left">
 	 	<ul class="profile_item">
-		  <a href="view_profile.html">
+		  <a href="#">
 		   <li class="profile_item-img">
-		   	  <img src="images/a7.jpg" class="img-responsive" alt=""/>
+		   	  <img src="images/a5.jpg" class="img-responsive" alt=""/>
 		   </li>
 		   <li class="profile_item-desc">
 		   	  <h4>2458741</h4>
@@ -395,9 +292,9 @@ $(document).ready(function(){
 	   </div>
 	   <div class="col-sm-6">
 	 	<ul class="profile_item">
-		  <a href="view_profile.html">
+		  <a href="#">
 		   <li class="profile_item-img">
-		   	  <img src="images/a8.jpg" class="img-responsive" alt=""/>
+		   	  <img src="images/a4.jpg" class="img-responsive" alt=""/>
 		   </li>
 		   <li class="profile_item-desc">
 		   	  <h4>2458741</h4>
@@ -413,9 +310,9 @@ $(document).ready(function(){
    <div class="row_2">
 	   <div class="col-sm-6 paid_people-left">
 	 	<ul class="profile_item">
-		  <a href="view_profile.html">
+		  <a href="#">
 		   <li class="profile_item-img">
-		   	  <img src="images/a5.jpg" class="img-responsive" alt=""/>
+		   	  <img src="images/a7.jpg" class="img-responsive" alt=""/>
 		   </li>
 		   <li class="profile_item-desc">
 		   	  <h4>2458741</h4>
@@ -428,9 +325,9 @@ $(document).ready(function(){
 	   </div>
 	   <div class="col-sm-6">
 	 	<ul class="profile_item">
-		  <a href="view_profile.html">
+		  <a href="#">
 		   <li class="profile_item-img">
-		   	  <img src="images/a4.jpg" class="img-responsive" alt=""/>
+		   	  <img src="images/a6.jpg" class="img-responsive" alt=""/>
 		   </li>
 		   <li class="profile_item-desc">
 		   	  <h4>2458741</h4>
@@ -477,7 +374,7 @@ $(document).ready(function(){
    <div class="view_profile view_profile2">
         	<h3>View Similar Profiles</h3>
         	<ul class="profile_item">
-        	  <a href="view_profile.html">
+        	  <a href="#">
         	   <li class="profile_item-img">
         	   	  <img src="images/p5.jpg" class="img-responsive" alt=""/>
         	   </li>
@@ -490,7 +387,7 @@ $(document).ready(function(){
         	  </a>
            </ul>
            <ul class="profile_item">
-        	  <a href="view_profile.html">
+        	  <a href="#">
         	   <li class="profile_item-img">
         	   	  <img src="images/p6.jpg" class="img-responsive" alt=""/>
         	   </li>
@@ -503,7 +400,7 @@ $(document).ready(function(){
         	  </a>
            </ul>
            <ul class="profile_item">
-        	  <a href="view_profile.html">
+        	  <a href="#">
         	   <li class="profile_item-img">
         	   	  <img src="images/p7.jpg" class="img-responsive" alt=""/>
         	   </li>
@@ -516,7 +413,7 @@ $(document).ready(function(){
         	  </a>
            </ul>
            <ul class="profile_item">
-        	  <a href="view_profile.html">
+        	  <a href="#">
         	   <li class="profile_item-img">
         	   	  <img src="images/p8.jpg" class="img-responsive" alt=""/>
         	   </li>
@@ -546,17 +443,17 @@ $(document).ready(function(){
     			<h4>Help & Support</h4>
     			<ul class="footer_links">
     				<li><a href="#">24x7 Live help</a></li>
-    				<li><a href="contact.html">Contact us</a></li>
+    				<li><a href="contact.php">Contact us</a></li>
     				<li><a href="#">Feedback</a></li>
-    				<li><a href="faq.html">FAQs</a></li>
+    				<li><a href="faq.php">FAQs</a></li>
     			</ul>
     		</div>
     		<div class="col-md-2 col_2">
     			<h4>Quick Links</h4>
     			<ul class="footer_links">
-    				<li><a href="privacy.html">Privacy Policy</a></li>
-    				<li><a href="terms.html">Terms and Conditions</a></li>
-    				<li><a href="services.html">Services</a></li>
+    				<li><a href="privacy.php">Privacy Policy</a></li>
+    				<li><a href="terms.php">Terms and Conditions</a></li>
+    				<li><a href="services.php">Services</a></li>
     			</ul>
     		</div>
     		<div class="col-md-2 col_2">
@@ -570,9 +467,9 @@ $(document).ready(function(){
     		</div>
     		<div class="clearfix"> </div>
     		<div class="copy">
-		      <p>Copyright © 2015 Marital . All Rights Reserved  | Design by <a href="http://w3layouts.com/" target="_blank">W3layouts</a> </p>
+		       <p>Copyright © 2015 Marital . All Rights Reserved  | Design by <a href="http://w3layouts.com/" target="_blank">W3layouts</a> </p>
 	        </div>
-    	</div>
+      </div>
 </div>
 <!-- FlexSlider -->
 <link href="css/flexslider.css" rel='stylesheet' type='text/css' />

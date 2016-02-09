@@ -51,15 +51,15 @@ $(document).ready(function(){
 				<li class="green">
 					<a href="#" class="icon-home"></a>
 					<ul>
-						<li><a href="login.html">Login</a></li>
-					    <li><a href="register.html">Register</a></li>
-					    <li><a href="index.html">Logout</a></li>
+						<li><a href="login.php">Login</a></li>
+					    <li><a href="register.php">Register</a></li>
+					    <li><a href="index.php">Logout</a></li>
 					</ul>
 				</li>
 			   </ul>
              </nav>
            </div>
-           <a class="brand" href="index.html"><img src="images/logo.png" alt="logo"></a>
+           <a class="brand" href="index.php"><img src="images/logo.png" alt="logo"></a>
            <div class="pull-right">
           	<nav class="navbar nav_bottom" role="navigation">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -75,39 +75,39 @@ $(document).ready(function(){
 		   <!-- Collect the nav links, forms, and other content for toggling -->
 		    <div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
 		        <ul class="nav navbar-nav nav_1">
-		            <li><a href="index.html">Home</a></li>
-		            <li><a href="about.html">About</a></li>
+		            <li><a href="index.php">Home</a></li>
+		            <li><a href="about.php">About</a></li>
 		    		<li class="dropdown">
 		              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Matches<span class="caret"></span></a>
 		              <ul class="dropdown-menu" role="menu">
-		                <li><a href="matches.html">New Matches</a></li>
-		                <li><a href="viewed-profile.html">Who Viewed my Profile</a></li>
-		                <li><a href="viewed-not_contacted.html">Viewed & not Contacted</a></li>
-		                <li><a href="members.html">Premium Members</a></li>
-		                <li><a href="shortlisted.html">Shortlisted Profile</a></li>
+		                <li><a href="matches.php">New Matches</a></li>
+		                <li><a href="viewed-profile.php">Who Viewed my Profile</a></li>
+		                <li><a href="viewed-not_contacted.php">Viewed & not Contacted</a></li>
+		                <li><a href="members.php">Premium Members</a></li>
+		                <li><a href="shortlisted.php">Shortlisted Profile</a></li>
 		              </ul>
 		            </li>
 					<li class="dropdown">
 		              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Search<span class="caret"></span></a>
 		              <ul class="dropdown-menu" role="menu">
-		                <li><a href="search.html">Regular Search</a></li>
-		                <li><a href="profile.html">Recently Viewed Profiles</a></li>
-		                <li><a href="search-id.html">Search By Profile ID</a></li>
-		                <li><a href="faq.html">Faq</a></li>
-		                <li><a href="shortcodes.html">Shortcodes</a></li>
+		                <li><a href="search.php">Regular Search</a></li>
+		                <li><a href="profile.php">Recently Viewed Profiles</a></li>
+		                <li><a href="search-id.php">Search By Profile ID</a></li>
+		                <li><a href="faq.php">Faq</a></li>
+		                <li><a href="shortcodes.php">Shortcodes</a></li>
 		              </ul>
 		            </li>
 		            <li class="dropdown">
 		              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Messages<span class="caret"></span></a>
 		              <ul class="dropdown-menu" role="menu">
-		                <li><a href="inbox.html">Inbox</a></li>
-		                <li><a href="inbox.html">New</a></li>
-		                <li><a href="inbox.html">Accepted</a></li>
-		                <li><a href="sent.html">Sent</a></li>
-		                <li><a href="upgrade.html">Upgrade</a></li>
+		                <li><a href="inbox.php">Inbox</a></li>
+		                <li><a href="inbox.php">New</a></li>
+		                <li><a href="inbox.php">Accepted</a></li>
+		                <li><a href="sent.php">Sent</a></li>
+		                <li><a href="upgrade.php">Upgrade</a></li>
 		              </ul>
 		            </li>
-		            <li class="last"><a href="contact.html">Contacts</a></li>
+		            <li class="last"><a href="contact.php">Contacts</a></li>
 		        </ul>
 		     </div><!-- /.navbar-collapse -->
 		    </nav>
@@ -121,7 +121,7 @@ $(document).ready(function(){
   <div class="container">
     <div class="banner_info">
       <h3>Millions of verified Members</h3>
-      <a href="view_profile.html" class="hvr-shutter-out-horizontal">Create your Profile</a>
+      <a href="view_profile.php" class="hvr-shutter-out-horizontal">Create your Profile</a>
     </div>
   </div>
   <div class="profile_search">
@@ -199,42 +199,42 @@ $(document).ready(function(){
 			<span class="grey-line"></span>
         </div>
         <ul id="flexiselDemo3">
-	      <li><div class="col_1"><a href="view_profile.html">
+	      <li><div class="col_1"><a href="view_profile.php">
 			<img src="images/1.jpg" alt="" class="hover-animation image-zoom-in img-responsive"/>
              <div class="layer m_1 hidden-link hover-animation delay1 fade-in">
                 <div class="center-middle">About Him</div>
              </div>
              <h3><span class="m_3">Profile ID : MI-387412</span><br>28, Christian, Australia<br>Corporate</h3></a></div>
           </li>
-		  <li><div class="col_1"><a href="view_profile.html">
+		  <li><div class="col_1"><a href="view_profile.php">
 			<img src="images/2.jpg" alt="" class="hover-animation image-zoom-in img-responsive"/>
              <div class="layer m_1 hidden-link hover-animation delay1 fade-in">
                 <div class="center-middle">About Her</div>
              </div>
              <h3><span class="m_3">Profile ID : MI-387412</span><br>28, Christian, Australia<br>Corporate</h3></a></div>
           </li>
-		  <li><div class="col_1"><a href="view_profile.html">
+		  <li><div class="col_1"><a href="view_profile.php">
 			<img src="images/3.jpg" alt="" class="hover-animation image-zoom-in img-responsive"/>
              <div class="layer m_1 hidden-link hover-animation delay1 fade-in">
                 <div class="center-middle">About Him</div>
              </div>
              <h3><span class="m_3">Profile ID : MI-387412</span><br>28, Christian, Australia<br>Corporate</h3></a></div>
           </li>
-		  <li><div class="col_1"><a href="view_profile.html">
+		  <li><div class="col_1"><a href="view_profile.php">
 			<img src="images/4.jpg" alt="" class="hover-animation image-zoom-in img-responsive"/>
              <div class="layer m_1 hidden-link hover-animation delay1 fade-in">
                 <div class="center-middle">About Her</div>
              </div>
              <h3><span class="m_3">Profile ID : MI-387412</span><br>28, Christian, Australia<br>Corporate</h3></a></div>
           </li>
-		  <li><div class="col_1"><a href="view_profile.html">
+		  <li><div class="col_1"><a href="view_profile.php">
 			<img src="images/5.jpg" alt="" class="hover-animation image-zoom-in img-responsive"/>
              <div class="layer m_1 hidden-link hover-animation delay1 fade-in">
                 <div class="center-middle">About Him</div>
              </div>
              <h3><span class="m_3">Profile ID : MI-387412</span><br>28, Christian, Australia<br>Corporate</h3></a></div>
           </li>
-		  <li><div class="col_1"><a href="view_profile.html">
+		  <li><div class="col_1"><a href="view_profile.php">
 			<img src="images/6.jpg" alt="" class="hover-animation image-zoom-in img-responsive"/>
              <div class="layer m_1 hidden-link hover-animation delay1 fade-in">
                 <div class="center-middle">About Her</div>
@@ -527,17 +527,17 @@ $(document).ready(function(){
     			<h4>Help & Support</h4>
     			<ul class="footer_links">
     				<li><a href="#">24x7 Live help</a></li>
-    				<li><a href="contact.html">Contact us</a></li>
+    				<li><a href="contact.php">Contact us</a></li>
     				<li><a href="#">Feedback</a></li>
-    				<li><a href="faq.html">FAQs</a></li>
+    				<li><a href="faq.php">FAQs</a></li>
     			</ul>
     		</div>
     		<div class="col-md-2 col_2">
     			<h4>Quick Links</h4>
     			<ul class="footer_links">
-    				<li><a href="privacy.html">Privacy Policy</a></li>
-    				<li><a href="terms.html">Terms and Conditions</a></li>
-    				<li><a href="services.html">Services</a></li>
+    				<li><a href="privacy.php">Privacy Policy</a></li>
+    				<li><a href="terms.php">Terms and Conditions</a></li>
+    				<li><a href="services.php">Services</a></li>
     			</ul>
     		</div>
     		<div class="col-md-2 col_2">

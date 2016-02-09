@@ -7,7 +7,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>Marital an Wedding Category Flat Bootstarp Resposive Website Template | Sent :: w3layouts</title>
+<title>Marital an Wedding Category Flat Bootstarp Resposive Website Template | Inbox :: w3layouts</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Marital Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
@@ -49,17 +49,17 @@ $(document).ready(function(){
              <nav id="colorNav">
 			   <ul>
 				<li class="green">
-				  <a href="#" class="icon-home"></a>
-				  <ul>
-					<li><a href="login.html">Login</a></li>
-					<li><a href="register.html">Register</a></li>
-					<li><a href="index.html">Logout</a></li>
-				  </ul>
+					<a href="#" class="icon-home"></a>
+					<ul>
+						<li><a href="login.php">Login</a></li>
+					    <li><a href="register.php">Register</a></li>
+					    <li><a href="index.php">Logout</a></li>
+					</ul>
 				</li>
 			   </ul>
              </nav>
            </div>
-           <a class="brand" href="index.html"><img src="images/logo.png" alt="logo"></a>
+           <a class="brand" href="index.php"><img src="images/logo.png" alt="logo"></a>
            <div class="pull-right">
           	<nav class="navbar nav_bottom" role="navigation">
  
@@ -76,39 +76,39 @@ $(document).ready(function(){
 		   <!-- Collect the nav links, forms, and other content for toggling -->
 		    <div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
 		        <ul class="nav navbar-nav nav_1">
-		            <li><a href="index.html">Home</a></li>
-		            <li><a href="about.html">About</a></li>
+		            <li><a href="index.php">Home</a></li>
+		            <li><a href="about.php">About</a></li>
 		    		<li class="dropdown">
 		              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Matches<span class="caret"></span></a>
 		              <ul class="dropdown-menu" role="menu">
-		                <li><a href="matches.html">New Matches</a></li>
-		                <li><a href="viewed-profile.html">Who Viewed my Profile</a></li>
-		                <li><a href="viewed-not_contacted.html">Viewed & not Contacted</a></li>
-		                <li><a href="members.html">Premium Members</a></li>
-		                <li><a href="shortlisted.html">Shortlisted Profile</a></li>
+		                <li><a href="matches.php">New Matches</a></li>
+		                <li><a href="viewed-profile.php">Who Viewed my Profile</a></li>
+		                <li><a href="viewed-not_contacted.php">Viewed & not Contacted</a></li>
+		                <li><a href="members.php">Premium Members</a></li>
+		                <li><a href="shortlisted.php">Shortlisted Profile</a></li>
 		              </ul>
 		            </li>
 					<li class="dropdown">
 		              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Search<span class="caret"></span></a>
 		              <ul class="dropdown-menu" role="menu">
-		                <li><a href="search.html">Regular Search</a></li>
-		                <li><a href="profile.html">Recently Viewed Profiles</a></li>
-		                <li><a href="search-id.html">Search By Profile ID</a></li>
-		                <li><a href="faq.html">Faq</a></li>
-		                <li><a href="shortcodes.html">Shortcodes</a></li>
+		                <li><a href="search.php">Regular Search</a></li>
+		                <li><a href="profile.php">Recently Viewed Profiles</a></li>
+		                <li><a href="search-id.php">Search By Profile ID</a></li>
+		                <li><a href="faq.php">Faq</a></li>
+		                <li><a href="shortcodes.php">Shortcodes</a></li>
 		              </ul>
 		            </li>
 		            <li class="dropdown">
 		              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Messages<span class="caret"></span></a>
 		              <ul class="dropdown-menu" role="menu">
-		                <li><a href="inbox.html">Inbox</a></li>
-		                <li><a href="inbox.html">New</a></li>
-		                <li><a href="inbox.html">Accepted</a></li>
-		                <li><a href="sent.html">Sent</a></li>
-		                <li><a href="upgrade.html">Upgrade</a></li>
+		                <li><a href="inbox.php">Inbox</a></li>
+		                <li><a href="inbox.php">New</a></li>
+		                <li><a href="inbox.php">Accepted</a></li>
+		                <li><a href="sent.php">Sent</a></li>
+		                <li><a href="upgrade.php">Upgrade</a></li>
 		              </ul>
 		            </li>
-		            <li class="last"><a href="contact.html">Contacts</a></li>
+		            <li class="last"><a href="contact.php">Contacts</a></li>
 		        </ul>
 		     </div><!-- /.navbar-collapse -->
 		    </nav>
@@ -122,9 +122,9 @@ $(document).ready(function(){
   <div class="container">
    <div class="breadcrumb1">
      <ul>
-        <a href="index.html"><i class="fa fa-home home_1"></i></a>
+        <a href="index.php"><i class="fa fa-home home_1"></i></a>
         <span class="divider">&nbsp;|&nbsp;</span>
-        <li class="current-page">Sent</li>
+        <li class="current-page">Inbox</li>
      </ul>
    </div>
    <div class="col-md-3 col_5">
@@ -134,7 +134,8 @@ $(document).ready(function(){
    	 	<li><a href="#">Profiles yet to be viewed</a></li>
    	 	<li><a href="#">Mutual Matches</a></li>
    	 </ul>
-   	 <ul class="menu">
+   	 <img src="images/v1.jpg" class="img-responsive" alt=""/>
+     <ul class="menu">
 		<li class="item1"><h3 class="m_2">Show Profiles Created</h3>
 		  <ul class="cute">
 			<li class="subitem1"><a href="#">within a week (2) </a></li>
@@ -198,8 +199,8 @@ $(document).ready(function(){
 	  </ul>
    </div>
    <div class="col-md-9 members_box2">
-   	   <h3>Sent</h3>
-   	   <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College.</p>
+   	   <h3>Inbox</h3>
+   	   <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
        <div class="col_4">
 		    <div class="bs-example bs-example-tabs" role="tabpanel" data-example-id="togglable-tabs">
 			   <ul id="myTab" class="nav nav-tabs nav-tabs1" role="tablist">
@@ -207,8 +208,7 @@ $(document).ready(function(){
 				  <li role="presentation"><a href="#profile" role="tab" id="profile-tab" data-toggle="tab" aria-controls="profile">New</a></li>
 				  <li role="presentation"><a href="#profile1" role="tab" id="profile-tab" data-toggle="tab" aria-controls="profile">Read</a></li>
 				  <li role="presentation"><a href="#profile2" role="tab" id="profile-tab" data-toggle="tab" aria-controls="profile">Accepted</a></li>
-				  <li role="presentation"><a href="#profile3" role="tab" id="profile-tab" data-toggle="tab" aria-controls="profile">Not Interested</a></li>
-				  <li role="presentation"><a href="#profile4" role="tab" id="profile-tab" data-toggle="tab" aria-controls="profile">Replied</a></li>
+				  <li role="presentation"><a href="#profile2" role="tab" id="profile-tab" data-toggle="tab" aria-controls="profile">Not Interested</a></li>
 			   </ul>
 			   <div id="myTabContent" class="tab-content">
 				  <div role="tabpanel" class="tab-pane fade in active" id="home" aria-labelledby="home-tab">
@@ -224,9 +224,9 @@ $(document).ready(function(){
 	                <div class="clearfix"> </div>
 	                <div class="jobs-item with-thumb">
 	                   <div class="thumb_top">
-				        <div class="thumb"><a href="view_profile.html"><img src="images/p17.jpg" class="img-responsive" alt=""/></a></div>
+				        <div class="thumb"><a href="view_profile.php"><img src="images/p13.jpg" class="img-responsive" alt=""/></a></div>
 					    <div class="jobs_right">
-							<h6 class="title"><a href="view_profile.html">Lorem (2547189)</a></h6>
+							<h6 class="title"><a href="view_profile.php">Lorem (2547189)</a></h6>
 							<ul class="top-btns">
 							  <li><a href="#" class="fa fa-facebook"></a></li>
 							  <li><a href="#" class="fa fa-twitter"></a></li>
@@ -235,21 +235,21 @@ $(document).ready(function(){
 							<ul class="login_details1">
 							  <li>Last Login : 5 days ago</li>
 							</ul>
-							<p class="description">30 years, 5 Ft 7 In / 170 Cms | <span class="m_1">Reliogion</span> : Hindu | <span class="m_1">Education</span> : B.Tech | <span class="m_1">Occupation</span> : Software Professional<br><a href="view_profile.html" class="read-more">view full profile</a></p>
+							<p class="description">30 years, 5 Ft 7 In / 170 Cms | <span class="m_1">Reliogion</span> : Hindu | <span class="m_1">Education</span> : B.Tech | <span class="m_1">Occupation</span> : Software Professional<br><a href="view_profile.php" class="read-more">view full profile</a></p>
 						</div>
 						<div class="clearfix"> </div>
 					   </div>
 					   <div class="thumb_bottom">
-					   	  <div class="thumb"><a href="view_profile.html" class="photo_view">Add Photo</a></div>
-					   	   <div class="thumb_but"><a href="view_profile.html" class="photo_view">Send Mail</a></div>
+					   	  <div class="thumb"><a href="view_profile.php" class="photo_view">Add Photo</a></div>
+					   	   <div class="thumb_but"><a href="view_profile.php" class="photo_view">Send Mail</a></div>
 					   	  <div class="clearfix"> </div>
 					   </div>
 					  </div>
 					  <div class="jobs-item with-thumb">
 	                   <div class="thumb_top">
-				        <div class="thumb"><a href="view_profile.html"><img src="images/p16.jpg" class="img-responsive" alt=""/></a></div>
+				        <div class="thumb"><a href="view_profile.php"><img src="images/p15.jpg" class="img-responsive" alt=""/></a></div>
 					    <div class="jobs_right">
-							<h6 class="title"><a href="view_profile.html">Lorem (2547189)</a></h6>
+							<h6 class="title"><a href="view_profile.php">Lorem (2547189)</a></h6>
 							<ul class="top-btns">
 							  <li><a href="#" class="fa fa-facebook"></a></li>
 							  <li><a href="#" class="fa fa-twitter"></a></li>
@@ -258,21 +258,21 @@ $(document).ready(function(){
 							<ul class="login_details1">
 							  <li>Last Login : 5 days ago</li>
 							</ul>
-							<p class="description">30 years, 5 Ft 7 In / 170 Cms | <span class="m_1">Reliogion</span> : Hindu | <span class="m_1">Education</span> : B.Tech | <span class="m_1">Occupation</span> : Software Professional<br><a href="view_profile.html" class="read-more">view full profile</a></p>
+							<p class="description">30 years, 5 Ft 7 In / 170 Cms | <span class="m_1">Reliogion</span> : Hindu | <span class="m_1">Education</span> : B.Tech | <span class="m_1">Occupation</span> : Software Professional<br><a href="view_profile.php" class="read-more">view full profile</a></p>
 						</div>
 						<div class="clearfix"> </div>
 					   </div>
 					   <div class="thumb_bottom">
-					   	  <div class="thumb"><a href="view_profile.html" class="photo_view">Add Photo</a></div>
-					   	   <div class="thumb_but"><a href="view_profile.html" class="photo_view">Send Mail</a></div>
+					   	  <div class="thumb"><a href="view_profile.php" class="photo_view">Add Photo</a></div>
+					   	   <div class="thumb_but"><a href="view_profile.php" class="photo_view">Send Mail</a></div>
 					   	  <div class="clearfix"> </div>
 					   </div>
 					  </div>
 					  <div class="jobs-item with-thumb">
 	                   <div class="thumb_top">
-				        <div class="thumb"><a href="view_profile.html"><img src="images/p15.jpg" class="img-responsive" alt=""/></a></div>
+				        <div class="thumb"><a href="view_profile.php"><img src="images/p14.jpg" class="img-responsive" alt=""/></a></div>
 					    <div class="jobs_right">
-							<h6 class="title"><a href="view_profile.html">Lorem (2547189)</a></h6>
+							<h6 class="title"><a href="view_profile.php">Lorem (2547189)</a></h6>
 							<ul class="top-btns">
 							  <li><a href="#" class="fa fa-facebook"></a></li>
 							  <li><a href="#" class="fa fa-twitter"></a></li>
@@ -281,21 +281,21 @@ $(document).ready(function(){
 							<ul class="login_details1">
 							  <li>Last Login : 5 days ago</li>
 							</ul>
-							<p class="description">30 years, 5 Ft 7 In / 170 Cms | <span class="m_1">Reliogion</span> : Hindu | <span class="m_1">Education</span> : B.Tech | <span class="m_1">Occupation</span> : Software Professional<br><a href="view_profile.html" class="read-more">view full profile</a></p>
+							<p class="description">30 years, 5 Ft 7 In / 170 Cms | <span class="m_1">Reliogion</span> : Hindu | <span class="m_1">Education</span> : B.Tech | <span class="m_1">Occupation</span> : Software Professional<br><a href="view_profile.php" class="read-more">view full profile</a></p>
 						</div>
 						<div class="clearfix"> </div>
 					   </div>
 					   <div class="thumb_bottom">
-					   	  <div class="thumb"><a href="view_profile.html" class="photo_view">Add Photo</a></div>
-					   	   <div class="thumb_but"><a href="view_profile.html" class="photo_view">Send Mail</a></div>
+					   	  <div class="thumb"><a href="view_profile.php" class="photo_view">Add Photo</a></div>
+					   	   <div class="thumb_but"><a href="view_profile.php" class="photo_view">Send Mail</a></div>
 					   	  <div class="clearfix"> </div>
 					   </div>
 					  </div>
 					  <div class="jobs-item with-thumb">
 	                   <div class="thumb_top">
-				        <div class="thumb"><a href="view_profile.html"><img src="images/p14.jpg" class="img-responsive" alt=""/></a></div>
+				        <div class="thumb"><a href="view_profile.php"><img src="images/p16.jpg" class="img-responsive" alt=""/></a></div>
 					    <div class="jobs_right">
-							<h6 class="title"><a href="view_profile.html">Lorem (2547189)</a></h6>
+							<h6 class="title"><a href="view_profile.php">Lorem (2547189)</a></h6>
 							<ul class="top-btns">
 							  <li><a href="#" class="fa fa-facebook"></a></li>
 							  <li><a href="#" class="fa fa-twitter"></a></li>
@@ -304,21 +304,21 @@ $(document).ready(function(){
 							<ul class="login_details1">
 							  <li>Last Login : 5 days ago</li>
 							</ul>
-							<p class="description">30 years, 5 Ft 7 In / 170 Cms | <span class="m_1">Reliogion</span> : Hindu | <span class="m_1">Education</span> : B.Tech | <span class="m_1">Occupation</span> : Software Professional<br><a href="view_profile.html" class="read-more">view full profile</a></p>
+							<p class="description">30 years, 5 Ft 7 In / 170 Cms | <span class="m_1">Reliogion</span> : Hindu | <span class="m_1">Education</span> : B.Tech | <span class="m_1">Occupation</span> : Software Professional<br><a href="view_profile.php" class="read-more">view full profile</a></p>
 						</div>
 						<div class="clearfix"> </div>
 					   </div>
 					   <div class="thumb_bottom">
-					   	  <div class="thumb"><a href="view_profile.html" class="photo_view">Add Photo</a></div>
-					   	  <div class="thumb_but"><a href="view_profile.html" class="photo_view">Send Mail</a></div>
+					   	  <div class="thumb"><a href="view_profile.php" class="photo_view">Add Photo</a></div>
+					   	  <div class="thumb_but"><a href="view_profile.php" class="photo_view">Send Mail</a></div>
 					   	  <div class="clearfix"> </div>
 					   </div>
 					  </div>
 					  <div class="jobs-item with-thumb">
 	                   <div class="thumb_top">
-				        <div class="thumb"><a href="view_profile.html"><img src="images/p13.jpg" class="img-responsive" alt=""/></a></div>
+				        <div class="thumb"><a href="view_profile.php"><img src="images/p17.jpg" class="img-responsive" alt=""/></a></div>
 					    <div class="jobs_right">
-							<h6 class="title"><a href="view_profile.html">Lorem (2547189)</a></h6>
+							<h6 class="title"><a href="view_profile.php">Lorem (2547189)</a></h6>
 							<ul class="top-btns">
 							  <li><a href="#" class="fa fa-facebook"></a></li>
 							  <li><a href="#" class="fa fa-twitter"></a></li>
@@ -327,21 +327,21 @@ $(document).ready(function(){
 							<ul class="login_details1">
 							  <li>Last Login : 5 days ago</li>
 							</ul>
-							<p class="description">30 years, 5 Ft 7 In / 170 Cms | <span class="m_1">Reliogion</span> : Hindu | <span class="m_1">Education</span> : B.Tech | <span class="m_1">Occupation</span> : Software Professional<br><a href="view_profile.html" class="read-more">view full profile</a></p>
+							<p class="description">30 years, 5 Ft 7 In / 170 Cms | <span class="m_1">Reliogion</span> : Hindu | <span class="m_1">Education</span> : B.Tech | <span class="m_1">Occupation</span> : Software Professional<br><a href="view_profile.php" class="read-more">view full profile</a></p>
 						</div>
 						<div class="clearfix"> </div>
 					   </div>
 					   <div class="thumb_bottom">
-					   	  <div class="thumb"><a href="view_profile.html" class="photo_view">Add Photo</a></div>
-					   	   <div class="thumb_but"><a href="view_profile.html" class="photo_view">Send Mail</a></div>
+					   	  <div class="thumb"><a href="view_profile.php" class="photo_view">Add Photo</a></div>
+					   	   <div class="thumb_but"><a href="view_profile.php" class="photo_view">Send Mail</a></div>
 					   	  <div class="clearfix"> </div>
 					   </div>
 					  </div>
 					  <div class="jobs-item with-thumb">
 	                   <div class="thumb_top">
-				        <div class="thumb"><a href="view_profile.html"><img src="images/s3.jpg" class="img-responsive" alt=""/></a></div>
+				        <div class="thumb"><a href="view_profile.php"><img src="images/s3.jpg" class="img-responsive" alt=""/></a></div>
 					    <div class="jobs_right">
-							<h6 class="title"><a href="view_profile.html">Lorem (2547189)</a></h6>
+							<h6 class="title"><a href="view_profile.php">Lorem (2547189)</a></h6>
 							<ul class="top-btns">
 							  <li><a href="#" class="fa fa-facebook"></a></li>
 							  <li><a href="#" class="fa fa-twitter"></a></li>
@@ -350,13 +350,13 @@ $(document).ready(function(){
 							<ul class="login_details1">
 							  <li>Last Login : 5 days ago</li>
 							</ul>
-							<p class="description">30 years, 5 Ft 7 In / 170 Cms | <span class="m_1">Reliogion</span> : Hindu | <span class="m_1">Education</span> : B.Tech | <span class="m_1">Occupation</span> : Software Professional<br><a href="view_profile.html" class="read-more">view full profile</a></p>
+							<p class="description">30 years, 5 Ft 7 In / 170 Cms | <span class="m_1">Reliogion</span> : Hindu | <span class="m_1">Education</span> : B.Tech | <span class="m_1">Occupation</span> : Software Professional<br><a href="view_profile.php" class="read-more">view full profile</a></p>
 						</div>
 						<div class="clearfix"> </div>
 					   </div>
 					   <div class="thumb_bottom">
-					   	  <div class="thumb"><a href="view_profile.html" class="photo_view">Add Photo</a></div>
-					   	   <div class="thumb_but"><a href="view_profile.html" class="photo_view">Send Mail</a></div>
+					   	  <div class="thumb"><a href="view_profile.php" class="photo_view">Add Photo</a></div>
+					   	   <div class="thumb_but"><a href="view_profile.php" class="photo_view">Send Mail</a></div>
 					   	  <div class="clearfix"> </div>
 					   </div>
 					  </div>
@@ -364,9 +364,9 @@ $(document).ready(function(){
 				  <div role="tabpanel" class="tab-pane fade" id="profile" aria-labelledby="profile-tab">
 				    <div class="jobs-item with-thumb">
 	                   <div class="thumb_top">
-				        <div class="thumb"><a href="view_profile.html"><img src="images/s3.jpg" class="img-responsive" alt=""/></a></div>
+				        <div class="thumb"><a href="view_profile.php"><img src="images/s3.jpg" class="img-responsive" alt=""/></a></div>
 					    <div class="jobs_right">
-							<h6 class="title"><a href="view_profile.html">Lorem (2547189)</a></h6>
+							<h6 class="title"><a href="view_profile.php">Lorem (2547189)</a></h6>
 							<ul class="top-btns">
 							  <li><a href="#" class="fa fa-facebook"></a></li>
 							  <li><a href="#" class="fa fa-twitter"></a></li>
@@ -375,21 +375,21 @@ $(document).ready(function(){
 							<ul class="login_details1">
 							  <li>Last Login : 5 days ago</li>
 							</ul>
-							<p class="description">30 years, 5 Ft 7 In / 170 Cms | <span class="m_1">Reliogion</span> : Hindu | <span class="m_1">Education</span> : B.Tech | <span class="m_1">Occupation</span> : Software Professional<br><a href="view_profile.html" class="read-more">view full profile</a></p>
+							<p class="description">30 years, 5 Ft 7 In / 170 Cms | <span class="m_1">Reliogion</span> : Hindu | <span class="m_1">Education</span> : B.Tech | <span class="m_1">Occupation</span> : Software Professional<br><a href="view_profile.php" class="read-more">view full profile</a></p>
 						</div>
 						<div class="clearfix"> </div>
 					   </div>
 					   <div class="thumb_bottom">
-					   	  <div class="thumb"><a href="view_profile.html" class="photo_view">Add Photo</a></div>
-					   	   <div class="thumb_but"><a href="view_profile.html" class="photo_view">Send Mail</a></div>
+					   	  <div class="thumb"><a href="view_profile.php" class="photo_view">Add Photo</a></div>
+					   	   <div class="thumb_but"><a href="view_profile.php" class="photo_view">Send Mail</a></div>
 					   	  <div class="clearfix"> </div>
 					   </div>
 					</div>
 					<div class="jobs-item with-thumb">
 	                   <div class="thumb_top">
-				        <div class="thumb"><a href="view_profile.html"><img src="images/s3.jpg" class="img-responsive" alt=""/></a></div>
+				        <div class="thumb"><a href="view_profile.php"><img src="images/s3.jpg" class="img-responsive" alt=""/></a></div>
 					    <div class="jobs_right">
-							<h6 class="title"><a href="view_profile.html">Lorem (2547189)</a></h6>
+							<h6 class="title"><a href="view_profile.php">Lorem (2547189)</a></h6>
 							<ul class="top-btns">
 							  <li><a href="#" class="fa fa-facebook"></a></li>
 							  <li><a href="#" class="fa fa-twitter"></a></li>
@@ -398,21 +398,21 @@ $(document).ready(function(){
 							<ul class="login_details1">
 							  <li>Last Login : 5 days ago</li>
 							</ul>
-							<p class="description">30 years, 5 Ft 7 In / 170 Cms | <span class="m_1">Reliogion</span> : Hindu | <span class="m_1">Education</span> : B.Tech | <span class="m_1">Occupation</span> : Software Professional<br><a href="view_profile.html" class="read-more">view full profile</a></p>
+							<p class="description">30 years, 5 Ft 7 In / 170 Cms | <span class="m_1">Reliogion</span> : Hindu | <span class="m_1">Education</span> : B.Tech | <span class="m_1">Occupation</span> : Software Professional<br><a href="view_profile.php" class="read-more">view full profile</a></p>
 						</div>
 						<div class="clearfix"> </div>
 					   </div>
 					   <div class="thumb_bottom">
-					   	  <div class="thumb"><a href="view_profile.html" class="photo_view">Add Photo</a></div>
-					   	   <div class="thumb_but"><a href="view_profile.html" class="photo_view">Send Mail</a></div>
+					   	  <div class="thumb"><a href="view_profile.php" class="photo_view">Add Photo</a></div>
+					   	   <div class="thumb_but"><a href="view_profile.php" class="photo_view">Send Mail</a></div>
 					   	  <div class="clearfix"> </div>
 					   </div>
 					  </div>
 					  <div class="jobs-item with-thumb">
 	                   <div class="thumb_top">
-				        <div class="thumb"><a href="view_profile.html"><img src="images/s3.jpg" class="img-responsive" alt=""/></a></div>
+				        <div class="thumb"><a href="view_profile.php"><img src="images/s3.jpg" class="img-responsive" alt=""/></a></div>
 					    <div class="jobs_right">
-							<h6 class="title"><a href="view_profile.html">Lorem (2547189)</a></h6>
+							<h6 class="title"><a href="view_profile.php">Lorem (2547189)</a></h6>
 							<ul class="top-btns">
 							  <li><a href="#" class="fa fa-facebook"></a></li>
 							  <li><a href="#" class="fa fa-twitter"></a></li>
@@ -421,13 +421,13 @@ $(document).ready(function(){
 							<ul class="login_details1">
 							  <li>Last Login : 5 days ago</li>
 							</ul>
-							<p class="description">30 years, 5 Ft 7 In / 170 Cms | <span class="m_1">Reliogion</span> : Hindu | <span class="m_1">Education</span> : B.Tech | <span class="m_1">Occupation</span> : Software Professional<br><a href="view_profile.html" class="read-more">view full profile</a></p>
+							<p class="description">30 years, 5 Ft 7 In / 170 Cms | <span class="m_1">Reliogion</span> : Hindu | <span class="m_1">Education</span> : B.Tech | <span class="m_1">Occupation</span> : Software Professional<br><a href="view_profile.php" class="read-more">view full profile</a></p>
 						</div>
 						<div class="clearfix"> </div>
 					   </div>
 					   <div class="thumb_bottom">
-					   	  <div class="thumb"><a href="view_profile.html" class="photo_view">Add Photo</a></div>
-					   	   <div class="thumb_but"><a href="view_profile.html" class="photo_view">Send Mail</a></div>
+					   	  <div class="thumb"><a href="view_profile.php" class="photo_view">Add Photo</a></div>
+					   	   <div class="thumb_but"><a href="view_profile.php" class="photo_view">Send Mail</a></div>
 					   	  <div class="clearfix"> </div>
 					   </div>
 					  </div>
@@ -453,9 +453,9 @@ $(document).ready(function(){
 				 <div role="tabpanel" class="tab-pane fade" id="profile2" aria-labelledby="profile-tab">
 				    <div class="jobs-item with-thumb">
 	                   <div class="thumb_top">
-				        <div class="thumb"><a href="view_profile.html"><img src="images/s3.jpg" class="img-responsive" alt=""/></a></div>
+				        <div class="thumb"><a href="view_profile.php"><img src="images/s3.jpg" class="img-responsive" alt=""/></a></div>
 					    <div class="jobs_right">
-							<h6 class="title"><a href="view_profile.html">Lorem (2547189)</a></h6>
+							<h6 class="title"><a href="view_profile.php">Lorem (2547189)</a></h6>
 							<ul class="top-btns">
 							  <li><a href="#" class="fa fa-facebook"></a></li>
 							  <li><a href="#" class="fa fa-twitter"></a></li>
@@ -464,21 +464,21 @@ $(document).ready(function(){
 							<ul class="login_details1">
 							  <li>Last Login : 5 days ago</li>
 							</ul>
-							<p class="description">30 years, 5 Ft 7 In / 170 Cms | <span class="m_1">Reliogion</span> : Hindu | <span class="m_1">Education</span> : B.Tech | <span class="m_1">Occupation</span> : Software Professional<br><a href="view_profile.html" class="read-more">view full profile</a></p>
+							<p class="description">30 years, 5 Ft 7 In / 170 Cms | <span class="m_1">Reliogion</span> : Hindu | <span class="m_1">Education</span> : B.Tech | <span class="m_1">Occupation</span> : Software Professional<br><a href="view_profile.php" class="read-more">view full profile</a></p>
 						</div>
 						<div class="clearfix"> </div>
 					   </div>
 					   <div class="thumb_bottom">
-					   	  <div class="thumb"><a href="view_profile.html" class="photo_view">Add Photo</a></div>
-					   	   <div class="thumb_but"><a href="view_profile.html" class="photo_view">Send Mail</a></div>
+					   	  <div class="thumb"><a href="view_profile.php" class="photo_view">Add Photo</a></div>
+					   	   <div class="thumb_but"><a href="view_profile.php" class="photo_view">Send Mail</a></div>
 					   	  <div class="clearfix"> </div>
 					   </div>
 					  </div>
 					  <div class="jobs-item with-thumb">
 	                   <div class="thumb_top">
-				        <div class="thumb"><a href="view_profile.html"><img src="images/s3.jpg" class="img-responsive" alt=""/></a></div>
+				        <div class="thumb"><a href="view_profile.php"><img src="images/s3.jpg" class="img-responsive" alt=""/></a></div>
 					    <div class="jobs_right">
-							<h6 class="title"><a href="view_profile.html">Lorem (2547189)</a></h6>
+							<h6 class="title"><a href="view_profile.php">Lorem (2547189)</a></h6>
 							<ul class="top-btns">
 							  <li><a href="#" class="fa fa-facebook"></a></li>
 							  <li><a href="#" class="fa fa-twitter"></a></li>
@@ -487,21 +487,21 @@ $(document).ready(function(){
 							<ul class="login_details1">
 							  <li>Last Login : 5 days ago</li>
 							</ul>
-							<p class="description">30 years, 5 Ft 7 In / 170 Cms | <span class="m_1">Reliogion</span> : Hindu | <span class="m_1">Education</span> : B.Tech | <span class="m_1">Occupation</span> : Software Professional<br><a href="view_profile.html" class="read-more">view full profile</a></p>
+							<p class="description">30 years, 5 Ft 7 In / 170 Cms | <span class="m_1">Reliogion</span> : Hindu | <span class="m_1">Education</span> : B.Tech | <span class="m_1">Occupation</span> : Software Professional<br><a href="view_profile.php" class="read-more">view full profile</a></p>
 						</div>
 						<div class="clearfix"> </div>
 					   </div>
 					   <div class="thumb_bottom">
-					   	  <div class="thumb"><a href="view_profile.html" class="photo_view">Add Photo</a></div>
-					   	   <div class="thumb_but"><a href="view_profile.html" class="photo_view">Send Mail</a></div>
+					   	  <div class="thumb"><a href="view_profile.php" class="photo_view">Add Photo</a></div>
+					   	   <div class="thumb_but"><a href="view_profile.php" class="photo_view">Send Mail</a></div>
 					   	  <div class="clearfix"> </div>
 					   </div>
 					  </div>
 					  <div class="jobs-item with-thumb">
 	                   <div class="thumb_top">
-				        <div class="thumb"><a href="view_profile.html"><img src="images/s3.jpg" class="img-responsive" alt=""/></a></div>
+				        <div class="thumb"><a href="view_profile.php"><img src="images/s3.jpg" class="img-responsive" alt=""/></a></div>
 					    <div class="jobs_right">
-							<h6 class="title"><a href="view_profile.html">Lorem (2547189)</a></h6>
+							<h6 class="title"><a href="view_profile.php">Lorem (2547189)</a></h6>
 							<ul class="top-btns">
 							  <li><a href="#" class="fa fa-facebook"></a></li>
 							  <li><a href="#" class="fa fa-twitter"></a></li>
@@ -510,21 +510,21 @@ $(document).ready(function(){
 							<ul class="login_details1">
 							  <li>Last Login : 5 days ago</li>
 							</ul>
-							<p class="description">30 years, 5 Ft 7 In / 170 Cms | <span class="m_1">Reliogion</span> : Hindu | <span class="m_1">Education</span> : B.Tech | <span class="m_1">Occupation</span> : Software Professional<br><a href="view_profile.html" class="read-more">view full profile</a></p>
+							<p class="description">30 years, 5 Ft 7 In / 170 Cms | <span class="m_1">Reliogion</span> : Hindu | <span class="m_1">Education</span> : B.Tech | <span class="m_1">Occupation</span> : Software Professional<br><a href="view_profile.php" class="read-more">view full profile</a></p>
 						</div>
 						<div class="clearfix"> </div>
 					   </div>
 					   <div class="thumb_bottom">
-					   	  <div class="thumb"><a href="view_profile.html" class="photo_view">Add Photo</a></div>
-					   	   <div class="thumb_but"><a href="view_profile.html" class="photo_view">Send Mail</a></div>
+					   	  <div class="thumb"><a href="view_profile.php" class="photo_view">Add Photo</a></div>
+					   	   <div class="thumb_but"><a href="view_profile.php" class="photo_view">Send Mail</a></div>
 					   	  <div class="clearfix"> </div>
 					   </div>
 					  </div>
 					  <div class="jobs-item with-thumb">
 	                   <div class="thumb_top">
-				        <div class="thumb"><a href="view_profile.html"><img src="images/s3.jpg" class="img-responsive" alt=""/></a></div>
+				        <div class="thumb"><a href="view_profile.php"><img src="images/s3.jpg" class="img-responsive" alt=""/></a></div>
 					    <div class="jobs_right">
-							<h6 class="title"><a href="view_profile.html">Lorem (2547189)</a></h6>
+							<h6 class="title"><a href="view_profile.php">Lorem (2547189)</a></h6>
 							<ul class="top-btns">
 							  <li><a href="#" class="fa fa-facebook"></a></li>
 							  <li><a href="#" class="fa fa-twitter"></a></li>
@@ -533,13 +533,13 @@ $(document).ready(function(){
 							<ul class="login_details1">
 							  <li>Last Login : 5 days ago</li>
 							</ul>
-							<p class="description">30 years, 5 Ft 7 In / 170 Cms | <span class="m_1">Reliogion</span> : Hindu | <span class="m_1">Education</span> : B.Tech | <span class="m_1">Occupation</span> : Software Professional<br><a href="view_profile.html" class="read-more">view full profile</a></p>
+							<p class="description">30 years, 5 Ft 7 In / 170 Cms | <span class="m_1">Reliogion</span> : Hindu | <span class="m_1">Education</span> : B.Tech | <span class="m_1">Occupation</span> : Software Professional<br><a href="view_profile.php" class="read-more">view full profile</a></p>
 						</div>
 						<div class="clearfix"> </div>
 					   </div>
 					   <div class="thumb_bottom">
-					   	  <div class="thumb"><a href="view_profile.html" class="photo_view">Add Photo</a></div>
-					   	   <div class="thumb_but"><a href="view_profile.html" class="photo_view">Send Mail</a></div>
+					   	  <div class="thumb"><a href="view_profile.php" class="photo_view">Add Photo</a></div>
+					   	   <div class="thumb_but"><a href="view_profile.php" class="photo_view">Send Mail</a></div>
 					   	  <div class="clearfix"> </div>
 					   </div>
 					  </div>
@@ -562,100 +562,6 @@ $(document).ready(function(){
 					  </div> 	
 		           </div>
 				 </div>
-				 <div role="tabpanel" class="tab-pane fade" id="profile4" aria-labelledby="profile-tab">
-				    <div class="jobs-item with-thumb">
-	                   <div class="thumb_top">
-				        <div class="thumb"><a href="view_profile.html"><img src="images/s3.jpg" class="img-responsive" alt=""/></a></div>
-					    <div class="jobs_right">
-							<h6 class="title"><a href="view_profile.html">Lorem (2547189)</a></h6>
-							<ul class="top-btns">
-							  <li><a href="#" class="fa fa-facebook"></a></li>
-							  <li><a href="#" class="fa fa-twitter"></a></li>
-							  <li><a href="#" class="fa fa-google-plus"></a></li>
-							</ul>
-							<ul class="login_details1">
-							  <li>Last Login : 5 days ago</li>
-							</ul>
-							<p class="description">30 years, 5 Ft 7 In / 170 Cms | <span class="m_1">Reliogion</span> : Hindu | <span class="m_1">Education</span> : B.Tech | <span class="m_1">Occupation</span> : Software Professional<br><a href="view_profile.html" class="read-more">view full profile</a></p>
-						</div>
-						<div class="clearfix"> </div>
-					   </div>
-					   <div class="thumb_bottom">
-					   	  <div class="thumb"><a href="view_profile.html" class="photo_view">Add Photo</a></div>
-					   	   <div class="thumb_but"><a href="view_profile.html" class="photo_view">Send Mail</a></div>
-					   	  <div class="clearfix"> </div>
-					   </div>
-					  </div>
-					  <div class="jobs-item with-thumb">
-	                   <div class="thumb_top">
-				        <div class="thumb"><a href="view_profile.html"><img src="images/s3.jpg" class="img-responsive" alt=""/></a></div>
-					    <div class="jobs_right">
-							<h6 class="title"><a href="view_profile.html">Lorem (2547189)</a></h6>
-							<ul class="top-btns">
-							  <li><a href="#" class="fa fa-facebook"></a></li>
-							  <li><a href="#" class="fa fa-twitter"></a></li>
-							  <li><a href="#" class="fa fa-google-plus"></a></li>
-							</ul>
-							<ul class="login_details1">
-							  <li>Last Login : 5 days ago</li>
-							</ul>
-							<p class="description">30 years, 5 Ft 7 In / 170 Cms | <span class="m_1">Reliogion</span> : Hindu | <span class="m_1">Education</span> : B.Tech | <span class="m_1">Occupation</span> : Software Professional<br><a href="view_profile.html" class="read-more">view full profile</a></p>
-						</div>
-						<div class="clearfix"> </div>
-					   </div>
-					   <div class="thumb_bottom">
-					   	  <div class="thumb"><a href="view_profile.html" class="photo_view">Add Photo</a></div>
-					   	   <div class="thumb_but"><a href="view_profile.html" class="photo_view">Send Mail</a></div>
-					   	  <div class="clearfix"> </div>
-					   </div>
-					  </div>
-					  <div class="jobs-item with-thumb">
-	                   <div class="thumb_top">
-				        <div class="thumb"><a href="view_profile.html"><img src="images/s3.jpg" class="img-responsive" alt=""/></a></div>
-					    <div class="jobs_right">
-							<h6 class="title"><a href="view_profile.html">Lorem (2547189)</a></h6>
-							<ul class="top-btns">
-							  <li><a href="#" class="fa fa-facebook"></a></li>
-							  <li><a href="#" class="fa fa-twitter"></a></li>
-							  <li><a href="#" class="fa fa-google-plus"></a></li>
-							</ul>
-							<ul class="login_details1">
-							  <li>Last Login : 5 days ago</li>
-							</ul>
-							<p class="description">30 years, 5 Ft 7 In / 170 Cms | <span class="m_1">Reliogion</span> : Hindu | <span class="m_1">Education</span> : B.Tech | <span class="m_1">Occupation</span> : Software Professional<br><a href="view_profile.html" class="read-more">view full profile</a></p>
-						</div>
-						<div class="clearfix"> </div>
-					   </div>
-					   <div class="thumb_bottom">
-					   	  <div class="thumb"><a href="view_profile.html" class="photo_view">Add Photo</a></div>
-					   	   <div class="thumb_but"><a href="view_profile.html" class="photo_view">Send Mail</a></div>
-					   	  <div class="clearfix"> </div>
-					   </div>
-					  </div>
-					  <div class="jobs-item with-thumb">
-	                   <div class="thumb_top">
-				        <div class="thumb"><a href="view_profile.html"><img src="images/s3.jpg" class="img-responsive" alt=""/></a></div>
-					    <div class="jobs_right">
-							<h6 class="title"><a href="view_profile.html">Lorem (2547189)</a></h6>
-							<ul class="top-btns">
-							  <li><a href="#" class="fa fa-facebook"></a></li>
-							  <li><a href="#" class="fa fa-twitter"></a></li>
-							  <li><a href="#" class="fa fa-google-plus"></a></li>
-							</ul>
-							<ul class="login_details1">
-							  <li>Last Login : 5 days ago</li>
-							</ul>
-							<p class="description">30 years, 5 Ft 7 In / 170 Cms | <span class="m_1">Reliogion</span> : Hindu | <span class="m_1">Education</span> : B.Tech | <span class="m_1">Occupation</span> : Software Professional<br><a href="view_profile.html" class="read-more">view full profile</a></p>
-						</div>
-						<div class="clearfix"> </div>
-					   </div>
-					   <div class="thumb_bottom">
-					   	  <div class="thumb"><a href="view_profile.html" class="photo_view">Add Photo</a></div>
-					   	   <div class="thumb_but"><a href="view_profile.html" class="photo_view">Send Mail</a></div>
-					   	  <div class="clearfix"> </div>
-					   </div>
-					  </div>
-				 </div>
 			 </div> 
 		  </div>
 	   </div>
@@ -676,17 +582,17 @@ $(document).ready(function(){
     			<h4>Help & Support</h4>
     			<ul class="footer_links">
     				<li><a href="#">24x7 Live help</a></li>
-    				<li><a href="contact.html">Contact us</a></li>
+    				<li><a href="contact.php">Contact us</a></li>
     				<li><a href="#">Feedback</a></li>
-    				<li><a href="faq.html">FAQs</a></li>
+    				<li><a href="faq.php">FAQs</a></li>
     			</ul>
     		</div>
     		<div class="col-md-2 col_2">
     			<h4>Quick Links</h4>
     			<ul class="footer_links">
-    				<li><a href="privacy.html">Privacy Policy</a></li>
-    				<li><a href="terms.html">Terms and Conditions</a></li>
-    				<li><a href="services.html">Services</a></li>
+    				<li><a href="privacy.php">Privacy Policy</a></li>
+    				<li><a href="terms.php">Terms and Conditions</a></li>
+    				<li><a href="services.php">Services</a></li>
     			</ul>
     		</div>
     		<div class="col-md-2 col_2">

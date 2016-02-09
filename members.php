@@ -7,7 +7,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>Marital an Wedding Category Flat Bootstarp Resposive Website Template | Profile :: w3layouts</title>
+<title>Marital an Wedding Category Flat Bootstarp Resposive Website Template | Members :: w3layouts</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Marital Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
@@ -51,15 +51,15 @@ $(document).ready(function(){
 				<li class="green">
 					<a href="#" class="icon-home"></a>
 					<ul>
-						<li><a href="login.html">Login</a></li>
-					    <li><a href="register.html">Register</a></li>
-					    <li><a href="index.html">Logout</a></li>
+						<li><a href="login.php">Login</a></li>
+					    <li><a href="register.php">Register</a></li>
+					    <li><a href="index.php">Logout</a></li>
 					</ul>
 				</li>
 			   </ul>
              </nav>
            </div>
-           <a class="brand" href="index.html"><img src="images/logo.png" alt="logo"></a>
+           <a class="brand" href="index.php"><img src="images/logo.png" alt="logo"></a>
            <div class="pull-right">
           	<nav class="navbar nav_bottom" role="navigation">
  
@@ -76,39 +76,39 @@ $(document).ready(function(){
 		   <!-- Collect the nav links, forms, and other content for toggling -->
 		    <div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
 		        <ul class="nav navbar-nav nav_1">
-		            <li><a href="index.html">Home</a></li>
-		            <li><a href="about.html">About</a></li>
+		            <li><a href="index.php">Home</a></li>
+		            <li><a href="about.php">About</a></li>
 		    		<li class="dropdown">
 		              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Matches<span class="caret"></span></a>
 		              <ul class="dropdown-menu" role="menu">
-		                <li><a href="matches.html">New Matches</a></li>
-		                <li><a href="viewed-profile.html">Who Viewed my Profile</a></li>
-		                <li><a href="viewed-not_contacted.html">Viewed & not Contacted</a></li>
-		                <li><a href="members.html">Premium Members</a></li>
-		                <li><a href="shortlisted.html">Shortlisted Profile</a></li>
+		                <li><a href="matches.php">New Matches</a></li>
+		                <li><a href="viewed-profile.php">Who Viewed my Profile</a></li>
+		                <li><a href="viewed-not_contacted.php">Viewed & not Contacted</a></li>
+		                <li><a href="members.php">Premium Members</a></li>
+		                <li><a href="shortlisted.php">Shortlisted Profile</a></li>
 		              </ul>
 		            </li>
 					<li class="dropdown">
 		              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Search<span class="caret"></span></a>
 		              <ul class="dropdown-menu" role="menu">
-		                <li><a href="search.html">Regular Search</a></li>
-		                <li><a href="profile.html">Recently Viewed Profiles</a></li>
-		                <li><a href="search-id.html">Search By Profile ID</a></li>
-		                <li><a href="faq.html">Faq</a></li>
-		                <li><a href="shortcodes.html">Shortcodes</a></li>
+		                <li><a href="search.php">Regular Search</a></li>
+		                <li><a href="profile.php">Recently Viewed Profiles</a></li>
+		                <li><a href="search-id.php">Search By Profile ID</a></li>
+		                <li><a href="faq.php">Faq</a></li>
+		                <li><a href="shortcodes.php">Shortcodes</a></li>
 		              </ul>
 		            </li>
 		            <li class="dropdown">
 		              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Messages<span class="caret"></span></a>
 		              <ul class="dropdown-menu" role="menu">
-		                <li><a href="inbox.html">Inbox</a></li>
-		                <li><a href="inbox.html">New</a></li>
-		                <li><a href="inbox.html">Accepted</a></li>
-		                <li><a href="sent.html">Sent</a></li>
-		                <li><a href="upgrade.html">Upgrade</a></li>
+		                <li><a href="inbox.php">Inbox</a></li>
+		                <li><a href="inbox.php">New</a></li>
+		                <li><a href="inbox.php">Accepted</a></li>
+		                <li><a href="sent.php">Sent</a></li>
+		                <li><a href="upgrade.php">Upgrade</a></li>
 		              </ul>
 		            </li>
-		            <li class="last"><a href="contact.html">Contacts</a></li>
+		            <li class="last"><a href="contact.php">Contacts</a></li>
 		        </ul>
 		     </div><!-- /.navbar-collapse -->
 		    </nav>
@@ -121,361 +121,319 @@ $(document).ready(function(){
 <div class="grid_3">
   <div class="container">
    <div class="breadcrumb1">
-      <ul>
-        <a href="index.html"><i class="fa fa-home home_1"></i></a>
+     <ul>
+        <a href="index.php"><i class="fa fa-home home_1"></i></a>
         <span class="divider">&nbsp;|&nbsp;</span>
-        <li class="current-page">Profile</li>
-      </ul>
+        <li class="current-page">Premium Members</li>
+     </ul>
    </div>
-  <div class="col-md-9 profile_left1">
-  	<h1>Recently Viewed Profile</h1>
-    <div class="profile_top"><a href="view_profile.html">
-      <h2>254879</h2>
-	    <div class="col-sm-3 profile_left-top">
-	    	<img src="images/p13.jpg" class="img-responsive" alt=""/>
-	    </div>
-	    <div class="col-sm-3">
-	      <ul class="login_details1">
-			 <li>Last Login : 5 days ago</li>
-			 <li><p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor." More....</p></li>
+   <div class="col-md-3 col_5">
+   	 <ul class="match_box">
+   	 	<h4>Matches</h4>
+   	 	<li><a href="#">Mutual Matches</a></li>
+   	 	<li><a href="#">Profiles yet to be viewed</a></li>
+   	 	<li><a href="#">Mutual Matches</a></li>
+   	 </ul>
+     <ul class="menu">
+		<li class="item1"><h3 class="m_2">Show Profiles Created</h3>
+		  <ul class="cute">
+			<li class="subitem1"><a href="#">within a week (2) </a></li>
+			<li class="subitem2"><a href="#">within a month (4)</a></li>
 		  </ul>
-	    </div>
-	    <div class="col-sm-6">
-	    	<table class="table_working_hours">
-	        	<tbody>
-	        		<tr class="opened_1">
-						<td class="day_label1">Age / Height :</td>
-						<td class="day_value">28, 5ft 5in / 163cm</td>
-					</tr>
-				    <tr class="opened">
-						<td class="day_label1">Last Login :</td>
-						<td class="day_value">4 hours ago</td>
-					</tr>
-				    <tr class="opened">
-						<td class="day_label1">Religion :</td>
-						<td class="day_value">Sikh</td>
-					</tr>
-				    <tr class="opened">
-						<td class="day_label1">Marital Status :</td>
-						<td class="day_value">Single</td>
-					</tr>
-				    <tr class="opened">
-						<td class="day_label1">Location :</td>
-						<td class="day_value">India</td>
-					</tr>
-				    <tr class="closed">
-						<td class="day_label1">Profile Created by :</td>
-						<td class="day_value closed"><span>Self</span></td>
-					</tr>
-				    <tr class="closed">
-						<td class="day_label1">Education :</td>
-						<td class="day_value closed"><span>Engineering</span></td>
-					</tr>
-			    </tbody>
-		   </table>
-		   <div class="buttons">
-			   <div class="vertical">Send Mail</div>
-			   <div class="vertical">Shortlisted</div>
-			   <div class="vertical">Send Interest</div>
-		   </div>
-	    </div>
-	    <div class="clearfix"> </div>
-    </a></div>
-    <div class="profile_top"><a href="view_profile.html">
-      <h2>254879</h2>
-	    <div class="col-sm-3 profile_left-top">
-	    	<img src="images/p15.jpg" class="img-responsive" alt=""/>
-	    </div>
-	    <div class="col-sm-3">
-	      <ul class="login_details1">
-			 <li>Last Login : 5 days ago</li>
-			 <li><p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor." More....</p></li>
+		</li>
+		<li class="item1"><h3 class="m_2">Profile type</h3>
+		  <ul class="cute">
+			<li class="subitem1"><a href="#">with Photo (3) </a></li>
 		  </ul>
-	    </div>
-	    <div class="col-sm-6">
-	    	<table class="table_working_hours">
-	        	<tbody>
-	        		<tr class="opened_1">
-						<td class="day_label1">Age / Height :</td>
-						<td class="day_value">28, 5ft 5in / 163cm</td>
-					</tr>
-				    <tr class="opened">
-						<td class="day_label1">Last Login :</td>
-						<td class="day_value">4 hours ago</td>
-					</tr>
-				    <tr class="opened">
-						<td class="day_label1">Religion :</td>
-						<td class="day_value">Sikh</td>
-					</tr>
-				    <tr class="opened">
-						<td class="day_label1">Marital Status :</td>
-						<td class="day_value">Single</td>
-					</tr>
-				    <tr class="opened">
-						<td class="day_label1">Location :</td>
-						<td class="day_value">India</td>
-					</tr>
-				    <tr class="closed">
-						<td class="day_label1">Profile Created by :</td>
-						<td class="day_value closed"><span>Self</span></td>
-					</tr>
-				    <tr class="closed">
-						<td class="day_label1">Education :</td>
-						<td class="day_value closed"><span>Engineering</span></td>
-					</tr>
-			    </tbody>
-		   </table>
-		   <div class="buttons">
-			   <div class="vertical">Send Mail</div>
-			   <div class="vertical">Shortlisted</div>
-			   <div class="vertical">Send Interest</div>
-		   </div>
-	    </div>
-	    <div class="clearfix"> </div>
-    </a></div>
-    <div class="profile_top"><a href="view_profile.html">
-      <h2>254879</h2>
-	    <div class="col-sm-3 profile_left-top">
-	    	<img src="images/p16.jpg" class="img-responsive" alt=""/>
-	    </div>
-	    <div class="col-sm-3">
-	      <ul class="login_details1">
-			 <li>Last Login : 5 days ago</li>
-			 <li><p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor." More....</p></li>
+		</li>
+		<li class="item1"><h3 class="m_2">Marital Status</h3>
+		  <ul class="cute">
+			<li class="subitem1"><a href="#">Unmarried (2) </a></li>
 		  </ul>
-	    </div>
-	    <div class="col-sm-6">
-	    	<table class="table_working_hours">
-	        	<tbody>
-	        		<tr class="opened_1">
-						<td class="day_label1">Age / Height :</td>
-						<td class="day_value">28, 5ft 5in / 163cm</td>
-					</tr>
-				    <tr class="opened">
-						<td class="day_label1">Last Login :</td>
-						<td class="day_value">4 hours ago</td>
-					</tr>
-				    <tr class="opened">
-						<td class="day_label1">Religion :</td>
-						<td class="day_value">Sikh</td>
-					</tr>
-				    <tr class="opened">
-						<td class="day_label1">Marital Status :</td>
-						<td class="day_value">Single</td>
-					</tr>
-				    <tr class="opened">
-						<td class="day_label1">Location :</td>
-						<td class="day_value">India</td>
-					</tr>
-				    <tr class="closed">
-						<td class="day_label1">Profile Created by :</td>
-						<td class="day_value closed"><span>Self</span></td>
-					</tr>
-				    <tr class="closed">
-						<td class="day_label1">Education :</td>
-						<td class="day_value closed"><span>Engineering</span></td>
-					</tr>
-			    </tbody>
-		   </table>
-		   <div class="buttons">
-			   <div class="vertical">Send Mail</div>
-			   <div class="vertical">Shortlisted</div>
-			   <div class="vertical">Send Interest</div>
-		   </div>
-	    </div>
-	    <div class="clearfix"> </div>
-    </a></div>
-    <div class="profile_top"><a href="view_profile.html">
-      <h2>254879</h2>
-	    <div class="col-sm-3 profile_left-top">
-	    	<img src="images/p17.jpg" class="img-responsive" alt=""/>
-	    </div>
-	    <div class="col-sm-3">
-	      <ul class="login_details1">
-			 <li>Last Login : 5 days ago</li>
-			 <li><p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor." More....</p></li>
+		</li>
+		<li class="item1"><h3 class="m_2">Mother Tongue</h3>
+		  <ul class="cute">
+			<li class="subitem1"><a href="#">English </a></li>
 		  </ul>
-	    </div>
-	    <div class="col-sm-6">
-	    	<table class="table_working_hours">
-	        	<tbody>
-	        		<tr class="opened_1">
-						<td class="day_label1">Age / Height :</td>
-						<td class="day_value">28, 5ft 5in / 163cm</td>
-					</tr>
-				    <tr class="opened">
-						<td class="day_label1">Last Login :</td>
-						<td class="day_value">4 hours ago</td>
-					</tr>
-				    <tr class="opened">
-						<td class="day_label1">Religion :</td>
-						<td class="day_value">Sikh</td>
-					</tr>
-				    <tr class="opened">
-						<td class="day_label1">Marital Status :</td>
-						<td class="day_value">Single</td>
-					</tr>
-				    <tr class="opened">
-						<td class="day_label1">Location :</td>
-						<td class="day_value">India</td>
-					</tr>
-				    <tr class="closed">
-						<td class="day_label1">Profile Created by :</td>
-						<td class="day_value closed"><span>Self</span></td>
-					</tr>
-				    <tr class="closed">
-						<td class="day_label1">Education :</td>
-						<td class="day_value closed"><span>Engineering</span></td>
-					</tr>
-			    </tbody>
-		   </table>
-		   <div class="buttons">
-			   <div class="vertical">Send Mail</div>
-			   <div class="vertical">Shortlisted</div>
-			   <div class="vertical">Send Interest</div>
-		   </div>
-	    </div>
-	    <div class="clearfix"> </div>
-    </a></div>
-    <div class="profile_top profile_top1"><a href="view_profile.html">
-      <h2>254879</h2>
-	    <div class="col-sm-3 profile_left-top">
-	    	<img src="images/s1.jpg" class="img-responsive" alt=""/>
-	    </div>
-	    <div class="col-sm-3">
-	      <ul class="login_details1">
-			 <li>Last Login : 5 days ago</li>
-			 <li><p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor." More....</p></li>
+		</li>
+		<li class="item1"><h3 class="m_2">Education</h3>
+		  <ul class="cute">
+			<li class="subitem1"><a href="#">Bachelors-Engineering </a></li>
+			<li class="subitem1"><a href="#">Masters-Engineering </a></li>
 		  </ul>
-	    </div>
-	    <div class="col-sm-6">
-	    	<table class="table_working_hours">
-	        	<tbody>
-	        		<tr class="opened_1">
-						<td class="day_label1">Age / Height :</td>
-						<td class="day_value">28, 5ft 5in / 163cm</td>
-					</tr>
-				    <tr class="opened">
-						<td class="day_label1">Last Login :</td>
-						<td class="day_value">4 hours ago</td>
-					</tr>
-				    <tr class="opened">
-						<td class="day_label1">Religion :</td>
-						<td class="day_value">Sikh</td>
-					</tr>
-				    <tr class="opened">
-						<td class="day_label1">Marital Status :</td>
-						<td class="day_value">Single</td>
-					</tr>
-				    <tr class="opened">
-						<td class="day_label1">Location :</td>
-						<td class="day_value">India</td>
-					</tr>
-				    <tr class="closed">
-						<td class="day_label1">Profile Created by :</td>
-						<td class="day_value closed"><span>Self</span></td>
-					</tr>
-				    <tr class="closed">
-						<td class="day_label1">Education :</td>
-						<td class="day_value closed"><span>Engineering</span></td>
-					</tr>
-			    </tbody>
-		   </table>
-		   <div class="buttons">
-			   <div class="vertical">Send Mail</div>
-			   <div class="vertical">Shortlisted</div>
-			   <div class="vertical">Send Interest</div>
-		   </div>
-	    </div>
-	    <div class="clearfix"> </div>
-    </a></div>
-</div>
-<div class="col-md-3 match_right">
-	<div class="profile_search1">
-	   <form>
-		  <input type="text" class="m_1" name="ne" size="30" required="" placeholder="Enter Profile ID :">
-		  <input type="submit" value="Go">
-	   </form>
+		</li>
+		<li class="item1"><h3 class="m_2">Occupation</h3>
+		  <ul class="cute">
+			<li class="subitem1"><a href="#">Engineer-Non IT (2) </a></li>
+			<li class="subitem1"><a href="#">Software Professional (3)</a></li>
+		  </ul>
+		</li>
+		<li class="item1"><h3 class="m_2">Physical Status</h3>
+		  <ul class="cute">
+			<li class="subitem1"><a href="#">Normal (2) </a></li>
+		  </ul>
+		</li>
+		<li class="item1"><h3 class="m_2">Eating Habits</h3>
+		  <ul class="cute">
+			<li class="subitem1"><a href="#">Non Vegetarian (3)</a></li>
+			<li class="subitem1"><a href="#">Vegetarian (2)</a></li>
+		  </ul>
+		</li>
+		<li class="item1"><h3 class="m_2">Smoking</h3>
+		  <ul class="cute">
+			<li class="subitem1"><a href="#">Not Specified (3)</a></li>
+		  </ul>
+		</li>
+		<li class="item1"><h3 class="m_2">Drinking</h3>
+		  <ul class="cute">
+			<li class="subitem1"><a href="#">Not Specified (3)</a></li>
+			<li class="subitem1"><a href="#">Never Drinks (3)</a></li>
+		  </ul>
+		</li>
+		<li class="item1"><h3 class="m_2">Profile Created by</h3>
+		  <ul class="cute">
+			<li class="subitem1"><a href="#">Self (1)</a></li>
+		  </ul>
+		</li>
+	  </ul>
    </div>
-   <section class="slider">
-	 <h3>Happy Marriage</h3>
-	 <div class="flexslider">
-		<ul class="slides">
-		  <li>
-			<img src="images/s2.jpg" alt=""/>
-			<h4>Lorem & Ipsum</h4>
-			<p>It is a long established fact that a reader will be distracted by the readable</p>
-		  </li>
-		  <li>
-			<img src="images/s1.jpg" alt=""/>
-			<h4>Lorem & Ipsum</h4>
-			<p>It is a long established fact that a reader will be distracted by the readable</p>
-		  </li>
-		  <li>
-			<img src="images/s3.jpg" alt=""/>
-			<h4>Lorem & Ipsum</h4>
-			<p>It is a long established fact that a reader will be distracted by the readable</p>
-		  </li>
-	    </ul>
-	  </div>
-   </section>
-   <div class="view_profile view_profile2">
-        	<h3>View Similar Profiles</h3>
-        	<ul class="profile_item">
-        	  <a href="#">
-        	   <li class="profile_item-img">
-        	   	  <img src="images/p5.jpg" class="img-responsive" alt=""/>
-        	   </li>
-        	   <li class="profile_item-desc">
-        	   	  <h4>2458741</h4>
-        	   	  <p>29 Yrs, 5Ft 5in Christian</p>
-        	   	  <h5>View Full Profile</h5>
-        	   </li>
-        	   <div class="clearfix"> </div>
-        	  </a>
-           </ul>
-           <ul class="profile_item">
-        	  <a href="#">
-        	   <li class="profile_item-img">
-        	   	  <img src="images/p6.jpg" class="img-responsive" alt=""/>
-        	   </li>
-        	   <li class="profile_item-desc">
-        	   	  <h4>2458741</h4>
-        	   	  <p>29 Yrs, 5Ft 5in Christian</p>
-        	   	  <h5>View Full Profile</h5>
-        	   </li>
-        	   <div class="clearfix"> </div>
-        	  </a>
-           </ul>
-           <ul class="profile_item">
-        	  <a href="#">
-        	   <li class="profile_item-img">
-        	   	  <img src="images/p7.jpg" class="img-responsive" alt=""/>
-        	   </li>
-        	   <li class="profile_item-desc">
-        	   	  <h4>2458741</h4>
-        	   	  <p>29 Yrs, 5Ft 5in Christian</p>
-        	   	  <h5>View Full Profile</h5>
-        	   </li>
-        	   <div class="clearfix"> </div>
-        	  </a>
-           </ul>
-           <ul class="profile_item">
-        	  <a href="#">
-        	   <li class="profile_item-img">
-        	   	  <img src="images/p8.jpg" class="img-responsive" alt=""/>
-        	   </li>
-        	   <li class="profile_item-desc">
-        	   	  <h4>2458741</h4>
-        	   	  <p>29 Yrs, 5Ft 5in Christian</p>
-        	   	  <h5>View Full Profile</h5>
-        	   </li>
-        	   <div class="clearfix"> </div>
-        	  </a>
-           </ul>
-       </div>
-     </div>
-     <div class="clearfix"> </div>
+   <div class="col-md-9 members_box">
+     <h1>Suitable Matches</h1>
+     <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested..</p>
+       <div class="members_box1">
+	     <div class="col_1_of_3 span_1_of_3  phone_1">
+	      <ul class="phone">
+	     	<li class="phone_left"><i class="fa fa-mobile icon_1"></i></li>
+	     	<li class="phone_right"><p>Access Verified Mobile Numbers</p></li>
+	     	<div class="clearfix"> </div>
+	      </ul>
+	     </div>
+	     <div class="col_1_of_3 span_1_of_3 phone_1">
+	      <ul class="phone">
+	     	<li class="phone_left"><i class="fa fa-heart-o icon_2"></i></li>
+	     	<li class="phone_right"><p>Access Verified Mobile Numbers</p></li>
+	     	<div class="clearfix"> </div>
+	      </ul>
+	     </div>
+	     <div class="col_1_of_3 span_1_of_3">
+	      <ul class="phone">
+	     	<li class="phone_left"><i class="fa fa-envelope-o icon_2"></i></li>
+	     	<li class="phone_right"><p>Access Verified Mobile Numbers</p></li>
+	     	<div class="clearfix"> </div>
+	      </ul>
+	     </div>
+	     <div class="clearfix"> </div>
+	   </div>
+	   <div class="profile_top"><a href="view_profile.php">
+      <h2>254879</h2>
+	    <div class="col-sm-3 profile_left-top">
+	    	<img src="images/a6.jpg" class="img-responsive" alt=""/>
+	    </div>
+	    <div class="col-sm-3">
+	      <ul class="login_details1">
+			 <li>Last Login : 5 days ago</li>
+			 <li><p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor." More....</p></li>
+		  </ul>
+	    </div>
+	    <div class="col-sm-6">
+	    	<table class="table_working_hours">
+	        	<tbody>
+	        		<tr class="opened_1">
+						<td class="day_label1">Age / Height :</td>
+						<td class="day_value">28, 5ft 5in / 163cm</td>
+					</tr>
+				    <tr class="opened">
+						<td class="day_label1">Last Login :</td>
+						<td class="day_value">4 hours ago</td>
+					</tr>
+				    <tr class="opened">
+						<td class="day_label1">Religion :</td>
+						<td class="day_value">Sikh</td>
+					</tr>
+				    <tr class="opened">
+						<td class="day_label1">Marital Status :</td>
+						<td class="day_value">Single</td>
+					</tr>
+				    <tr class="opened">
+						<td class="day_label1">Location :</td>
+						<td class="day_value">India</td>
+					</tr>
+				    <tr class="closed">
+						<td class="day_label1">Profile Created by :</td>
+						<td class="day_value closed"><span>Self</span></td>
+					</tr>
+				    <tr class="closed">
+						<td class="day_label1">Education :</td>
+						<td class="day_value closed"><span>Engineering</span></td>
+					</tr>
+			    </tbody>
+		   </table>
+		   <div class="buttons">
+			   <div class="vertical">Send Mail</div>
+			   <div class="vertical">Shortlisted</div>
+			   <div class="vertical">Send Interest</div>
+		   </div>
+	    </div>
+	    <div class="clearfix"> </div>
+    </a></div>
+    <div class="profile_top"><a href="view_profile.php">
+      <h2>254879</h2>
+	    <div class="col-sm-3 profile_left-top">
+	    	<img src="images/a4.jpg" class="img-responsive" alt=""/>
+	    </div>
+	    <div class="col-sm-3">
+	      <ul class="login_details1">
+			 <li>Last Login : 5 days ago</li>
+			 <li><p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor." More....</p></li>
+		  </ul>
+	    </div>
+	    <div class="col-sm-6">
+	    	<table class="table_working_hours">
+	        	<tbody>
+	        		<tr class="opened_1">
+						<td class="day_label1">Age / Height :</td>
+						<td class="day_value">28, 5ft 5in / 163cm</td>
+					</tr>
+				    <tr class="opened">
+						<td class="day_label1">Last Login :</td>
+						<td class="day_value">4 hours ago</td>
+					</tr>
+				    <tr class="opened">
+						<td class="day_label1">Religion :</td>
+						<td class="day_value">Sikh</td>
+					</tr>
+				    <tr class="opened">
+						<td class="day_label1">Marital Status :</td>
+						<td class="day_value">Single</td>
+					</tr>
+				    <tr class="opened">
+						<td class="day_label1">Location :</td>
+						<td class="day_value">India</td>
+					</tr>
+				    <tr class="closed">
+						<td class="day_label1">Profile Created by :</td>
+						<td class="day_value closed"><span>Self</span></td>
+					</tr>
+				    <tr class="closed">
+						<td class="day_label1">Education :</td>
+						<td class="day_value closed"><span>Engineering</span></td>
+					</tr>
+			    </tbody>
+		   </table>
+		   <div class="buttons">
+			   <div class="vertical">Send Mail</div>
+			   <div class="vertical">Shortlisted</div>
+			   <div class="vertical">Send Interest</div>
+		   </div>
+	    </div>
+	    <div class="clearfix"> </div>
+    </a></div>
+    <div class="profile_top"><a href="view_profile.php">
+      <h2>254879</h2>
+	    <div class="col-sm-3 profile_left-top">
+	    	<img src="images/a5.jpg" class="img-responsive" alt=""/>
+	    </div>
+	    <div class="col-sm-3">
+	      <ul class="login_details1">
+			 <li>Last Login : 5 days ago</li>
+			 <li><p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor." More....</p></li>
+		  </ul>
+	    </div>
+	    <div class="col-sm-6">
+	    	<table class="table_working_hours">
+	        	<tbody>
+	        		<tr class="opened_1">
+						<td class="day_label1">Age / Height :</td>
+						<td class="day_value">28, 5ft 5in / 163cm</td>
+					</tr>
+				    <tr class="opened">
+						<td class="day_label1">Last Login :</td>
+						<td class="day_value">4 hours ago</td>
+					</tr>
+				    <tr class="opened">
+						<td class="day_label1">Religion :</td>
+						<td class="day_value">Sikh</td>
+					</tr>
+				    <tr class="opened">
+						<td class="day_label1">Marital Status :</td>
+						<td class="day_value">Single</td>
+					</tr>
+				    <tr class="opened">
+						<td class="day_label1">Location :</td>
+						<td class="day_value">India</td>
+					</tr>
+				    <tr class="closed">
+						<td class="day_label1">Profile Created by :</td>
+						<td class="day_value closed"><span>Self</span></td>
+					</tr>
+				    <tr class="closed">
+						<td class="day_label1">Education :</td>
+						<td class="day_value closed"><span>Engineering</span></td>
+					</tr>
+			    </tbody>
+		   </table>
+		   <div class="buttons">
+			   <div class="vertical">Send Mail</div>
+			   <div class="vertical">Shortlisted</div>
+			   <div class="vertical">Send Interest</div>
+		   </div>
+	    </div>
+	    <div class="clearfix"> </div>
+    </a></div>
+    <div class="profile_top profile_top1"><a href="view_profile.php">
+      <h2>254879</h2>
+	    <div class="col-sm-3 profile_left-top">
+	    	<img src="images/a7.jpg" class="img-responsive" alt=""/>
+	    </div>
+	    <div class="col-sm-3">
+	      <ul class="login_details1">
+			 <li>Last Login : 5 days ago</li>
+			 <li><p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor." More....</p></li>
+		  </ul>
+	    </div>
+	    <div class="col-sm-6">
+	    	<table class="table_working_hours">
+	        	<tbody>
+	        		<tr class="opened_1">
+						<td class="day_label1">Age / Height :</td>
+						<td class="day_value">28, 5ft 5in / 163cm</td>
+					</tr>
+				    <tr class="opened">
+						<td class="day_label1">Last Login :</td>
+						<td class="day_value">4 hours ago</td>
+					</tr>
+				    <tr class="opened">
+						<td class="day_label1">Religion :</td>
+						<td class="day_value">Sikh</td>
+					</tr>
+				    <tr class="opened">
+						<td class="day_label1">Marital Status :</td>
+						<td class="day_value">Single</td>
+					</tr>
+				    <tr class="opened">
+						<td class="day_label1">Location :</td>
+						<td class="day_value">India</td>
+					</tr>
+				    <tr class="closed">
+						<td class="day_label1">Profile Created by :</td>
+						<td class="day_value closed"><span>Self</span></td>
+					</tr>
+				    <tr class="closed">
+						<td class="day_label1">Education :</td>
+						<td class="day_value closed"><span>Engineering</span></td>
+					</tr>
+			    </tbody>
+		   </table>
+		   <div class="buttons">
+			   <div class="vertical">Send Mail</div>
+			   <div class="vertical">Shortlisted</div>
+			   <div class="vertical">Send Interest</div>
+		   </div>
+	    </div>
+	    <div class="clearfix"> </div>
+    </a></div>
+   </div>
+   <div class="clearfix"> </div>
   </div>
 </div>
 <div class="map">
@@ -491,17 +449,17 @@ $(document).ready(function(){
     			<h4>Help & Support</h4>
     			<ul class="footer_links">
     				<li><a href="#">24x7 Live help</a></li>
-    				<li><a href="contact.html">Contact us</a></li>
+    				<li><a href="contact.php">Contact us</a></li>
     				<li><a href="#">Feedback</a></li>
-    				<li><a href="faq.html">FAQs</a></li>
+    				<li><a href="faq.php">FAQs</a></li>
     			</ul>
     		</div>
     		<div class="col-md-2 col_2">
     			<h4>Quick Links</h4>
     			<ul class="footer_links">
-    				<li><a href="privacy.html">Privacy Policy</a></li>
-    				<li><a href="terms.html">Terms and Conditions</a></li>
-    				<li><a href="services.html">Services</a></li>
+    				<li><a href="privacy.php">Privacy Policy</a></li>
+    				<li><a href="terms.php">Terms and Conditions</a></li>
+    				<li><a href="services.php">Services</a></li>
     			</ul>
     		</div>
     		<div class="col-md-2 col_2">
@@ -515,26 +473,9 @@ $(document).ready(function(){
     		</div>
     		<div class="clearfix"> </div>
     		<div class="copy">
-		      <p>Copyright © 2015 Marital . All Rights Reserved  | Design by <a href="http://w3layouts.com/" target="_blank">W3layouts</a> </p>
+		       <p>Copyright © 2015 Marital . All Rights Reserved  | Design by <a href="http://w3layouts.com/" target="_blank">W3layouts</a> </p>
 	        </div>
-    	</div>
+      </div>
 </div>
-<!-- FlexSlider -->
-<link href="css/flexslider.css" rel='stylesheet' type='text/css' />
-  <script defer src="js/jquery.flexslider.js"></script>
-  <script type="text/javascript">
-	$(function(){
-	  SyntaxHighlighter.all();
-	});
-	$(window).load(function(){
-	  $('.flexslider').flexslider({
-		animation: "slide",
-		start: function(slider){
-		  $('body').removeClass('loading');
-		}
-	  });
-	});
-  </script>
-<!-- FlexSlider -->
 </body>
 </html>	
