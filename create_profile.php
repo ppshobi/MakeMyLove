@@ -1,5 +1,4 @@
 <?php include_once("functions.php"); ?>
-<?php register(); ?>
 <!DOCTYPE HTML>
 <html>
 <head>
