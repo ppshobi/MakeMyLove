@@ -61,13 +61,11 @@ $(document).ready(function(){
 		            <li><a href="view_profile.php?id=<?php echo $id;?>">View Profile</a></li>
 		            <li><a href="create_profile.php?id=<?php echo $id;?>">Edit Profile</a></li>
 		    		<li class="dropdown">
-		              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Matches<span class="caret"></span></a>
+		              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Profile<span class="caret"></span></a>
 		              <ul class="dropdown-menu" role="menu">
-		                <li><a href="matches.php">New Matches</a></li>
-		                <li><a href="viewed-profile.php">Who Viewed my Profile</a></li>
-		                <li><a href="viewed-not_contacted.php">Viewed & not Contacted</a></li>
-		                <li><a href="members.php">Premium Members</a></li>
-		                <li><a href="shortlisted.php">Shortlisted Profile</a></li>
+		               <li><a href="photouploader.php?id=<?php echo $id;?>">Upload Photos</a></li>
+		               <li><a href="view_profile.php?id=<?php echo $id;?>">View Profile</a></li>
+		               <li><a href="create_profile.php?id=<?php echo $id;?>">Edit Profile</a></li>  
 		              </ul>
 		            </li>
 					<li class="dropdown">

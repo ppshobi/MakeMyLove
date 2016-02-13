@@ -1,4 +1,12 @@
+<?php include_once("includes/basic_includes.php");?>
+<?php include_once("functions.php"); ?>
+<?php
 
+$id=$_GET['id'];
+isloggedin();
+//calling photo uploader function
+if ($_SERVER['REQUEST_METHOD'] == 'POST'){ uploadphoto($id); }
+?>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -49,10 +57,13 @@ $(document).ready(function(){
    </div>
    <div class="services">
    	  <div class="col-sm-6 login_left">
-	   <form action="" method="post">
+	   <form action="" method="post" enctype="multipart/form-data">
   	    <div class="form-item form-type-textfield form-item-name">
 	      <label for="edit-name">Upload Your Photo(Upto 4 images, Use 300 x 250 dimensions) <span class="form-required" title="This field is required.">*</span></label>
-	      <input type="file" id="edit-name" name="pic1" value="" size="60" maxlength="60" class="form-text required">
+	      <input type="file" id="edit-name" name="pic1" class="form-file required">
+        <input type="file" id="edit-name" name="pic2" class="form-file required">
+        <input type="file" id="edit-name" name="pic3" class="form-file required">
+        <input type="file" id="edit-name" name="pic4" class="form-file required">
 	    </div>
 	    <div class="form-actions">
 	    	<input type="submit" id="edit-submit" name="op" value="Upload" class="btn_1 submit">
