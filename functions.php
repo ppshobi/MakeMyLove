@@ -7,7 +7,7 @@ function register(){
 	$day=$_POST['day'];
 	$month=$_POST['month'];
 	$year=$_POST['year'];
-	$dob='2016-10-10';
+	$dob=$day ."-".$month."-" ."$year" ;
 	$gender=$_POST['gender'];
 	require_once("/includes/dbconn.php");
 
@@ -29,5 +29,26 @@ function isloggedin(){
  		header("location:login.php");
 	}
 }
+
+
+function processprofile_form($id,$dob){
+    $rows = "";
+    $values = "";
+
+    foreach($_POST as $key => $value) {
+
+        $rows = mysql_real_escape_string($key);
+        $values = mysql_real_escape_string($value);
+        $entry .= "[".$rows . "::".$values."]";
+
+    }
+    // clean up the array
+
+
+    $entry = preg_replace('/^\[|\d+|\:\:\]/', '', $entry);
+
+    $query = mysql_query("INSERT INTO `customer` (`id`, `email`, `age`, `gender`, `status`, `created_at`) VALUES (NULL, '".$form_id."', '".$entry."', '".$_SESSION['manager_id']."', '0', NOW())");
+
+ }
 
 ?>

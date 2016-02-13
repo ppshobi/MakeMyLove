@@ -1,10 +1,15 @@
-<?php session_start();?>
+<?php include_once("includes/basic_includes.php");?>
 <?php include_once("functions.php"); ?>
-<?php isloggedin(); ?>
+<?php
+
+$id=$_GET['id'];
+isloggedin();
+
+?>
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>Marital an Wedding Category Flat Bootstarp Resposive Website Template | View_profile :: w3layouts</title>
+<title>Marital an Wedding Category Flat Bootstarp Resposive Website Template | User Home :: w3layouts</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Marital Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
@@ -46,9 +51,38 @@ $(document).ready(function(){
      <ul>
         <a href="index.php"><i class="fa fa-home home_1"></i></a>
         <span class="divider">&nbsp;|&nbsp;</span>
-        <li class="current-page">View Profile</li>
+        <li class="current-page">User Home</li>
      </ul>
    </div>
+   <div class="navigation" style="background-color: #ccc;"><!-- Innernavigation starts -->
+   	
+   	  	<div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
+		        <ul class="nav navbar-nav nav_1">
+		            <li><a href="view_profile.php?id=<?php echo $id;?>">View Profile</a></li>
+		            <li><a href="create_profile.php?id=<?php echo $id;?>">Edit Profile</a></li>
+		    		<li class="dropdown">
+		              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Matches<span class="caret"></span></a>
+		              <ul class="dropdown-menu" role="menu">
+		                <li><a href="matches.php">New Matches</a></li>
+		                <li><a href="viewed-profile.php">Who Viewed my Profile</a></li>
+		                <li><a href="viewed-not_contacted.php">Viewed & not Contacted</a></li>
+		                <li><a href="members.php">Premium Members</a></li>
+		                <li><a href="shortlisted.php">Shortlisted Profile</a></li>
+		              </ul>
+		            </li>
+					<li class="dropdown">
+		              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Search<span class="caret"></span></a>
+		              <ul class="dropdown-menu" role="menu">
+		                <li><a href="search.php">Regular Search</a></li>
+		                <li><a href="profile.php">Recently Viewed Profiles</a></li>
+		                <li><a href="search-id.php">Search By Profile ID</a></li>
+		                <li><a href="faq.php">Faq</a></li>
+		                <li><a href="shortcodes.php">Shortcodes</a></li>
+		              </ul>
+		            </li>
+		        </ul>
+		</div>
+   </div><!-- End of inner navigation -->
    <div class="profile">
    	 <div class="col-md-8 profile_left">
    	 	<h2>Profile Id : 254870</h2>

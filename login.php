@@ -21,9 +21,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <link href="css/style.css" rel='stylesheet' type='text/css' />
 <link href='//fonts.googleapis.com/css?family=Oswald:300,400,700' rel='stylesheet' type='text/css'>
 <link href='//fonts.googleapis.com/css?family=Ubuntu:300,400,500,700' rel='stylesheet' type='text/css'>
-<!----font-Awesome----->
+<!--font-Awesome-->
 <link href="css/font-awesome.css" rel="stylesheet"> 
-<!----font-Awesome----->
+<!--font-Awesome-->
 <script>
 $(document).ready(function(){
     $(".dropdown").hover(            
@@ -41,82 +41,7 @@ $(document).ready(function(){
 </head>
 <body>
 <!-- ============================  Navigation Start =========================== -->
- <div class="navbar navbar-inverse-blue navbar">
-    <!--<div class="navbar navbar-inverse-blue navbar-fixed-top">-->
-      <div class="navbar-inner navbar-inner_1">
-        <div class="container">
-           <div class="navigation">
-             <nav id="colorNav">
-			   <ul>
-				<li class="green">
-				  <a href="#" class="icon-home"></a>
-				  <ul>
-					<li><a href="login.php">Login</a></li>
-					<li><a href="register.php">Register</a></li>
-					<li><a href="index.php">Logout</a></li>
-				  </ul>
-				</li>
-			   </ul>
-             </nav>
-           </div>
-           <a class="brand" href="index.php"><img src="images/logo.png" alt="logo"></a>
-           <div class="pull-right">
-          	<nav class="navbar nav_bottom" role="navigation">
- 
-		 <!-- Brand and toggle get grouped for better mobile display -->
-		  <div class="navbar-header nav_2">
-		      <button type="button" class="navbar-toggle collapsed navbar-toggle1" data-toggle="collapse" data-target="#bs-megadropdown-tabs">Menu
-		        <span class="sr-only">Toggle navigation</span>
-		        <span class="icon-bar"></span>
-		        <span class="icon-bar"></span>
-		        <span class="icon-bar"></span>
-		      </button>
-		      <a class="navbar-brand" href="#"></a>
-		   </div> 
-		   <!-- Collect the nav links, forms, and other content for toggling -->
-		    <div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
-		        <ul class="nav navbar-nav nav_1">
-		            <li><a href="index.php">Home</a></li>
-		            <li><a href="about.php">About</a></li>
-		    		<li class="dropdown">
-		              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Matches<span class="caret"></span></a>
-		              <ul class="dropdown-menu" role="menu">
-		                <li><a href="matches.php">New Matches</a></li>
-		                <li><a href="viewed-profile.php">Who Viewed my Profile</a></li>
-		                <li><a href="viewed-not_contacted.php">Viewed & not Contacted</a></li>
-		                <li><a href="members.php">Premium Members</a></li>
-		                <li><a href="shortlisted.php">Shortlisted Profile</a></li>
-		              </ul>
-		            </li>
-					<li class="dropdown">
-		              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Search<span class="caret"></span></a>
-		              <ul class="dropdown-menu" role="menu">
-		                <li><a href="search.php">Regular Search</a></li>
-		                <li><a href="profile.php">Recently Viewed Profiles</a></li>
-		                <li><a href="search-id.php">Search By Profile ID</a></li>
-		                <li><a href="faq.php">Faq</a></li>
-		                <li><a href="shortcodes.php">Shortcodes</a></li>
-		              </ul>
-		            </li>
-		            <li class="dropdown">
-		              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Messages<span class="caret"></span></a>
-		              <ul class="dropdown-menu" role="menu">
-		                <li><a href="inbox.php">Inbox</a></li>
-		                <li><a href="inbox.php">New</a></li>
-		                <li><a href="inbox.php">Accepted</a></li>
-		                <li><a href="sent.php">Sent</a></li>
-		                <li><a href="upgrade.php">Upgrade</a></li>
-		              </ul>
-		            </li>
-		            <li class="last"><a href="contact.php">Contacts</a></li>
-		        </ul>
-		     </div><!-- /.navbar-collapse -->
-		    </nav>
-		   </div> <!-- end pull-right -->
-          <div class="clearfix"> </div>
-        </div> <!-- end container -->
-      </div> <!-- end navbar-inner -->
-    </div> <!-- end navbar-inverse-blue -->
+<?php include_once("includes/navigation.php");?>
 <!-- ============================  Navigation End ============================ -->
 <div class="grid_3">
   <div class="container">
@@ -129,14 +54,14 @@ $(document).ready(function(){
    </div>
    <div class="services">
    	  <div class="col-sm-6 login_left">
-	   <form>
+	   <form action="auth/auth.php?user=1" method="post">
   	    <div class="form-item form-type-textfield form-item-name">
 	      <label for="edit-name">Username <span class="form-required" title="This field is required.">*</span></label>
-	      <input type="text" id="edit-name" name="name" value="" size="60" maxlength="60" class="form-text required">
+	      <input type="text" id="edit-name" name="username" value="" size="60" maxlength="60" class="form-text required">
 	    </div>
 	    <div class="form-item form-type-password form-item-pass">
 	      <label for="edit-pass">Password <span class="form-required" title="This field is required.">*</span></label>
-	      <input type="password" id="edit-pass" name="pass" size="60" maxlength="128" class="form-text required">
+	      <input type="password" id="edit-pass" name="password" size="60" maxlength="128" class="form-text required">
 	    </div>
 	    <div class="form-actions">
 	    	<input type="submit" id="edit-submit" name="op" value="Log in" class="btn_1 submit">
