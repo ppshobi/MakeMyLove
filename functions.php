@@ -11,7 +11,7 @@ function register(){
 	$gender=$_POST['gender'];
 	require_once("/includes/dbconn.php");
 
-	$sql = "INSERT INTO users (id, username, password, email, dateofbirth, gender) VALUES ('', '$uname', '$pass', '$email', CURDATE(), '$gender')";
+	$sql = "INSERT INTO users (id, username, password, email, dateofbirth, gender) VALUES ('', '$uname', '$pass', '$email', $dob, '$gender')";
 
 	if (mysqli_query($conn,$sql)) {
 	  echo "Successfully Registered";
@@ -31,24 +31,33 @@ function isloggedin(){
 }
 
 
-function processprofile_form($id,$dob){
-    $rows = "";
-    $values = "";
+function processprofile_form($id){
+   
+	$fname=$_POST['fname'];
+	$lname=$_POST['lname'];
+	$email=$_POST['email'];
+	$sex=$_POST['sex'];
+	
+		$day=$_POST['day'];
+		$month=$_POST['month'];
+		$year=$_POST['year'];
+		$dob=$day ."-" . $month . "-" .$year ;
+	
+	$religion=$_POST['religion'];
+	$caste = $_POST['caste'];
+	$sub_caste=$_POST['subcaste'];
+	$age=$_POST['age'];
+	
+	require_once("/includes/dbconn.php");
+	 $sql = "INSERT INTO customer (id, email, age, sex, religion, caste, subcaste) VALUES ('', '$email', '$age', '$sex', '$religion', '$caste', '$sub_caste')";
 
-    foreach($_POST as $key => $value) {
-
-        $rows = mysql_real_escape_string($key);
-        $values = mysql_real_escape_string($value);
-        $entry .= "[".$rows . "::".$values."]";
-
-    }
-    // clean up the array
-
-
-    $entry = preg_replace('/^\[|\d+|\:\:\]/', '', $entry);
-
-    $query = mysql_query("INSERT INTO `customer` (`id`, `email`, `age`, `gender`, `status`, `created_at`) VALUES (NULL, '".$form_id."', '".$entry."', '".$_SESSION['manager_id']."', '0', NOW())");
-
- }
-
+	if (mysqli_query($conn,$sql)) {
+	  echo "Successfully Updated profile";
+	  echo "<a href=\"userhome.php\">";
+	  echo "Back to home";
+	  echo "</a>";
+	} else {
+	  echo "Error: " . $sql . "<br>" . $conn->error;
+	}
+}
 ?>

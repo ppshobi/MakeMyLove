@@ -215,7 +215,7 @@ $(document).ready(function(){
 	         
 	            <div class="col-sm-4 form_box2">
 	                   <div class="select-block1">
-	                    <select name="Caste">
+	                    <select name="caste">
 		                    <option value="Roman Cathaolic">Roman Cathaolic</option>
 		                    <option value="Latin Catholic">Latin Catholic</option>
 		                    <option value="Penthecost">Penthecost</option>
@@ -226,7 +226,7 @@ $(document).ready(function(){
 	                 </div>
 	                 <div class="col-sm-4 form_box1">
 	                   <div class="select-block1">
-	                    <select name="Subcast">
+	                    <select name="subcaste">
 		                    <option value="">Not Applicable</option>
 		                    <option value="">sub cast1</option>
 		                    <option value="">sub caste2</option>

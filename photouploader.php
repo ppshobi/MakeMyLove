@@ -49,17 +49,13 @@ $(document).ready(function(){
    </div>
    <div class="services">
    	  <div class="col-sm-6 login_left">
-	   <form action="auth/auth.php?user=1" method="post">
+	   <form action="" method="post">
   	    <div class="form-item form-type-textfield form-item-name">
-	      <label for="edit-name">Username <span class="form-required" title="This field is required.">*</span></label>
-	      <input type="text" id="edit-name" name="username" value="" size="60" maxlength="60" class="form-text required">
-	    </div>
-	    <div class="form-item form-type-password form-item-pass">
-	      <label for="edit-pass">Password <span class="form-required" title="This field is required.">*</span></label>
-	      <input type="password" id="edit-pass" name="password" size="60" maxlength="128" class="form-text required">
+	      <label for="edit-name">Upload Your Photo(Upto 4 images, Use 300 x 250 dimensions) <span class="form-required" title="This field is required.">*</span></label>
+	      <input type="file" id="edit-name" name="pic1" value="" size="60" maxlength="60" class="form-text required">
 	    </div>
 	    <div class="form-actions">
-	    	<input type="submit" id="edit-submit" name="op" value="Log in" class="btn_1 submit">
+	    	<input type="submit" id="edit-submit" name="op" value="Upload" class="btn_1 submit">
 	    </div>
 	   </form>
 	  </div>
