@@ -327,10 +327,10 @@ $(document).ready(function(){
              <div class="form-group col-sm-2">
 		      <label for="edit-name">Marital status <span class="form-required" title="This field is required.">*</span></label>
 			    <div class="select-block1">
-	                <select name="MArital Status">
-	                    <option value="">Single</option>
-	                    <option value="">Married</option> 
-	               
+	                <select name="marital-status">
+	                    <option value="Single">Single</option>
+	                    <option value="Married">Married</option> 
+	               		<option value="Divorsed">Divorsed</option>
 	                </select>
 			    </div>
 		    </div>
@@ -348,12 +348,12 @@ $(document).ready(function(){
 		      <label for="edit-name">Education <span class="form-required" title="This field is required.">*</span></label>
 			    <div class="select-block1">
 	                <select name="Education">
-	                    <option value="">Primary</option>
-	                    <option value="">Tenth level</option> 
-	               		<option value="">+2</option> 
-	               		<option value="">Degree</option> 
-	               		<option value="">PG</option> 
-	               		<option value="">Doctorate</option> 
+	                    <option value="Primary">Primary</option>
+	                    <option value="Tenth level">Tenth level</option> 
+	               		<option value="+2">+2</option> 
+	               		<option value="Degree">Degree</option> 
+	               		<option value="PG">PG</option> 
+	               		<option value="Doctorate">Doctorate</option> 
 	                </select>
 			    </div>
 		    </div>
@@ -365,9 +365,9 @@ $(document).ready(function(){
 		      <label for="edit-name">Body type<span class="form-required" title="This field is required.">*</span></label>
 			    <div class="select-block1">
 	                <select name="body-type">
-	                    <option value="">Slim</option>
-	                    <option value="">Fat</option> 
-	               		<option value="">Average</option> 
+	                    <option value="Slim">Slim</option>
+	                    <option value="Fat">Fat</option> 
+	               		<option value="Average">Average</option> 
 	                </select>
 			    </div>
 		    </div>
@@ -466,7 +466,7 @@ $(document).ready(function(){
 		    <div class="form-group col-sm-2">
 		      <label for="edit-name">Diet<span class="form-required" title="This field is required.">*</span></label>
 			    <div class="select-block1">
-	                <select name="Diet">
+	                <select name="diet">
 	                    <option value="">Veg</option>
 	                    <option value="">Non Veg</option> 
 	               		

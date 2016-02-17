@@ -42,7 +42,7 @@
 		                <li><a href="matches.php">New Matches</a></li>
 		                <li><a href="viewed-profile.php">Who Viewed my Profile</a></li>
 		                <li><a href="viewed-not_contacted.php">Viewed & not Contacted</a></li>
-		                <li><a href="members.php">Premium Members</a></li>
+		                
 		                <li><a href="shortlisted.php">Shortlisted Profile</a></li>
 		              </ul>
 		            </li>

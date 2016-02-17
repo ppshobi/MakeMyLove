@@ -1,6 +1,25 @@
-<?php session_start();?>
+<?php include_once("includes/basic_includes.php");?>
 <?php include_once("functions.php"); ?>
-<?php isloggedin(); ?>
+<?php require_once("/includes/dbconn.php");?>
+<?php
+isloggedin(); 
+$id=$_GET['id'];
+
+	$pic1="";
+	$pic2="";
+	$pic3="";
+	$pic4="";
+//getting image filenames from db
+$sql="SELECT * FROM photos WHERE cust_id = $id";
+if($result = mysqli_query($conn, $sql)){
+	$row=mysqli_fetch_array($result);
+	$pic1=$row['pic1'];
+	$pic2=$row['pic2'];
+	$pic3=$row['pic3'];
+	$pic4=$row['pic4'];
+}
+
+?>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -51,22 +70,22 @@ $(document).ready(function(){
    </div>
    <div class="profile">
    	 <div class="col-md-8 profile_left">
-   	 	<h2>Profile Id : 254870</h2>
+   	 	<h2>Profile Id : <?php echo $id;?></h2>
    	 	<div class="col_3">
    	        <div class="col-sm-4 row_2">
 				<div class="flexslider">
 					 <ul class="slides">
-						<li data-thumb="images/p1.jpg">
-							<img src="images/p1.jpg" />
+						<li data-thumb="profile/<?php echo $id;?>/<?php echo $pic1;?>">
+							<img src="profile/<?php echo $id;?>/<?php echo $pic1;?>" />
 						</li>
-						<li data-thumb="images/p2.jpg">
-							<img src="images/p2.jpg" />
+						<li data-thumb="profile/<?php echo $id;?>/<?php echo $pic2;?>">
+							<img src="profile/<?php echo $id;?>/<?php echo $pic2;?>" />
 						</li>
-						<li data-thumb="images/p3.jpg">
-							<img src="images/p3.jpg" />
+						<li data-thumb="profile/<?php echo $id;?>/<?php echo $pic3;?>">
+							<img src="profile/<?php echo $id;?>/<?php echo $pic3;?>" />
 						</li>
-						<li data-thumb="images/p4.jpg">
-							<img src="images/p4.jpg" />
+						<li data-thumb="profile/<?php echo $id;?>/<?php echo $pic4;?>">
+							<img src="profile/<?php echo $id;?>/<?php echo $pic4;?>" />
 						</li>
 					 </ul>
 				  </div>

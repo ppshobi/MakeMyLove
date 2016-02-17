@@ -1,4 +1,29 @@
 <?php
+// include_once('/includes/dbconn.php');
+ ?>
+<?php
+function mysqlexec($sql){
+	$host="localhost"; // Host name
+	$username="root"; // Mysql username
+	$password=""; // Mysql password
+	$db_name="matrimony"; // Database name
+
+// Connect to server and select databse.
+	$conn=mysqli_connect("$host", "$username", "$password")or die("cannot connect");
+
+	mysqli_select_db($conn,"$db_name")or die("cannot select DB");
+
+	if($result = mysqli_query($conn, $sql)){
+		return $result;
+	}
+	else{
+		return false;
+	}
+
+
+}
+
+
 function register(){
 	if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 	$uname=$_POST['name'];
@@ -11,7 +36,7 @@ function register(){
 	$gender=$_POST['gender'];
 	require_once("/includes/dbconn.php");
 
-	$sql = "INSERT INTO users (id, username, password, email, dateofbirth, gender) VALUES ('', '$uname', '$pass', '$email', $dob, '$gender')";
+	$sql = "INSERT INTO users (id, username, password, email, dateofbirth, gender) VALUES ('', '$uname', '$pass', '$email', '$dob', '$gender')";
 
 	if (mysqli_query($conn,$sql)) {
 	  echo "Successfully Registered";
@@ -56,6 +81,9 @@ function processprofile_form($id){
 	  echo "<a href=\"userhome.php\">";
 	  echo "Back to home";
 	  echo "</a>";
+	  //creating a slot for partner prefernce table for prefs details with cust id
+	  $sql2="INSERT INTO partnerprefs (id, custId) VALUES('', '$id')";
+	  mysqli_query($conn,$sql2);
 	} else {
 	  echo "Error: " . $sql . "<br>" . $conn->error;
 	}
@@ -84,10 +112,25 @@ $pic4=($_FILES['pic4']['name']);
 
 
 // Connects to your Database
-require_once("/includes/dbconn.php");
+
+
+$host="localhost"; // Host name 
+$username="root"; // Mysql username 
+$password=""; // Mysql password 
+$db_name="matrimony"; // Database name 
+
+// Connect to server and select databse.
+$conn=mysqli_connect("$host", "$username", "$password")or die("cannot connect"); 
+
+mysqli_select_db($conn,"$db_name")or die("cannot select DB");
+
+
+
 $sql="INSERT INTO photos (id, cust_id, pic1, pic2, pic3, pic4) VALUES ('', '$id', '$pic1' ,'$pic2', '$pic3','$pic4')";
 // Writes the information to the database
-mysqli_query($conn,$sql) ;
+if(mysqli_query($conn,$sql)){
+
+}
 
 // Writes the photo to the server
 if(move_uploaded_file($_FILES['pic1']['tmp_name'], $target1)&&move_uploaded_file($_FILES['pic2']['tmp_name'], $target2)&&move_uploaded_file($_FILES['pic3']['tmp_name'], $target3)&&move_uploaded_file($_FILES['pic4']['tmp_name'], $target4))
