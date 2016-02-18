@@ -1,9 +1,3 @@
-<!--A Design by W3layouts
-Author: W3layout
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
--->
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -21,9 +15,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <link href="css/style.css" rel='stylesheet' type='text/css' />
 <link href='//fonts.googleapis.com/css?family=Oswald:300,400,700' rel='stylesheet' type='text/css'>
 <link href='//fonts.googleapis.com/css?family=Ubuntu:300,400,500,700' rel='stylesheet' type='text/css'>
-<!----font-Awesome----->
+<!--font-Awesome-->
 <link href="css/font-awesome.css" rel="stylesheet"> 
-<!----font-Awesome----->
+<!--font-Awesome-->
 <script>
 $(document).ready(function(){
     $(".dropdown").hover(            

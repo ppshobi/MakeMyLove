@@ -23,6 +23,36 @@ function mysqlexec($sql){
 
 }
 
+function writepartnerprefs($id){
+	if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+		$agemin=$_POST['agemin'];
+		$agemax=$_POST['agemax'];
+		$maritalstatus=$_POST['maritalstatus'];
+		$bodytype=$_POST['bodytype'];
+		$complexion=$_POST['colour'];
+		$height=$_POST['height'];
+		$diet=$_POST['diet'];
+		$religion=$_POST['religion'];
+		$caste=$_POST['caste'];
+		$mothertounge=$_POST['mothertounge'];
+		$education=$_POST['education'];
+		$occupation=$_POST['occupation'];
+		$country=$_POST['country'];
+		$descr=$_POST['descr'];
+
+		$sql = "UPDATE partnerprefs SET agemin = '$agemin', agemax='$agemax', maritalstatus='$maritalstatus', bodytype='$bodytype', complexion = '$complexion', height = '$height', diet = '$diet', religion='$religion', caste = '$caste', mothertounge = '$mothertounge', education='$education', descr = '$descr', occupation = '$occupation', country = '$country' WHERE custId = '$id'";
+
+		$result = mysqlexec($sql);
+		if ($result) {
+			echo "Successfully updated Partner Preference";
+		}
+		else{
+			mysqli_errno();
+		}
+
+	}
+}
+
 
 function register(){
 	if ($_SERVER['REQUEST_METHOD'] == 'POST') {
@@ -52,6 +82,9 @@ function register(){
 function isloggedin(){
 	if(!isset($_SESSION['username'])){
  		header("location:login.php");
+	}
+	else{
+		return true;
 	}
 }
 

@@ -4,31 +4,34 @@
 <?php
 isloggedin(); 
 $id=$_GET['id'];
+writepartnerprefs($id);
 
-$sql="SELECT * FROM partnerprefs WHERE custId = $id";
-$result=mysqlexec($sql);
-if($result){
-	$row=mysqli_fetch_assoc($result);
-	$agemin=$row['agemin'];
-	$agemax=$row['agemax'];
-	$marital_status=$row['maritalstatus'];
-	$body_type=$row['bodytype'];
-	$complexion=$row['complexion'];
-	$height=$row['height'];
-	$diet=$row['diet'];
-	$religion=$row['religion'];
-	$caste=$row['caste'];
-	$sub_caste=$row['subcaste'];
-	$mother_tounge=$row['mothertounge'];
-	$education=$row['education'];
-	$occupation=$row['occupation'];
-	$country=$row['country'];
-	$descr=$row['descr'];
-	
-}
-else{
-	echo mysqli_error($conn);
-}
+///reading partnerprefs from db
+
+		$sql="SELECT * FROM partnerprefs WHERE custId = $id";
+		$result=mysqlexec($sql);
+		if($result){
+			$row=mysqli_fetch_assoc($result);
+			$agemin=$row['agemin'];
+			$agemax=$row['agemax'];
+			$marital_status=$row['maritalstatus'];
+			$body_type=$row['bodytype'];
+			$complexion=$row['complexion'];
+			$height=$row['height'];
+			$diet=$row['diet'];
+			$religion=$row['religion'];
+			$caste=$row['caste'];
+			$sub_caste=$row['subcaste'];
+			$mother_tounge=$row['mothertounge'];
+			$education=$row['education'];
+			$occupation=$row['occupation'];
+			$country=$row['country'];
+			$descr=$row['descr'];
+			
+		}
+		else{
+			echo mysqli_error($conn);
+		}
 
 
 
@@ -101,14 +104,14 @@ $(document).ready(function(){
 				        		<tr class="opened">
 									<td class="day_label">Age   :</td>
 									<td class="day_value">
-									<input type="text" value="<?php echo $agemin; ?>">to <input type="text" value="<?php echo $agemax; ?>"> 
+									<input type="text" name="agemin" value="<?php echo $agemin; ?>">to <input type="text" name ="agemax" value="<?php echo $agemax; ?>"> 
 									</td>
 								</tr>
 				        		<tr class="opened">
 									<td class="day_label">Marital Status :</td>
 									<td class="day_value">
 										<div class="select-block1">
-										<select name="marital-status">
+										<select name="maritalstatus">
 						                    <option value="<?php if($marital_status="Single"){echo "Single";} elseif ($marital_status="Married") {echo "Married";} else{echo "Divorced";}?>"><?php echo $marital_status;?></option>
 
 						                    <option value="Single">Single</option>
@@ -122,7 +125,7 @@ $(document).ready(function(){
 									<td class="day_label">Body Type :</td>
 									<td class="day_value closed">
 										<div class="select-block1">
-							                <select name="body-type">
+							                <select name="bodytype">
 							                    <option value="Slim">Slim</option>
 							                    <option value="Fat">Fat</option> 
 							               		<option value="Average">Average</option> 
@@ -150,8 +153,8 @@ $(document).ready(function(){
 									<td class="day_label">Diet :</td>
 									<td class="day_value closed"><div class="select-block1">
 					                <select name="diet">
-					                    <option value="">Veg</option>
-					                    <option value="">Non Veg</option> 
+					                    <option value="Veg">Veg</option>
+					                    <option value="Non Veg">Non Veg</option> 
 					                </select>
 							    	</div>
 							    	</td>
@@ -189,7 +192,7 @@ $(document).ready(function(){
 									<td class="day_label">Mother Tongue :</td>
 									<td class="day_value closed">
 									<div class="select-block1">
-						                <select name="mother-tounge">
+						                <select name="mothertounge">
 						                    <option value="">Malayalam</option>
 						                    <option value="">Hindi</option> 
 						               		<option value="">English</option> 
