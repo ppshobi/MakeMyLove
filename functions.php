@@ -150,27 +150,9 @@ $pic3=($_FILES['pic3']['name']);
 $pic4=($_FILES['pic4']['name']);
 
 
-
-// Connects to your Database
-
-
-$host="localhost"; // Host name 
-$username="root"; // Mysql username 
-$password=""; // Mysql password 
-$db_name="matrimony"; // Database name 
-
-// Connect to server and select databse.
-$conn=mysqli_connect("$host", "$username", "$password")or die("cannot connect"); 
-
-mysqli_select_db($conn,"$db_name")or die("cannot select DB");
-
-
-
 $sql="INSERT INTO photos (id, cust_id, pic1, pic2, pic3, pic4) VALUES ('', '$id', '$pic1' ,'$pic2', '$pic3','$pic4')";
 // Writes the information to the database
-if(mysqli_query($conn,$sql)){
-
-}
+mysqlexec($sql);
 
 // Writes the photo to the server
 if(move_uploaded_file($_FILES['pic1']['tmp_name'], $target1)&&move_uploaded_file($_FILES['pic2']['tmp_name'], $target2)&&move_uploaded_file($_FILES['pic3']['tmp_name'], $target3)&&move_uploaded_file($_FILES['pic4']['tmp_name'], $target4))
