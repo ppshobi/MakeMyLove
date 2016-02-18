@@ -149,10 +149,23 @@ $pic2=($_FILES['pic2']['name']);
 $pic3=($_FILES['pic3']['name']);
 $pic4=($_FILES['pic4']['name']);
 
+$sql="SELECT id FROM photos WHERE cust_id = '$id'";
+$result = mysqlexec($sql);
 
-$sql="INSERT INTO photos (id, cust_id, pic1, pic2, pic3, pic4) VALUES ('', '$id', '$pic1' ,'$pic2', '$pic3','$pic4')";
-// Writes the information to the database
-mysqlexec($sql);
+//code part to check weather a photo already exists
+if(mysqli_num_rows($result) == 0) {
+     // no photo for curret user, do stuff...
+		$sql="INSERT INTO photos (id, cust_id, pic1, pic2, pic3, pic4) VALUES ('', '$id', '$pic1' ,'$pic2', '$pic3','$pic4')";
+		// Writes the information to the database
+		mysqlexec($sql);
+
+		
+} else {
+    // There is a photo for customer so update table
+    $sql="UPDATE photos SET pic1 = '$pic1', pic2 = '$pic2', pic3 = '$pic3', pic4 = '$pic4' WHERE cust_id=$id";
+		// Writes the information to the database
+		mysqlexec($sql);
+}
 
 // Writes the photo to the server
 if(move_uploaded_file($_FILES['pic1']['tmp_name'], $target1)&&move_uploaded_file($_FILES['pic2']['tmp_name'], $target2)&&move_uploaded_file($_FILES['pic3']['tmp_name'], $target3)&&move_uploaded_file($_FILES['pic4']['tmp_name'], $target4))
@@ -166,6 +179,7 @@ else {
 // Gives and error if its not
 echo "Sorry, there was a problem uploading your file.";
 }
-}
+
+}//end uploadphoto function
 
 ?>
