@@ -1,9 +1,39 @@
-<!--A Design by W3layouts
-Author: W3layout
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
--->
+<?php include_once("includes/basic_includes.php");?>
+<?php include_once("functions.php"); ?>
+<?php isloggedin(); ?>
+<?php
+//search function
+
+function search(){
+  if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    $agemin=$_POST['agemin'];
+    $agemax=$_POST['agemax'];
+    $maritalstatus=$_POST['maritalstatus'];
+    $country=$_POST['country'];
+    $state=$_POST['state'];
+    $religion=$_POST['religion'];
+    $mothertounge=$_POST['mothertounge'];
+    //$education=$_POST['education'];
+    $sex = $_POST['sex'];
+
+    $sql="SELECT * FROM customer WHERE 
+    sex='$sex' 
+    AND age>'$agemin'
+    AND age<'$agemax'
+    AND maritalstatus = '$maritalstatus'
+    AND country = '$country'
+    AND state = '$state'
+    AND religion = '$religion'
+    AND mothertounge = '$mothertounge'
+    ";
+
+    $result = mysqlexec($sql);
+
+  }
+}
+
+search();
+?>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -21,9 +51,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <link href="css/style.css" rel='stylesheet' type='text/css' />
 <link href='//fonts.googleapis.com/css?family=Oswald:300,400,700' rel='stylesheet' type='text/css'>
 <link href='//fonts.googleapis.com/css?family=Ubuntu:300,400,500,700' rel='stylesheet' type='text/css'>
-<!----font-Awesome----->
+<!--font-Awesome-->
 <link href="css/font-awesome.css" rel="stylesheet"> 
-<!----font-Awesome----->
+<!--font-Awesome-->
 <script>
 $(document).ready(function(){
     $(".dropdown").hover(            
@@ -61,12 +91,12 @@ $(document).ready(function(){
     });
    </script>-->
 <div class="col-md-9 search_left">
-  <form>	
+  <form action="" method="post">	
    <div class="form_but1">
 	<label class="col-sm-5 control-lable1" for="sex">Gender : </label>
 	<div class="col-sm-7 form_radios">
-		<input type="radio" class="radio_1" /> Male &nbsp;&nbsp;
-		<input type="radio" class="radio_1" checked="checked" /> Female
+		<input type="radio" class="radio_1" name="sex" value="male" /> Male &nbsp;&nbsp;
+		<input type="radio" class="radio_1" name="sex" value="female"/> Female
 		
 		<!--<hr />
 		<p id="sel"></p><br />
@@ -77,11 +107,11 @@ $(document).ready(function(){
   <div class="form_but1">
 	<label class="col-sm-5 control-lable1" for="sex">Marital Status : </label>
 	<div class="col-sm-7 form_radios">
-		<input type="checkbox" class="radio_1" /> Single &nbsp;&nbsp;
-		<input type="checkbox" class="radio_1" checked="checked" /> Divorced &nbsp;&nbsp;
-		<input type="checkbox" class="radio_1" value="Cheese" /> Widowed &nbsp;&nbsp;
-		<input type="checkbox" class="radio_1" value="Cheese" /> Separated &nbsp;&nbsp;
-		<input type="checkbox" class="radio_1" value="Cheese" /> Any
+		<input type="checkbox" class="radio_1" name="maritalstatus" value="Single" /> Single &nbsp;&nbsp;
+		<input type="checkbox" class="radio_1" name="maritalstatus" value="divorced" /> Divorced &nbsp;&nbsp;
+		<input type="checkbox" class="radio_1" name="maritalstatus" value="widowed" /> Widowed &nbsp;&nbsp;
+		<input type="checkbox" class="radio_1" name="maritalstatus" value="seperated"/> Separated &nbsp;&nbsp;
+		<input type="checkbox" class="radio_1" name="maritalstatus" value="any" /> Any
 	</div>
 	<div class="clearfix"> </div>
   </div>
@@ -89,16 +119,17 @@ $(document).ready(function(){
     <label class="col-sm-5 control-lable1" for="sex">Country : </label>
     <div class="col-sm-7 form_radios">
       <div class="select-block1">
-        <select>
+        <select name="country">
             <option value="">Country</option>
-            <option value="">Japan</option>
-            <option value="">Kenya</option>
+            <option value="Japan">Japan</option>
+            <option value="Kenya">Kenya</option>
             <option value="">Dubai</option>
             <option value="">Italy</option>
             <option value="">Greece</option> 
             <option value="">Iceland</option> 
-            <option value="">China</option> 
+            <option value="China">China</option> 
             <option value="">Doha</option> 
+            <option value="India">India</option> 
             <option value="">Irland</option> 
             <option value="">Srilanka</option> 
             <option value="">Russia</option> 
@@ -125,33 +156,14 @@ $(document).ready(function(){
     <label class="col-sm-5 control-lable1" for="sex">District / City : </label>
     <div class="col-sm-7 form_radios">
       <div class="select-block1">
-        <select>
+        <select name="district">
             <option value="">District / City</option>
-            <option value="">Japan</option>
-            <option value="">Kenya</option>
-            <option value="">Dubai</option>
-            <option value="">Italy</option>
-            <option value="">Greece</option> 
-            <option value="">Iceland</option> 
-            <option value="">China</option> 
-            <option value="">Doha</option> 
-            <option value="">Irland</option> 
-            <option value="">Srilanka</option> 
-            <option value="">Russia</option> 
-            <option value="">Hong Kong</option> 
-            <option value="">Germany</option>
-            <option value="">Canada</option>  
-            <option value="">Mexico</option> 
-            <option value="">Nepal</option>
-            <option value="">Norway</option> 
-            <option value="">Oman</option>
-            <option value="">Pakistan</option>  
-            <option value="">Kuwait</option> 
-            <option value="">Indonesia</option>  
-            <option value="">Spain</option>
-            <option value="">Thailand</option>  
-            <option value="">Saudi Arabia</option> 
-            <option value="">Poland</option> 
+            <option value="Wayanad">Wayanad</option>
+            <option value="Calicut">Calicut</option>
+            <option value="Malappuram">Malappuram</option> 
+            <option value="Trivandrum">Trivandrum</option> 
+            <option value="Kannur">Kannur</option> 
+            <option value="Kasargode">Kasargode</option>
         </select>
       </div>
     </div>
@@ -161,33 +173,12 @@ $(document).ready(function(){
     <label class="col-sm-5 control-lable1" for="sex">State : </label>
     <div class="col-sm-7 form_radios">
       <div class="select-block1">
-        <select>
+        <select name="state">
             <option value="">State</option>
-            <option value="">Japan</option>
-            <option value="">Kenya</option>
-            <option value="">Dubai</option>
-            <option value="">Italy</option>
-            <option value="">Greece</option> 
-            <option value="">Iceland</option> 
-            <option value="">China</option> 
-            <option value="">Doha</option> 
-            <option value="">Irland</option> 
-            <option value="">Srilanka</option> 
-            <option value="">Russia</option> 
-            <option value="">Hong Kong</option> 
-            <option value="">Germany</option>
-            <option value="">Canada</option>  
-            <option value="">Mexico</option> 
-            <option value="">Nepal</option>
-            <option value="">Norway</option> 
-            <option value="">Oman</option>
-            <option value="">Pakistan</option>  
-            <option value="">Kuwait</option> 
-            <option value="">Indonesia</option>  
-            <option value="">Spain</option>
-            <option value="">Thailand</option>  
-            <option value="">Saudi Arabia</option> 
-            <option value="">Poland</option> 
+            <option value="Kerala">Kerala</option>
+            <option value="Tamilnadu">Tamilnadu</option>
+            <option value="Karnataka">Karnataka</option>
+            <option value="Madhyapradesh">Madhyapradesh</option>
         </select>
       </div>
     </div>
@@ -197,20 +188,21 @@ $(document).ready(function(){
     <label class="col-sm-5 control-lable1" for="sex">Religion : </label>
     <div class="col-sm-7 form_radios">
       <div class="select-block1">
-        <select>
-            <option value="">Hindu</option>
-            <option value="">Sikh</option>
-            <option value="">Jain-All</option>
-            <option value="">Jain-Digambar</option>
-            <option value="">Jain-Others</option>
-            <option value="">Muslim-All</option> 
-            <option value="">Muslim-Shia</option> 
-            <option value="">Muslim-Sunni</option> 
-            <option value="">Muslim-Others</option> 
-            <option value="">Christian-All</option> 
-            <option value="">Christian-Catholic</option> 
-            <option value="">Jewish</option> 
-            <option value="">Inter-Religion</option> 
+        <select name="religion">
+            <option value="">Religion</option>
+            <option value="Hindu">Hindu</option>
+            <option value="Sikh">Sikh</option>
+            <option value="Jain-All">Jain-All</option>
+            <option value="Jain-Digambar">Jain-Digambar</option>
+            <option value="Jain-Others">Jain-Others</option>
+            <option value="Muslim-All">Muslim-All</option> 
+            <option value="Muslim-Shia">Muslim-Shia</option> 
+            <option value="Muslim-Sunni">Muslim-Sunni</option> 
+            <option value="Muslim-Others">Muslim-Others</option> 
+            <option value="Christian-All">Christian-All</option> 
+            <option value="Christian-Catholic">Christian-Catholic</option> 
+            <option value="Jewish">Jewish</option> 
+            <option value="Inter-Religion">Inter-Religion</option> 
         </select>
       </div>
     </div>
@@ -220,55 +212,44 @@ $(document).ready(function(){
     <label class="col-sm-5 control-lable1" for="sex">Mother Tongue : </label>
     <div class="col-sm-7 form_radios">
       <div class="select-block1">
-        <select>
-            <option value="">English</option>
-            <option value="">French</option>
-            <option value="">Telugu</option>
-            <option value="">Bengali</option>
-            <option value="">Bihari</option>
-            <option value="">Hindi</option> 
-            <option value="">Koshali</option> 
-            <option value="">Khasi</option> 
-            <option value="">Tamil</option> 
-            <option value="">Urdu</option> 
-            <option value="">Manipuri</option> 
+        <select name="mothertounge">
+            <option value="Malayalam">Malayalam</option>
+            <option value="English">English</option>
+            <option value="French">French</option>
+            <option value="Telugu">Telugu</option>
+            <option value="Bengali">Bengali</option>
+            <option value="Bihari">Bihari</option>
+            <option value="Hindi">Hindi</option>
+            <option value="Tamil">Tamil</option> 
+            <option value="Urdu">Urdu</option> 
+            <option value="Manipuri">Manipuri</option> 
         </select>
       </div>
     </div>
     <div class="clearfix"> </div>
   </div>
   <div class="form_but1">
-	<label class="col-sm-5 control-lable1" for="sex">Show Profile : </label>
-	<div class="col-sm-7 form_radios">
-		<input type="checkbox" class="radio_1" /> with Photo &nbsp;&nbsp;
-		<input type="checkbox" class="radio_1" checked="checked" /> with Horoscope
-	</div>
-	<div class="clearfix"> </div>
-  </div>
-  <div class="form_but1">
-	<label class="col-sm-5 control-lable1" for="sex">Don't Show : </label>
-	<div class="col-sm-7 form_radios">
-		<input type="checkbox" class="radio_1" /> Ignored Profiles &nbsp;&nbsp;
-		<input type="checkbox" class="radio_1" checked="checked" /> Profiles already Contacted
-	</div>
-	<div class="clearfix"> </div>
-  </div>
-  <div class="form_but1">
 	<label class="col-sm-5 control-lable1" for="sex">Age : </label>
 	<div class="col-sm-7 form_radios">
 	  <div class="col-sm-5 input-group1">
-        <input class="form-control has-dark-background" name="28" id="slider-name" placeholder="28" type="text" required="">
+        <input class="form-control has-dark-background" name="agemin" id="slider-name" placeholder="28" type="text" required=""/>
       </div>
+      
       <div class="col-sm-5 input-group1">
-        <input class="form-control has-dark-background" name="40" id="slider-name" placeholder="40" type="text" required="">
+        <input class="form-control has-dark-background" name="agemax" id="slider-name" placeholder="40" type="text" required=""/>
       </div>
       <div class="clearfix"> </div>
 	</div>
 	<div class="clearfix"> </div>
+  <input type="submit" value="Search"/>
   </div>
  </form>
  <div class="paid_people">
-   <h1>Paid People</h1>
+   <h1>Profiles</h1>
+
+<?php 
+?>
+
    <div class="row_1">
 	   <div class="col-sm-6 paid_people-left">
 	 	<ul class="profile_item">

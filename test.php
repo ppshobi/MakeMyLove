@@ -1,0 +1,17 @@
+<?php
+$agemin=$_POST['agemin'];
+		$agemax=$_POST['agemax'];
+		$marital_status=$_POST['maritalstatus'];
+		$body_type=$_POST['bodytype'];
+		$complexion=$_POST['complexion'];
+		$height=$_POST['height'];
+		$diet=$_POST['diet'];
+		$religion=$_POST['religion'];
+		$caste=$_POST['caste'];
+		$sub_caste=$_POST['subcaste'];
+		$mother_tounge=$_POST['mothertounge'];
+		$education=$_POST['education'];
+		$occupation=$_POST['occupation'];
+		$country=$_POST['country'];
+		$descr=$_POST['descr'];
+		?>
