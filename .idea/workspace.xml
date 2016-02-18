@@ -56,12 +56,12 @@
         <entry file="file://$PROJECT_DIR$/search.php">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-1.3964912">
-              <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+              <caret line="65" column="0" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
               <folding>
-                <marker date="1455807265156" expanded="true" signature="521:565" placeholder="SELECT * FRO..customer..." />
-                <marker date="1455807265156" expanded="true" signature="521:588" placeholder="SELECT * FRO..customer..." />
-                <marker date="1455807265156" expanded="true" signature="521:610" placeholder="SELECT * FRO..customer..." />
-                <marker date="1455807265156" expanded="true" signature="521:775" placeholder="SELECT * FRO..customer..." />
+                <marker date="1455809018157" expanded="true" signature="521:565" placeholder="SELECT * FRO..customer..." />
+                <marker date="1455809018157" expanded="true" signature="521:588" placeholder="SELECT * FRO..customer..." />
+                <marker date="1455809018157" expanded="true" signature="521:610" placeholder="SELECT * FRO..customer..." />
+                <marker date="1455809018157" expanded="true" signature="521:775" placeholder="SELECT * FRO..customer..." />
               </folding>
             </state>
           </provider>
@@ -298,7 +298,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32840723" sideWeight="0.49707174" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39901477" sideWeight="0.49707174" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39901477" sideWeight="0.49707174" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -852,12 +852,12 @@
     <entry file="file://$PROJECT_DIR$/search.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.3964912">
-          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+          <caret line="65" column="0" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
           <folding>
-            <marker date="1455807265156" expanded="true" signature="521:565" placeholder="SELECT * FRO..customer..." />
-            <marker date="1455807265156" expanded="true" signature="521:588" placeholder="SELECT * FRO..customer..." />
-            <marker date="1455807265156" expanded="true" signature="521:610" placeholder="SELECT * FRO..customer..." />
-            <marker date="1455807265156" expanded="true" signature="521:775" placeholder="SELECT * FRO..customer..." />
+            <marker date="1455809018157" expanded="true" signature="521:565" placeholder="SELECT * FRO..customer..." />
+            <marker date="1455809018157" expanded="true" signature="521:588" placeholder="SELECT * FRO..customer..." />
+            <marker date="1455809018157" expanded="true" signature="521:610" placeholder="SELECT * FRO..customer..." />
+            <marker date="1455809018157" expanded="true" signature="521:775" placeholder="SELECT * FRO..customer..." />
           </folding>
         </state>
       </provider>

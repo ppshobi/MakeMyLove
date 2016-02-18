@@ -248,11 +248,38 @@ $(document).ready(function(){
    <h1>Profiles</h1>
 
 <?php 
+//row count and couloumn count
+$r_count="1";
+$c_count='1';
+while($row=mysqli_fetch_assoc($result)){
+echo "<div class=\"row_1\">";//starting row
+  //printing left side profile
+  if($c_count=='1'){
+    echo "<div class=\"col-sm-6 paid_people-left\">"; //left statrted
+      echo "<ul class=\"profile_item\">";
+        echo "<a href=\"view_profile.php\">";
+          echo "<li class=\"profile_item-img\"><img src=\"images/a5.jpg\" class=\"img-responsive\" alt=\"\"/></li>";
+            echo "<li class=\"profile_item-desc\">"
+              echo "<h4>". "2458741" ."</h4>";
+              echo "<p>" . "29 Yrs, 5Ft 5in Christian" . "</p>";
+              echo "<h5>". "View Full Profile" . "</h5>";
+            echo "</li>"
+        echo "</a>";
+
+      echo "</ul>"
+
+    echo "</div>"//left end
+
+  }
+  //end of left side
+echo "</div>";//row end
+
+}//loop end
 ?>
 
    <div class="row_1">
-	   <div class="col-sm-6 paid_people-left">
-	 	<ul class="profile_item">
+	  <div class="col-sm-6 paid_people-left">
+	 	   <ul class="profile_item">
 		  <a href="view_profile.php">
 		   <li class="profile_item-img">
 		   	  <img src="images/a5.jpg" class="img-responsive" alt=""/>
@@ -265,7 +292,7 @@ $(document).ready(function(){
 		   <div class="clearfix"> </div>
 		  </a>
 	     </ul>
-	   </div>
+	  </div>
 	   <div class="col-sm-6">
 	 	<ul class="profile_item">
 		  <a href="view_profile.php">
@@ -280,7 +307,7 @@ $(document).ready(function(){
 		   <div class="clearfix"> </div>
 		  </a>
 	     </ul>
-	   </div>
+	  </div>
 	   <div class="clearfix"> </div>
    </div>
    <div class="row_1">
