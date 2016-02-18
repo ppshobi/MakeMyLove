@@ -11,7 +11,8 @@ $id=$_GET['id'];
 	$pic4="";
 //getting image filenames from db
 $sql="SELECT * FROM photos WHERE cust_id = $id";
-if($result = mysqli_query($conn, $sql)){
+$result = mysqlexec($sql);
+if($result){
 	$row=mysqli_fetch_array($result);
 	$pic1=$row['pic1'];
 	$pic2=$row['pic2'];
