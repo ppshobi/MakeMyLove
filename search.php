@@ -13,7 +13,6 @@ function search(){
     $state=$_POST['state'];
     $religion=$_POST['religion'];
     $mothertounge=$_POST['mothertounge'];
-    //$education=$_POST['education'];
     $sex = $_POST['sex'];
 
     $sql="SELECT * FROM customer WHERE 
@@ -28,11 +27,12 @@ function search(){
     ";
 
     $result = mysqlexec($sql);
+    return $result;
 
   }
 }
 
-search();
+$result=search();
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -95,8 +95,8 @@ $(document).ready(function(){
    <div class="form_but1">
 	<label class="col-sm-5 control-lable1" for="sex">Gender : </label>
 	<div class="col-sm-7 form_radios">
-		<input type="radio" class="radio_1" name="sex" value="male" /> Male &nbsp;&nbsp;
-		<input type="radio" class="radio_1" name="sex" value="female"/> Female
+		<input type="radio" class="radio_1" name="sex" value="male" <?php echo "checked";?>/> Groom &nbsp;&nbsp;
+		<input type="radio" class="radio_1" name="sex" value="female"/> Bride
 		
 		<!--<hr />
 		<p id="sel"></p><br />
@@ -105,9 +105,9 @@ $(document).ready(function(){
 	<div class="clearfix"> </div>
   </div>
   <div class="form_but1">
-	<label class="col-sm-5 control-lable1" for="sex">Marital Status : </label>
+	<label class="col-sm-5 control-lable1" for="Marital Status">Marital Status : </label>
 	<div class="col-sm-7 form_radios">
-		<input type="checkbox" class="radio_1" name="maritalstatus" value="Single" /> Single &nbsp;&nbsp;
+		<input type="checkbox" class="radio_1" name="maritalstatus" value="Single" <?php echo "checked" ?>/> Single &nbsp;&nbsp;
 		<input type="checkbox" class="radio_1" name="maritalstatus" value="divorced" /> Divorced &nbsp;&nbsp;
 		<input type="checkbox" class="radio_1" name="maritalstatus" value="widowed" /> Widowed &nbsp;&nbsp;
 		<input type="checkbox" class="radio_1" name="maritalstatus" value="seperated"/> Separated &nbsp;&nbsp;
@@ -116,7 +116,7 @@ $(document).ready(function(){
 	<div class="clearfix"> </div>
   </div>
   <div class="form_but1">
-    <label class="col-sm-5 control-lable1" for="sex">Country : </label>
+    <label class="col-sm-5 control-lable1" for="country">Country : </label>
     <div class="col-sm-7 form_radios">
       <div class="select-block1">
         <select name="country">
@@ -153,7 +153,7 @@ $(document).ready(function(){
     <div class="clearfix"> </div>
   </div>
   <div class="form_but1">
-    <label class="col-sm-5 control-lable1" for="sex">District / City : </label>
+    <label class="col-sm-5 control-lable1" for="District / City">District / City : </label>
     <div class="col-sm-7 form_radios">
       <div class="select-block1">
         <select name="district">
@@ -170,7 +170,7 @@ $(document).ready(function(){
     <div class="clearfix"> </div>
   </div>
   <div class="form_but1">
-    <label class="col-sm-5 control-lable1" for="sex">State : </label>
+    <label class="col-sm-5 control-lable1" for="State">State : </label>
     <div class="col-sm-7 form_radios">
       <div class="select-block1">
         <select name="state">
@@ -185,7 +185,7 @@ $(document).ready(function(){
     <div class="clearfix"> </div>
   </div>
   <div class="form_but1">
-    <label class="col-sm-5 control-lable1" for="sex">Religion : </label>
+    <label class="col-sm-5 control-lable1" for="Religion">Religion : </label>
     <div class="col-sm-7 form_radios">
       <div class="select-block1">
         <select name="religion">
@@ -209,7 +209,7 @@ $(document).ready(function(){
     <div class="clearfix"> </div>
   </div>
   <div class="form_but1">
-    <label class="col-sm-5 control-lable1" for="sex">Mother Tongue : </label>
+    <label class="col-sm-5 control-lable1" for="Mother Tongue">Mother Tongue : </label>
     <div class="col-sm-7 form_radios">
       <div class="select-block1">
         <select name="mothertounge">
@@ -229,10 +229,10 @@ $(document).ready(function(){
     <div class="clearfix"> </div>
   </div>
   <div class="form_but1">
-	<label class="col-sm-5 control-lable1" for="sex">Age : </label>
+	<label class="col-sm-5 control-lable1" for="Age">Age : </label>
 	<div class="col-sm-7 form_radios">
 	  <div class="col-sm-5 input-group1">
-        <input class="form-control has-dark-background" name="agemin" id="slider-name" placeholder="28" type="text" required=""/>
+        <input class="form-control has-dark-background" name="agemin" id="slider-name" placeholder="18" type="text" required=""/>
       </div>
       
       <div class="col-sm-5 input-group1">
@@ -241,141 +241,68 @@ $(document).ready(function(){
       <div class="clearfix"> </div>
 	</div>
 	<div class="clearfix"> </div>
-  <input type="submit" value="Search"/>
+  <input type="submit" name="search" value="Search"/>
   </div>
  </form>
  <div class="paid_people">
    <h1>Profiles</h1>
 
-<?php 
-//row count and couloumn count
-$r_count="1";
-$c_count='1';
-while($row=mysqli_fetch_assoc($result)){
-echo "<div class=\"row_1\">";//starting row
-  //printing left side profile
-  if($c_count=='1'){
+<?php
+//only start display profiles if and only if search is triggered
+if(isset($_POST['search'])){
+
+//code to print matching profiles
+
+// couloumn count
+
+$c_count = '1';
+
+while ($row = mysqli_fetch_assoc($result))
+  {
+
+  // printing left side profile
+
+  if ($c_count == '1')
+    {
+    echo "<div class=\"row_1\">"; //starting row
     echo "<div class=\"col-sm-6 paid_people-left\">"; //left statrted
-      echo "<ul class=\"profile_item\">";
-        echo "<a href=\"view_profile.php\">";
-          echo "<li class=\"profile_item-img\"><img src=\"images/a5.jpg\" class=\"img-responsive\" alt=\"\"/></li>";
-            echo "<li class=\"profile_item-desc\">"
-              echo "<h4>". "2458741" ."</h4>";
-              echo "<p>" . "29 Yrs, 5Ft 5in Christian" . "</p>";
-              echo "<h5>". "View Full Profile" . "</h5>";
-            echo "</li>"
-        echo "</a>";
+    echo "<ul class=\"profile_item\">";
+    echo "<a href=\"view_profile.php\">";
+    echo "<li class=\"profile_item-img\"><img src=\"images/a5.jpg\" class=\"img-responsive\" alt=\"\"/></li>";
+    echo "<li class=\"profile_item-desc\">";
+    echo "<h4>" . "2458741" . "</h4>";
+    echo "<p>" . "29 Yrs, 5Ft 5in Christian" . "</p>";
+    echo "<h5>" . "View Full Profile" . "</h5>";
+    echo "</li>";
+    echo "</a>";
+    echo "</ul>";
+    echo "</div>"; //left end
+    $c_count++;
+    }
+    else
+    {
+    echo "<div class=\"col-sm-6\">"; //left statrted
+    echo "<ul class=\"profile_item\">";
+    echo "<a href=\"view_profile.php\">";
+    echo "<li class=\"profile_item-img\"><img src=\"images/a5.jpg\" class=\"img-responsive\" alt=\"\"/></li>";
+    echo "<li class=\"profile_item-desc\">";
+    echo "<h4>" . "2458741" . "</h4>";
+    echo "<p>" . "29 Yrs, 5Ft 5in Christian" . "</p>";
+    echo "<h5>" . "View Full Profile" . "</h5>";
+    echo "</li>";
+    echo "</a>";
+    echo "</ul>";
+    echo "</div>"; //right end
 
-      echo "</ul>"
+    // end of right side
 
-    echo "</div>"//left end
-
-  }
-  //end of left side
-echo "</div>";//row end
-
-}//loop end
+    echo "</div>"; //row end
+    $c_count = '1';
+    }
+  } //loop end
+}//end of if
 ?>
-
-   <div class="row_1">
-	  <div class="col-sm-6 paid_people-left">
-	 	   <ul class="profile_item">
-		  <a href="view_profile.php">
-		   <li class="profile_item-img">
-		   	  <img src="images/a5.jpg" class="img-responsive" alt=""/>
-		   </li>
-		   <li class="profile_item-desc">
-		   	  <h4>2458741</h4>
-		   	  <p>29 Yrs, 5Ft 5in Christian</p>
-		   	  <h5>View Full Profile</h5>
-		   </li>
-		   <div class="clearfix"> </div>
-		  </a>
-	     </ul>
-	  </div>
-	   <div class="col-sm-6">
-	 	<ul class="profile_item">
-		  <a href="view_profile.php">
-		   <li class="profile_item-img">
-		   	  <img src="images/a6.jpg" class="img-responsive" alt=""/>
-		   </li>
-		   <li class="profile_item-desc">
-		   	  <h4>2458741</h4>
-		   	  <p>29 Yrs, 5Ft 5in Christian</p>
-		   	  <h5>View Full Profile</h5>
-		   </li>
-		   <div class="clearfix"> </div>
-		  </a>
-	     </ul>
-	  </div>
-	   <div class="clearfix"> </div>
-   </div>
-   <div class="row_1">
-	   <div class="col-sm-6 paid_people-left">
-	 	<ul class="profile_item">
-		  <a href="view_profile.php">
-		   <li class="profile_item-img">
-		   	  <img src="images/a7.jpg" class="img-responsive" alt=""/>
-		   </li>
-		   <li class="profile_item-desc">
-		   	  <h4>2458741</h4>
-		   	  <p>29 Yrs, 5Ft 5in Christian</p>
-		   	  <h5>View Full Profile</h5>
-		   </li>
-		   <div class="clearfix"> </div>
-		  </a>
-	     </ul>
-	   </div>
-	   <div class="col-sm-6">
-	 	<ul class="profile_item">
-		  <a href="view_profile.php">
-		   <li class="profile_item-img">
-		   	  <img src="images/a8.jpg" class="img-responsive" alt=""/>
-		   </li>
-		   <li class="profile_item-desc">
-		   	  <h4>2458741</h4>
-		   	  <p>29 Yrs, 5Ft 5in Christian</p>
-		   	  <h5>View Full Profile</h5>
-		   </li>
-		   <div class="clearfix"> </div>
-		  </a>
-	     </ul>
-	   </div>
-	   <div class="clearfix"> </div>
-   </div>
-   <div class="row_2">
-	   <div class="col-sm-6 paid_people-left">
-	 	<ul class="profile_item">
-		  <a href="view_profile.php">
-		   <li class="profile_item-img">
-		   	  <img src="images/a5.jpg" class="img-responsive" alt=""/>
-		   </li>
-		   <li class="profile_item-desc">
-		   	  <h4>2458741</h4>
-		   	  <p>29 Yrs, 5Ft 5in Christian</p>
-		   	  <h5>View Full Profile</h5>
-		   </li>
-		   <div class="clearfix"> </div>
-		  </a>
-	     </ul>
-	   </div>
-	   <div class="col-sm-6">
-	 	<ul class="profile_item">
-		  <a href="view_profile.php">
-		   <li class="profile_item-img">
-		   	  <img src="images/a4.jpg" class="img-responsive" alt=""/>
-		   </li>
-		   <li class="profile_item-desc">
-		   	  <h4>2458741</h4>
-		   	  <p>29 Yrs, 5Ft 5in Christian</p>
-		   	  <h5>View Full Profile</h5>
-		   </li>
-		   <div class="clearfix"> </div>
-		  </a>
-	     </ul>
-	   </div>
-	   <div class="clearfix"> </div>
-    </div>
+   
   </div>
 </div>
 <div class="col-md-3 match_right">

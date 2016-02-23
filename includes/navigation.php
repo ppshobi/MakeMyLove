@@ -10,14 +10,14 @@
 				  <a href="#" class="icon-home"></a>
 				  <ul>
 				  <?php 
-				  if(isloggedin()){
-				  	echo "<li><a href=\"userhome.php?id=$id\">Home</a></li>";
-				  	echo "<li><a href=\"logout.php\">Logout</a></li>";
-				  }
-				  else{
-				  	echo "<li><a href=\"login.php\">Login</a></li>";
-				  	echo "<li><a href=\"register.php\">Register</a></li>";
-				  }
+				  // if(isloggedin()){
+				  // 	echo "<li><a href=\"userhome.php?id=$id\">Home</a></li>";
+				  // 	echo "<li><a href=\"logout.php\">Logout</a></li>";
+				  // }
+				  // else{
+				  // 	echo "<li><a href=\"login.php\">Login</a></li>";
+				  // 	echo "<li><a href=\"register.php\">Register</a></li>";
+				  // }
 
 				  ?>
 					
@@ -49,9 +49,7 @@
 		              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Matches<span class="caret"></span></a>
 		              <ul class="dropdown-menu" role="menu">
 		                <li><a href="matches.php">New Matches</a></li>
-		                <li><a href="viewed-profile.php">Who Viewed my Profile</a></li>
-		                <li><a href="viewed-not_contacted.php">Viewed & not Contacted</a></li>
-		                
+		              
 		                <li><a href="shortlisted.php">Shortlisted Profile</a></li>
 		              </ul>
 		            </li>
@@ -59,10 +57,10 @@
 		              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Search<span class="caret"></span></a>
 		              <ul class="dropdown-menu" role="menu">
 		                <li><a href="search.php">Regular Search</a></li>
-		                <li><a href="profile.php">Recently Viewed Profiles</a></li>
+		                
 		                <li><a href="search-id.php">Search By Profile ID</a></li>
 		                <li><a href="faq.php">Faq</a></li>
-		                <li><a href="shortcodes.php">Shortcodes</a></li>
+		                
 		              </ul>
 		            </li>
 		            <li class="dropdown">

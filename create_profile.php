@@ -269,7 +269,7 @@ $(document).ready(function(){
 	                 </div>
 	                 <div class="col-sm-4 form_box1">
 	                   <div class="select-block1">
-	                    <select name="District">
+	                    <select name="district">
 		                    <option value="">District</option>
 		                     <option value="">Trivandrum</option>
 		                    <option value="">Kollam</option>
@@ -364,7 +364,7 @@ $(document).ready(function(){
 		     <div class="form-group col-sm-2">
 		      <label for="edit-name">Body type<span class="form-required" title="This field is required.">*</span></label>
 			    <div class="select-block1">
-	                <select name="body-type">
+	                <select name="body-type1">
 	                    <option value="Slim">Slim</option>
 	                    <option value="Fat">Fat</option> 
 	               		<option value="Average">Average</option> 
@@ -374,7 +374,7 @@ $(document).ready(function(){
 		     <div class="form-group col-sm-2">
 		      <label for="edit-name">Physical Status<span class="form-required" title="This field is required.">*</span></label>
 			    <div class="select-block1">
-	                <select name="body-type">
+	                <select name="body-type2">
 	                    <option value="">No Problem</option>
 	                    <option value="">Blind</option> 
 	               		<option value="">Deaf</option> 
@@ -396,7 +396,7 @@ $(document).ready(function(){
 		    <div class="form-group col-sm-2">
 		      <label for="edit-name">Smoke<span class="form-required" title="This field is required.">*</span></label>
 			    <div class="select-block1">
-	                <select name="smoke">
+	                <select name="smoke1">
 	                    <option value="">No</option>
 	                    <option value="">Yes</option> 
 	               		<option value="">Sometimes</option> 
@@ -406,7 +406,7 @@ $(document).ready(function(){
 		    <div class="form-group col-sm-2">
 		      <label for="edit-name">Smoke<span class="form-required" title="This field is required.">*</span></label>
 			    <div class="select-block1">
-	                <select name="smoke">
+	                <select name="smoke2">
 	                    <option value="">No</option>
 	                    <option value="">Yes</option> 
 	               		<option value="">Sometimes</option> 
@@ -416,7 +416,7 @@ $(document).ready(function(){
 		    <div class="form-group col-sm-2">
 		      <label for="edit-name">Mother Tounge<span class="form-required" title="This field is required.">*</span></label>
 			    <div class="select-block1">
-	                <select name="mother-tounge">
+	                <select name="mother-tounge1">
 	                    <option value="">Malayalam</option>
 	                    <option value="">Hindi</option> 
 	               		<option value="">English</option> 
@@ -426,7 +426,7 @@ $(document).ready(function(){
 		     <div class="form-group col-sm-2">
 		      <label for="edit-name">Mother Tounge<span class="form-required" title="This field is required.">*</span></label>
 			    <div class="select-block1">
-	                <select name="mother-tounge">
+	                <select name="mother-tounge2">
 	                    <option value="">Malayalam</option>
 	                    <option value="">Hindi</option> 
 	               		<option value="">English</option> 

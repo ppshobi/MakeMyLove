@@ -96,7 +96,7 @@ else{
 }
 
 
-function processprofile_form($id){
+function processprofile_form($id,$dob){
    
 	$fname=$_POST['fname'];
 	$lname=$_POST['lname'];
@@ -112,7 +112,29 @@ function processprofile_form($id){
 	$caste = $_POST['caste'];
 	$sub_caste=$_POST['subcaste'];
 	$age=$_POST['age'];
+
+	$country = $_POST['country'];
+
+	//$state=$_POST['state'];
+	// $district=$_POST['district']
+	// $maritalstatus=$_POST['marital-status']
+	// $maritalStatus=$_POST['marital Status']
+	// $education=$_POST['education']
+	// $body-type1=$_POST['body-type1']
+	// $body-type2=$_POST['body-type2']
+	// $drink=$_POST['drink']
+	// $smoke1=$_POST['smoke1']
+	// $smoke2=$_POST['smoke2']
+	// $mother-tounge1=$_POST['mother-tounge1']
+	// $mother-tounge2=$_POST['mother-tounge2']
+	// $blood-group=$_POST['blood-group']
+	// $colour=$_POST['colour']
+	// $diet=$_POST['diet']
+	// $bros=$_POST['bros']
+	// $sis=$_POST['sis']
 	
+
+
 	require_once("/includes/dbconn.php");
 	 $sql = "INSERT INTO customer (id, email, age, sex, religion, caste, subcaste) VALUES ('', '$email', '$age', '$sex', '$religion', '$caste', '$sub_caste')";
 
