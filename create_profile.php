@@ -4,11 +4,7 @@
 <?php
 $id=$_GET['id'];
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-	$day=$_POST['day'];
-	$month=$_POST['month'];
-	$year=$_POST['year'];
-	$dob=$day ."-".$month."-" ."$year" ;
-	processprofile_form($id,$dob);
+		processprofile_form($id);
 }
 ?>
 
@@ -227,9 +223,9 @@ $(document).ready(function(){
 	                 <div class="col-sm-4 form_box1">
 	                   <div class="select-block1">
 	                    <select name="subcaste">
-		                    <option value="">Not Applicable</option>
-		                    <option value="">sub cast1</option>
-		                    <option value="">sub caste2</option>
+		                    <option value="Not Applicable">Not Applicable</option>
+		                    <option value="sub cast1">sub cast1</option>
+		                    <option value="sub caste2">sub caste2</option>
 		                  
 	                    </select>
 	                   </div>
@@ -248,9 +244,9 @@ $(document).ready(function(){
 	                  <div class="select-block1">
 	                    <select name="country">
 		                    <option value="Not Applicable">Country</option>
-		                    <option value="Hindu">India</option>
-		                    <option value="Christian">China</option>
-		                    <option value="Muslim">UAE</option>
+		                    <option value="India">India</option>
+		                    <option value="China">China</option>
+		                    <option value="UAE">UAE</option>
 		                    
 	                    </select>
 	                  </div>
@@ -260,7 +256,7 @@ $(document).ready(function(){
 	                   <div class="select-block1">
 	                    <select name="state">
 		                    <option value="">State</option>
-		                    <option value="Latin Catholic">KErala</option>
+		                    <option value="Latin Catholic">Kerala</option>
 		                    <option value="Penthecost">Tamilnadu</option>
 		                    <option value="Mappila">Karnataka</option>
 		                    <option value="Thiyya">Andra</option>  
@@ -271,10 +267,9 @@ $(document).ready(function(){
 	                   <div class="select-block1">
 	                    <select name="district">
 		                    <option value="">District</option>
-		                     <option value="">Trivandrum</option>
+		                    <option value="">Trivandrum</option>
 		                    <option value="">Kollam</option>
 		                    <option value="">Pathanamthitta</option>
-		                  
 	                    </select>
 	                   </div>
 	                  </div>
@@ -327,7 +322,7 @@ $(document).ready(function(){
              <div class="form-group col-sm-2">
 		      <label for="edit-name">Marital status <span class="form-required" title="This field is required.">*</span></label>
 			    <div class="select-block1">
-	                <select name="marital-status">
+	                <select name="maritalstatus">
 	                    <option value="Single">Single</option>
 	                    <option value="Married">Married</option> 
 	               		<option value="Divorsed">Divorsed</option>
@@ -337,7 +332,7 @@ $(document).ready(function(){
 		    <div class="form-group col-sm-2">
 		      <label for="edit-name">Profile Created by <span class="form-required" title="This field is required.">*</span></label>
 			    <div class="select-block1">
-	                <select name="Marital Status">
+	                <select name="profileby">
 	                    <option value="">Self</option>
 	                    <option value="">Son/Daughter</option> 
 	               		<option value="">Other</option> 
@@ -347,7 +342,7 @@ $(document).ready(function(){
 		    <div class="form-group col-sm-2">
 		      <label for="edit-name">Education <span class="form-required" title="This field is required.">*</span></label>
 			    <div class="select-block1">
-	                <select name="Education">
+	                <select name="education">
 	                    <option value="Primary">Primary</option>
 	                    <option value="Tenth level">Tenth level</option> 
 	               		<option value="+2">+2</option> 
@@ -359,12 +354,12 @@ $(document).ready(function(){
 		    </div>
 		    <div class="form-group col-sm-2">
 		      <label for="edit-name">Specialization <span class="form-required" title="This field is required."></span></label>
-			  <input type="text" id="edit-name" name="name" value="" size="60" maxlength="60" class="form-text">
+			  <input type="text" id="edit-name" name="edudescr" value="" size="60" maxlength="60" class="form-text">
 		    </div>
 		     <div class="form-group col-sm-2">
 		      <label for="edit-name">Body type<span class="form-required" title="This field is required.">*</span></label>
 			    <div class="select-block1">
-	                <select name="body-type1">
+	                <select name="bodytype">
 	                    <option value="Slim">Slim</option>
 	                    <option value="Fat">Fat</option> 
 	               		<option value="Average">Average</option> 
@@ -374,10 +369,10 @@ $(document).ready(function(){
 		     <div class="form-group col-sm-2">
 		      <label for="edit-name">Physical Status<span class="form-required" title="This field is required.">*</span></label>
 			    <div class="select-block1">
-	                <select name="body-type2">
-	                    <option value="">No Problem</option>
-	                    <option value="">Blind</option> 
-	               		<option value="">Deaf</option> 
+	                <select name="physicalstatus">
+	                    <option value="No Problem">No Problem</option>
+	                    <option value="Blind">Blind</option> 
+	               		<option value="Deaf">Deaf</option> 
 	                </select>
 			    </div>
 		    </div>
@@ -387,59 +382,40 @@ $(document).ready(function(){
 		      <label for="edit-name">Drinks<span class="form-required" title="This field is required.">*</span></label>
 			    <div class="select-block1">
 	                <select name="drink">
-	                    <option value="">No</option>
-	                    <option value="">Yes</option> 
-	               		<option value="">Sometimes</option> 
+	                    <option value="No">No</option>
+	                    <option value="Yes">Yes</option> 
+	               		<option value="Sometimes">Sometimes</option> 
 	                </select>
 			    </div>
 		    </div>
 		    <div class="form-group col-sm-2">
 		      <label for="edit-name">Smoke<span class="form-required" title="This field is required.">*</span></label>
 			    <div class="select-block1">
-	                <select name="smoke1">
-	                    <option value="">No</option>
-	                    <option value="">Yes</option> 
-	               		<option value="">Sometimes</option> 
+	                <select name="smoke">
+	                    <option value="No">No</option>
+	                    <option value="Yes">Yes</option> 
+	               		<option value="Sometimes">Sometimes</option>
 	                </select>
 			    </div>
 		    </div>
-		    <div class="form-group col-sm-2">
-		      <label for="edit-name">Smoke<span class="form-required" title="This field is required.">*</span></label>
-			    <div class="select-block1">
-	                <select name="smoke2">
-	                    <option value="">No</option>
-	                    <option value="">Yes</option> 
-	               		<option value="">Sometimes</option> 
-	                </select>
-			    </div>
-		    </div>
+		    
 		    <div class="form-group col-sm-2">
 		      <label for="edit-name">Mother Tounge<span class="form-required" title="This field is required.">*</span></label>
 			    <div class="select-block1">
-	                <select name="mother-tounge1">
-	                    <option value="">Malayalam</option>
-	                    <option value="">Hindi</option> 
-	               		<option value="">English</option> 
-	                </select>
-			    </div>
-		    </div>
-		     <div class="form-group col-sm-2">
-		      <label for="edit-name">Mother Tounge<span class="form-required" title="This field is required.">*</span></label>
-			    <div class="select-block1">
-	                <select name="mother-tounge2">
-	                    <option value="">Malayalam</option>
-	                    <option value="">Hindi</option> 
-	               		<option value="">English</option> 
+	                <select name="mothertounge">
+	                    <option value="Malayalam">Malayalam</option>
+	                    <option value="Hindi">Hindi</option> 
+	               		<option value="English">English</option> 
 	                </select>
 			    </div>
 		    </div>
 		    <div class="form-group col-sm-2">
 		      <label for="edit-name">Blood Group<span class="form-required" title="This field is required.">*</span></label>
 			    <div class="select-block1">
-	                <select name="blood-group">
-	                    <option value="">O +ve</option>
-	                    <option value="">O -ve</option> 
-	               		<option value="">AB -ve</option> 
+	                <select name="bloodgroup">
+	                    <option value="O +ve">O +ve</option>
+	                    <option value="O -ve">O -ve</option> 
+	               		<option value="AB -ve">AB -ve</option> 
 	                </select>
 			    </div>
 		    </div>
@@ -457,9 +433,9 @@ $(document).ready(function(){
 		      <label for="edit-name">Colour<span class="form-required" title="This field is required.">*</span></label>
 			    <div class="select-block1">
 	                <select name="colour">
-	                    <option value="">Black</option>
-	                    <option value="">Fair</option> 
-	               		<option value="">Normal</option> 
+	                    <option value="Dark">Dark</option>
+	                    <option value="Fair">Fair</option> 
+	               		<option value="Normal">Normal</option> 
 	                </select>
 			    </div>
 		    </div>
@@ -467,8 +443,8 @@ $(document).ready(function(){
 		      <label for="edit-name">Diet<span class="form-required" title="This field is required.">*</span></label>
 			    <div class="select-block1">
 	                <select name="diet">
-	                    <option value="">Veg</option>
-	                    <option value="">Non Veg</option> 
+	                    <option value="Veg">Veg</option>
+	                    <option value="Non Veg">Non Veg</option> 
 	               		
 	                </select>
 			    </div>
@@ -478,12 +454,12 @@ $(document).ready(function(){
 			  <input type="text" id="edit-name" name="occupation" value="" size="60" maxlength="60" class="form-text">
 		    </div>
 		    <div class="form-group col-sm-2">
-		      <label for="edit-name">Occupa Descr <span class="form-required" title="This field is required."></span></label>
-			  <input type="text" id="edit-name" name="occupation" value="" size="60" maxlength="60" class="form-text">
+		      <label for="edit-name">Occupation Descr <span class="form-required" title="This field is required."></span></label>
+			  <input type="text" id="edit-name" name="occupationdescr" value="" size="130" maxlength="120" class="form-text">
 		    </div>
 		    <div class="form-group col-sm-2">
 		      <label for="edit-name">Annual Income <span class="form-required" title="This field is required."></span></label>
-			  <input type="text" id="edit-name" name="occupation" value="" size="60" maxlength="60" class="form-text">
+			  <input type="text" id="edit-name" name="income" value="" size="60" maxlength="60" class="form-text">
 		    </div>
 
              <!-- Seventh Row ends-->
@@ -492,21 +468,21 @@ $(document).ready(function(){
            <!-- eighth Row starts-->
            <div class="form-group col-sm-2">
 		    <label for="edit-name">Fathers Occupation <span class="form-required" title="This field is required."></span></label>
-			  <input type="text" id="edit-name" name="occupation" value="" size="60" maxlength="60" class="form-text">
+			  <input type="text" id="edit-name" name="fatheroccupation" value="" size="60" maxlength="60" class="form-text">
 		   </div>
 		   <div class="form-group col-sm-2">
 		      <label for="edit-name">Mothers Occupation <span class="form-required" title="This field is required."></span></label>
-			  <input type="text" id="edit-name" name="occupation" value="" size="60" maxlength="60" class="form-text">
+			  <input type="text" id="edit-name" name="motheroccupation" value="" size="60" maxlength="60" class="form-text">
 		    </div>
 		    <div class="form-group col-sm-2">
 		      <label for="edit-name">No . Of brothers<span class="form-required" title="This field is required.">*</span></label>
 			    <div class="select-block1">
 	                <select name="bros">
-	                    <option value="">1</option>
-	                    <option value="">2</option> 
-	                    <option value="">3</option> 
-	                    <option value="">4</option> 
-	                    <option value="">5</option> 	
+	                    <option value="1">1</option>
+	                    <option value="2">2</option> 
+	                    <option value="3">3</option> 
+	                    <option value="4">4</option> 
+	                    <option value="5">5</option> 	
 	                </select>
 			    </div>
 		    </div>
@@ -514,11 +490,11 @@ $(document).ready(function(){
 		      <label for="edit-name">No . Of sisters<span class="form-required" title="This field is required.">*</span></label>
 			    <div class="select-block1">
 	                <select name="sis">
-	                    <option value="">1</option>
-	                    <option value="">2</option> 
-	                    <option value="">3</option> 
-	                    <option value="">4</option> 
-	                    <option value="">5</option> 	
+	                    <option value="1">1</option>
+	                    <option value="2">2</option> 
+	                    <option value="3">3</option> 
+	                    <option value="4">4</option> 
+	                    <option value="5">5</option> 	
 	                </select>
 			    </div>
 		    </div>
