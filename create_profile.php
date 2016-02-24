@@ -66,14 +66,14 @@ $(document).ready(function(){
 		    </div>
 		    <div class="form-group col-sm-4">
 		      <label for="edit-pass">Last Name <span class="form-required" title="This field is required.">*</span></label>
-		      <input type="password" id="edit-pass" name="lname" size="60" maxlength="128" class="form-text required">
+		      <input type="text" id="edit-last" name="lname" size="60" maxlength="128" class="form-text required">
 		    </div>
 		     <div class="form-group col-sm-2">
 		      <label for="edit-name">Sex <span class="form-required" title="This field is required.">*</span></label>
 			    <div class="select-block1">
 	                <select name="sex">
-	                    <option value="">Male</option>
-	                    <option value="">Female</option> 
+	                    <option value="Male">Male</option>
+	                    <option value="Female">Female</option> 
 	               
 	                </select>
 			    </div>
@@ -129,18 +129,18 @@ $(document).ready(function(){
 	                   <div class="select-block1">
 	                    <select name="month">
 		                    <option value="">Month</option>
-		                    <option value="">January</option>
-		                    <option value="">February</option>
-		                    <option value="">March</option>
-		                    <option value="">April</option>
-		                    <option value="">May</option>
-		                    <option value="">June</option>
-		                    <option value="">July</option>
-		                    <option value="">August</option>
-		                    <option value="">September</option>
-		                    <option value="">October</option>
-		                    <option value="">November</option>
-		                    <option value="">December</option>
+		                    <option value="01">January</option>
+		                    <option value="02">February</option>
+		                    <option value="03">March</option>
+		                    <option value="04">April</option>
+		                    <option value="05">May</option>
+		                    <option value="06">June</option>
+		                    <option value="07">July</option>
+		                    <option value="08">August</option>
+		                    <option value="09">September</option>
+		                    <option value="10">October</option>
+		                    <option value="11">November</option>
+		                    <option value="12">December</option>
 	                    </select>
 	                  </div>
 	                 </div>
@@ -148,42 +148,33 @@ $(document).ready(function(){
 	                   <div class="select-block1">
 	                    <select name="year">
 		                    <option value="">Year</option>
-		                    <option value="">1980</option>
-		                    <option value="">1981</option>
-		                    <option value="">1982</option>
-		                    <option value="">1983</option>
-		                    <option value="">1984</option>
-		                    <option value="">1985</option>
-		                    <option value="">1986</option>
-		                    <option value="">1987</option>
-		                    <option value="">1988</option>
-		                    <option value="">1989</option>
-		                    <option value="">1990</option>
-		                    <option value="">1991</option>
-		                    <option value="">1992</option>
-		                    <option value="">1993</option>
-		                    <option value="">1994</option>
-		                    <option value="">1995</option>
-		                    <option value="">1996</option>
-		                    <option value="">1997</option>
-		                    <option value="">1998</option>
-		                    <option value="">1999</option>
-		                    <option value="">2000</option>
-		                    <option value="">2001</option>
-		                    <option value="">2002</option>
-		                    <option value="">2003</option>
-		                    <option value="">2004</option>
-		                    <option value="">2005</option>
-		                    <option value="">2006</option>
-		                    <option value="">2007</option>
-		                    <option value="">2008</option>
-		                    <option value="">2009</option>
-		                    <option value="">2010</option>
-		                    <option value="">2011</option>
-		                    <option value="">2012</option>
-		                    <option value="">2013</option>
-		                    <option value="">2014</option>
-		                    <option value="">2015</option>
+		                    <option value="1980">1980</option>
+		                    <option value="1981">1981</option>
+		                    <option value="1981">1981</option>
+		                    <option value="1983">1983</option>
+		                    <option value="1984">1984</option>
+		                    <option value="1985">1985</option>
+		                    <option value="1986">1986</option>
+		                    <option value="1987">1987</option>
+		                    <option value="1988">1988</option>
+		                    <option value="1989">1989</option>
+		                    <option value="1990">1990</option>
+		                    <option value="1991">1991</option>
+		                    <option value="1992">1992</option>
+		                    <option value="1993">1993</option>
+		                    <option value="1994">1994</option>
+		                    <option value="1995">1995</option>
+		                    <option value="1996">1996</option>
+		                    <option value="1997">1997</option>
+		                    <option value="1998">1998</option>
+		                    <option value="1999">1999</option>
+		                    <option value="2000">2000</option>
+		                    <option value="2001">2001</option>
+		                    <option value="2002">2002</option>
+		                    <option value="2003">2003</option>
+		                    <option value="2004">2004</option>
+		                    <option value="2005">2005</option>
+		                    <option value="2006">2006</option>
 	                    </select>
 	                   </div>
 	                  </div>
@@ -267,9 +258,10 @@ $(document).ready(function(){
 	                   <div class="select-block1">
 	                    <select name="district">
 		                    <option value="">District</option>
-		                    <option value="">Trivandrum</option>
-		                    <option value="">Kollam</option>
-		                    <option value="">Pathanamthitta</option>
+		                    <option value="Trivandrum">Trivandrum</option>
+		                    <option value="Kollam">Kollam</option>
+		                    <option value="Pathanamthitta">Pathanamthitta</option>
+		                    <option value="Wayanad">Wayanad</option>
 	                    </select>
 	                   </div>
 	                  </div>
@@ -333,9 +325,9 @@ $(document).ready(function(){
 		      <label for="edit-name">Profile Created by <span class="form-required" title="This field is required.">*</span></label>
 			    <div class="select-block1">
 	                <select name="profileby">
-	                    <option value="">Self</option>
-	                    <option value="">Son/Daughter</option> 
-	               		<option value="">Other</option> 
+	                    <option value="Self">Self</option>
+	                    <option value="Son/Daughter">Son/Daughter</option> 
+	               		<option value="Other">Other</option> 
 	                </select>
 			    </div>
 		    </div>
@@ -419,12 +411,13 @@ $(document).ready(function(){
 	                </select>
 			    </div>
 		    </div>
-		    <!-- sixth Row ends-->
-		    <!-- Seventh Row starts-->
-		     <div class="form-group col-sm-2">
+		    <div class="form-group col-sm-2">
 		      <label for="edit-name">Weight <span class="form-required" title="This field is required."></span></label>
 			  <input type="text" id="edit-name" name="weight" value="" size="60" maxlength="60" class="form-text">
 		    </div>
+		    <!-- sixth Row ends-->
+		    <!-- Seventh Row starts-->
+		    <div class="col-lg-12">
 		    <div class="form-group col-sm-2">
 		      <label for="edit-name">Height <span class="form-required" title="This field is required."></span></label>
 			  <input type="text" id="edit-name" name="height" value="" size="60" maxlength="60" class="form-text">
@@ -461,32 +454,26 @@ $(document).ready(function(){
 		      <label for="edit-name">Annual Income <span class="form-required" title="This field is required."></span></label>
 			  <input type="text" id="edit-name" name="income" value="" size="60" maxlength="60" class="form-text">
 		    </div>
+		   
+		   
+		    
+</div>
+
 
              <!-- Seventh Row ends-->
-             </div>
-             <div class="col-sm-12 login_left">
+  
            <!-- eighth Row starts-->
-           <div class="form-group col-sm-2">
-		    <label for="edit-name">Fathers Occupation <span class="form-required" title="This field is required."></span></label>
-			  <input type="text" id="edit-name" name="fatheroccupation" value="" size="60" maxlength="60" class="form-text">
+           <div class="col-lg-12">
+            <div class="form-group col-sm-3">
+		    		<label for="edit-name">Fathers Occupation <span class="form-required" title="This field is required."></span></label>
+			  		<input type="text" id="edit-name" name="fatheroccupation" value="" size="60" maxlength="500" class="form-text">
 		   </div>
-		   <div class="form-group col-sm-2">
+           <div class="form-group col-sm-3">
 		      <label for="edit-name">Mothers Occupation <span class="form-required" title="This field is required."></span></label>
-			  <input type="text" id="edit-name" name="motheroccupation" value="" size="60" maxlength="60" class="form-text">
+			  <input type="text" id="edit-name" name="motheroccupation" value="" size="60" maxlength="500" class="form-text">
 		    </div>
-		    <div class="form-group col-sm-2">
-		      <label for="edit-name">No . Of brothers<span class="form-required" title="This field is required.">*</span></label>
-			    <div class="select-block1">
-	                <select name="bros">
-	                    <option value="1">1</option>
-	                    <option value="2">2</option> 
-	                    <option value="3">3</option> 
-	                    <option value="4">4</option> 
-	                    <option value="5">5</option> 	
-	                </select>
-			    </div>
-		    </div>
-		    <div class="form-group col-sm-2">
+		    
+          <div class="form-group col-sm-3">
 		      <label for="edit-name">No . Of sisters<span class="form-required" title="This field is required.">*</span></label>
 			    <div class="select-block1">
 	                <select name="sis">
@@ -498,11 +485,26 @@ $(document).ready(function(){
 	                </select>
 			    </div>
 		    </div>
-             <!-- eighth Row ends-->
-         <hr/>
-			  <div class="form-actions">
+		    <div class="form-group col-sm-3">
+		      <label for="edit-name">No . Of brothers<span class="form-required" title="This field is required.">*</span></label>
+			    <div class="select-block1">
+	                <select name="bros">
+	                    <option value="1">1</option>
+	                    <option value="2">2</option> 
+	                    <option value="3">3</option> 
+	                    <option value="4">4</option> 
+	                    <option value="5">5</option> 	
+	                </select>
+			    </div>
+		    </div>
+		    <div class="form-actions">
 			    <input type="submit" id="edit-submit" name="op" value="Submit" class="btn_1 submit">
 			  </div>
+			  </div>
+             <!-- eighth Row ends-->
+         <hr/>
+			  
+
 		 </form>
 	  </div>
 	 

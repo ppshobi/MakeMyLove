@@ -106,7 +106,7 @@ function processprofile_form($id){
 		$day=$_POST['day'];
 		$month=$_POST['month'];
 		$year=$_POST['year'];
-	$dob=$day ."-" . $month . "-" .$year ;
+	$dob=$year ."-" . $month . "-" .$day ;
 	
 	$religion=$_POST['religion'];
 	$caste = $_POST['caste'];
@@ -141,7 +141,7 @@ function processprofile_form($id){
 
 
 	require_once("/includes/dbconn.php");
-	 $sql = "INSERT INTO customer (id, email, age, sex, religion, caste, subcaste, district, state, country, maritalstatus, profilecreatedby, education, education_sub, firstname, lastname, body_type, physical_status, drink, mothertounge, colour, weight, blood_group, diet, smoke, dateofbirth, occupation, occupation_descr, annual_income, fathers_occupation, mothers_occupation, no_bro, no_sis, profilecreationdate) VALUES ('', '$email', '$age', '$sex', '$religion', '$caste', '$subcaste', '$district', '$state', '$country', '$maritalstatus', '$profileby', '$education', '$edudescr', '$fname', '$lname', '$bodytype', '$physicalstatus', '$drink', '$mothertounge', '$colour', '$weight', '$bloodgroup', '$diet', '$smoke', '$dob', '$occupation', '$occupationdescr', '$income', '$fatheroccupation', '$motheroccupation', '$bros', '$sis','CURDATE()' )";
+	 $sql = "INSERT INTO customer (id, email, age, sex, religion, caste, subcaste, district, state, country, maritalstatus, profilecreatedby, education, education_sub, firstname, lastname, body_type, physical_status, drink, mothertounge, colour, weight, blood_group, diet, smoke, dateofbirth, occupation, occupation_descr, annual_income, fathers_occupation, mothers_occupation, no_bro, no_sis, profilecreationdate) VALUES ('', '$email', '$age', '$sex', '$religion', '$caste', '$subcaste', '$district', '$state', '$country', '$maritalstatus', '$profileby', '$education', '$edudescr', '$fname', '$lname', '$bodytype', '$physicalstatus', '$drink', '$mothertounge', '$colour', '$weight', '$bloodgroup', '$diet', '$smoke', '$dob', '$occupation', '$occupationdescr', '$income', '$fatheroccupation', '$motheroccupation', '$bros', '$sis',CURDATE())";
 
 	if (mysqli_query($conn,$sql)) {
 	  echo "Successfully Updated profile";
