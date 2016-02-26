@@ -341,7 +341,7 @@ $(document).ready(function(){
 	  </div>
    </section>
    <div class="view_profile view_profile2">
-        	<h3>View Similar Profiles</h3>
+        	<h3>View Recent Profiles</h3>
         	<ul class="profile_item">
         	  <a href="#">
         	   <li class="profile_item-img">

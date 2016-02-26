@@ -22,7 +22,33 @@ function mysqlexec($sql){
 
 
 }
+function search(){
+  if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    $agemin=$_POST['agemin'];
+    $agemax=$_POST['agemax'];
+    $maritalstatus=$_POST['maritalstatus'];
+    $country=$_POST['country'];
+    $state=$_POST['state'];
+    $religion=$_POST['religion'];
+    $mothertounge=$_POST['mothertounge'];
+    $sex = $_POST['sex'];
 
+    $sql="SELECT * FROM customer WHERE 
+    sex='$sex' 
+    AND age>'$agemin'
+    AND age<'$agemax'
+    AND maritalstatus = '$maritalstatus'
+    AND country = '$country'
+    AND state = '$state'
+    AND religion = '$religion'
+    AND mothertounge = '$mothertounge'
+    ";
+
+    $result = mysqlexec($sql);
+    return $result;
+
+  }
+}
 function writepartnerprefs($id){
 	if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 		$agemin=$_POST['agemin'];
