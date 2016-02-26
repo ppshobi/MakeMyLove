@@ -2,7 +2,7 @@
 <?php include_once("functions.php"); ?>
 <?php isloggedin(); ?>
 <?php
-$id=$_GET['id'];
+$id=$_SESSION['id'];
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 		processprofile_form($id);
 }
@@ -85,12 +85,14 @@ $(document).ready(function(){
 
 	    <div class="form-group col-sm-6">
 			    <div class="age_select">
-			      <label for="edit-pass">Date Of Birth <span class="form-required" title="This field is required.">*</span></label>
+			      <label for="edit-pass">
+ Of Birth <span class="form-required" title="This field is required.">*</span></label>
 			        <div class="age_grid">
 			         <div class="col-sm-4 form_box">
 	                  <div class="select-block1">
 	                    <select name="day">
-		                    <option value="">Date</option>
+		                    <option value="">
+</option>
 		                    <option value="1">1</option>
 		                    <option value="2">2</option>
 		                    <option value="3">3</option>
@@ -276,7 +278,8 @@ $(document).ready(function(){
 		      <label for="edit-name">Age<span class="form-required" title="This field is required.">*</span></label>
 			    <div class="select-block1">
 	                <select name="age">
-	                     <option value="">Date</option>
+	                     <option value="">
+</option>
 		                    <option value="1">1</option>
 		                    <option value="2">2</option>
 		                    <option value="3">3</option>
@@ -496,6 +499,10 @@ $(document).ready(function(){
 	                    <option value="5">5</option> 	
 	                </select>
 			    </div>
+		    </div>
+		    <div class="form-group">
+		    	<label for="about me">About Me<span class="form-required" title="This field is required.">*</span></label>
+		    	<textarea rows="5" name="aboutme" placeholder="Write about you" class="form-text"></textarea>
 		    </div>
 		    <div class="form-actions">
 			    <input type="submit" id="edit-submit" name="op" value="Submit" class="btn_1 submit">

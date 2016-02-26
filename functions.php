@@ -40,11 +40,13 @@ function writepartnerprefs($id){
 		$country=$_POST['country'];
 		$descr=$_POST['descr'];
 
-		$sql = "UPDATE partnerprefs SET agemin = '$agemin', agemax='$agemax', maritalstatus='$maritalstatus', bodytype='$bodytype', complexion = '$complexion', height = '$height', diet = '$diet', religion='$religion', caste = '$caste', mothertounge = '$mothertounge', education='$education', descr = '$descr', occupation = '$occupation', country = '$country' WHERE custId = '$id'";
+		$sql = "UP
+ partnerprefs SET agemin = '$agemin', agemax='$agemax', maritalstatus='$maritalstatus', bodytype='$bodytype', complexion = '$complexion', height = '$height', diet = '$diet', religion='$religion', caste = '$caste', mothertounge = '$mothertounge', education='$education', descr = '$descr', occupation = '$occupation', country = '$country' WHERE custId = '$id'";
 
 		$result = mysqlexec($sql);
 		if ($result) {
-			echo "Successfully updated Partner Preference";
+			echo "Successfully up
+d Partner Preference";
 		}
 		else{
 			mysqli_errno();
@@ -66,7 +68,8 @@ function register(){
 	$gender=$_POST['gender'];
 	require_once("/includes/dbconn.php");
 
-	$sql = "INSERT INTO users (id, username, password, email, dateofbirth, gender) VALUES ('', '$uname', '$pass', '$email', '$dob', '$gender')";
+	$sql = "INSERT INTO users (id, username, password, email, 
+ofbirth, gender) VALUES ('', '$uname', '$pass', '$email', '$dob', '$gender')";
 
 	if (mysqli_query($conn,$sql)) {
 	  echo "Successfully Registered";
@@ -137,14 +140,18 @@ function processprofile_form($id){
 	$income=$_POST['income'];
 	$bros=$_POST['bros'];
 	$sis=$_POST['sis'];
+	$aboutme=$_POST['aboutme'];
 	
 
 
 	require_once("/includes/dbconn.php");
-	 $sql = "INSERT INTO customer (id, email, age, sex, religion, caste, subcaste, district, state, country, maritalstatus, profilecreatedby, education, education_sub, firstname, lastname, body_type, physical_status, drink, mothertounge, colour, weight, blood_group, diet, smoke, dateofbirth, occupation, occupation_descr, annual_income, fathers_occupation, mothers_occupation, no_bro, no_sis, profilecreationdate) VALUES ('', '$email', '$age', '$sex', '$religion', '$caste', '$subcaste', '$district', '$state', '$country', '$maritalstatus', '$profileby', '$education', '$edudescr', '$fname', '$lname', '$bodytype', '$physicalstatus', '$drink', '$mothertounge', '$colour', '$weight', '$bloodgroup', '$diet', '$smoke', '$dob', '$occupation', '$occupationdescr', '$income', '$fatheroccupation', '$motheroccupation', '$bros', '$sis',CURDATE())";
+	 $sql = "INSERT INTO customer (id, email, age, sex, religion, caste, subcaste, district, state, country, maritalstatus, profilecreatedby, education, education_sub, firstname, lastname, body_type, physical_status, drink, mothertounge, colour, weight, blood_group, diet, smoke, 
+ofbirth, occupation, occupation_descr, annual_income, fathers_occupation, mothers_occupation, no_bro, no_sis, profilecreation
+) VALUES ('', '$email', '$age', '$sex', '$religion', '$caste', '$subcaste', '$district', '$state', '$country', '$maritalstatus', '$profileby', '$education', '$edudescr', '$fname', '$lname', '$bodytype', '$physicalstatus', '$drink', '$mothertounge', '$colour', '$weight', '$bloodgroup', '$diet', '$smoke', '$dob', '$occupation', '$occupationdescr', '$income', '$fatheroccupation', '$motheroccupation', '$bros', '$sis', '$aboutme', CURDATE())";
 
 	if (mysqli_query($conn,$sql)) {
-	  echo "Successfully Updated profile";
+	  echo "Successfully Up
+d profile";
 	  echo "<a href=\"userhome.php?id={$id}\">";
 	  echo "Back to home";
 	  echo "</a>";
@@ -188,10 +195,10 @@ if(mysqli_num_rows($result) == 0) {
 
 		
 } else {
-    // There is a photo for customer so update table
-    $sql="UPDATE photos SET pic1 = '$pic1', pic2 = '$pic2', pic3 = '$pic3', pic4 = '$pic4' WHERE cust_id=$id";
+    // There is a photo for customer so up
+     $sql="UPDATE table photos SET pic1 = '$pic1', pic2 = '$pic2', pic3 = '$pic3', pic4 = '$pic4' WHERE cust_id=$id";
 		// Writes the information to the database
-		mysqlexec($sql);
+	mysqlexec($sql);
 }
 
 // Writes the photo to the server
