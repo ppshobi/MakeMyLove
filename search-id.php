@@ -3,6 +3,7 @@
 <?php isloggedin(); ?>
 <?php
 $id=$_SESSION['id'];
+$result=search();
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -55,183 +56,81 @@ $(document).ready(function(){
    <div class="col-md-9 profile_left">
      <form>	
 	  <div class="form_but1">
-		<label class="col-sm-5 control-lable1" for="sex">Profile ID : </label>
+		<label class="col-sm-5 control-lable1" for="Prof id">Profile ID : </label>
 		<div class="col-sm-7 form_radios">
 		  <div class="input-group1">
-	        <input type="text" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}">
-	        <input type="submit" value="Submit">
+	        <input type="text" value="" name="profid" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}">
+	        <input type="submit" value="search">
 	      </div>
 	    </div>
 		<div class="clearfix"> </div>
 	 </div>
     </form>
  <div class="paid_people">
-   <h1>Paid People</h1>
+   <h1>Profiles</h1>
    <div class="row_1">
-	   <div class="col-sm-6 paid_people-left">
-	 	<ul class="profile_item">
-		  <a href="#">
-		   <li class="profile_item-img">
-		   	  <img src="images/a8.jpg" class="img-responsive" alt=""/>
-		   </li>
-		   <li class="profile_item-desc">
-		   	  <h4>2458741</h4>
-		   	  <p>29 Yrs, 5Ft 5in Christian</p>
-		   	  <h5>View Full Profile</h5>
-		   </li>
-		   <div class="clearfix"> </div>
-		  </a>
-	     </ul>
-	   </div>
+	   <?php
+//only start display profiles if and only if search is triggered
+if(isset($_POST['search'])){
+
+//code to print matching profiles
+
+// couloumn count
+
+$c_count = '1';
+
+while ($row = mysqli_fetch_assoc($result))
+  {
+    //getting photo for display
+    $profid=$row['id'];
+    $sql="SELECT * FROM photos WHERE cust_id=$profid";
+    $result2=mysqlexec($sql);
+    $photo=mysqli_fetch_assoc($result2);
+    $pic=$photo['pic1'];
+  // printing left side profile
+    
+  if ($c_count == '1')
+    {
+    echo "<div class=\"row_1\">"; //starting row
+    echo "<div class=\"col-sm-6 paid_people-left\">"; //left statrted
+    echo "<ul class=\"profile_item\">";
+    echo "<a href=\"view_profile.php?id=$profid\">";
+    echo "<li class=\"profile_item-img\"><img src=\"profile/". $profid."/".$pic ."\"" . "class=\"img-responsive\"" ;
+    echo "alt=\"\"/></li>";
+    echo "<li class=\"profile_item-desc\">";
+    echo "<h4>" . $row['firstname'] . " " . $row['lastname'] . "</h4>";
+    echo "<p>" . $row['age']. "Yrs," . $row['religion'] . "</p>";
+    echo "<h5>" . "View Full Profile" . "</h5>";
+    echo "</li>";
+    echo "</a>";
+    echo "</ul>";
+    echo "</div>"; //left end
+    $c_count++;
+    }
+    else
+    {
+    echo "<div class=\"col-sm-6\">"; //right statrted
+    
+    echo "</div>"; //right end
+
+    // end of right side
+
+    
+    $c_count = '1';
+    }
+  } //loop end
+  echo "</div>"; //row end
+}//end of if
+?>
 	   <div class="col-sm-6">
-	 	<ul class="profile_item">
-		  <a href="#">
-		   <li class="profile_item-img">
-		   	  <img src="images/a7.jpg" class="img-responsive" alt=""/>
-		   </li>
-		   <li class="profile_item-desc">
-		   	  <h4>2458741</h4>
-		   	  <p>29 Yrs, 5Ft 5in Christian</p>
-		   	  <h5>View Full Profile</h5>
-		   </li>
-		   <div class="clearfix"> </div>
-		  </a>
-	     </ul>
+	 	
 	   </div>
 	   <div class="clearfix"> </div>
    </div>
-   <div class="row_1">
-	   <div class="col-sm-6 paid_people-left">
-	 	<ul class="profile_item">
-		  <a href="#">
-		   <li class="profile_item-img">
-		   	  <img src="images/a6.jpg" class="img-responsive" alt=""/>
-		   </li>
-		   <li class="profile_item-desc">
-		   	  <h4>2458741</h4>
-		   	  <p>29 Yrs, 5Ft 5in Christian</p>
-		   	  <h5>View Full Profile</h5>
-		   </li>
-		   <div class="clearfix"> </div>
-		  </a>
-	     </ul>
-	   </div>
-	   <div class="col-sm-6">
-	 	<ul class="profile_item">
-		  <a href="#">
-		   <li class="profile_item-img">
-		   	  <img src="images/a5.jpg" class="img-responsive" alt=""/>
-		   </li>
-		   <li class="profile_item-desc">
-		   	  <h4>2458741</h4>
-		   	  <p>29 Yrs, 5Ft 5in Christian</p>
-		   	  <h5>View Full Profile</h5>
-		   </li>
-		   <div class="clearfix"> </div>
-		  </a>
-	     </ul>
-	   </div>
-	   <div class="clearfix"> </div>
-   </div>
-   <div class="row_1">
-	   <div class="col-sm-6 paid_people-left">
-	 	<ul class="profile_item">
-		  <a href="#">
-		   <li class="profile_item-img">
-		   	  <img src="images/a4.jpg" class="img-responsive" alt=""/>
-		   </li>
-		   <li class="profile_item-desc">
-		   	  <h4>2458741</h4>
-		   	  <p>29 Yrs, 5Ft 5in Christian</p>
-		   	  <h5>View Full Profile</h5>
-		   </li>
-		   <div class="clearfix"> </div>
-		  </a>
-	     </ul>
-	   </div>
-	   <div class="col-sm-6">
-	 	<ul class="profile_item">
-		  <a href="#">
-		   <li class="profile_item-img">
-		   	  <img src="images/a8.jpg" class="img-responsive" alt=""/>
-		   </li>
-		   <li class="profile_item-desc">
-		   	  <h4>2458741</h4>
-		   	  <p>29 Yrs, 5Ft 5in Christian</p>
-		   	  <h5>View Full Profile</h5>
-		   </li>
-		   <div class="clearfix"> </div>
-		  </a>
-	     </ul>
-	   </div>
-	   <div class="clearfix"> </div>
-   </div>
-   <div class="row_1">
-	   <div class="col-sm-6 paid_people-left">
-	 	<ul class="profile_item">
-		  <a href="#">
-		   <li class="profile_item-img">
-		   	  <img src="images/a7.jpg" class="img-responsive" alt=""/>
-		   </li>
-		   <li class="profile_item-desc">
-		   	  <h4>2458741</h4>
-		   	  <p>29 Yrs, 5Ft 5in Christian</p>
-		   	  <h5>View Full Profile</h5>
-		   </li>
-		   <div class="clearfix"> </div>
-		  </a>
-	     </ul>
-	   </div>
-	   <div class="col-sm-6">
-	 	<ul class="profile_item">
-		  <a href="#">
-		   <li class="profile_item-img">
-		   	  <img src="images/a6.jpg" class="img-responsive" alt=""/>
-		   </li>
-		   <li class="profile_item-desc">
-		   	  <h4>2458741</h4>
-		   	  <p>29 Yrs, 5Ft 5in Christian</p>
-		   	  <h5>View Full Profile</h5>
-		   </li>
-		   <div class="clearfix"> </div>
-		  </a>
-	     </ul>
-	   </div>
-	   <div class="clearfix"> </div>
-   </div>
-   <div class="row_1">
-	   <div class="col-sm-6 paid_people-left">
-	 	<ul class="profile_item">
-		  <a href="#">
-		   <li class="profile_item-img">
-		   	  <img src="images/a5.jpg" class="img-responsive" alt=""/>
-		   </li>
-		   <li class="profile_item-desc">
-		   	  <h4>2458741</h4>
-		   	  <p>29 Yrs, 5Ft 5in Christian</p>
-		   	  <h5>View Full Profile</h5>
-		   </li>
-		   <div class="clearfix"> </div>
-		  </a>
-	     </ul>
-	   </div>
-	   <div class="col-sm-6">
-	 	<ul class="profile_item">
-		  <a href="#">
-		   <li class="profile_item-img">
-		   	  <img src="images/a4.jpg" class="img-responsive" alt=""/>
-		   </li>
-		   <li class="profile_item-desc">
-		   	  <h4>2458741</h4>
-		   	  <p>29 Yrs, 5Ft 5in Christian</p>
-		   	  <h5>View Full Profile</h5>
-		   </li>
-		   <div class="clearfix"> </div>
-		  </a>
-	     </ul>
-	   </div>
-	   <div class="clearfix"> </div>
-   </div>
+  
+   
+   
+   
    <div class="row_2">
 	   <div class="col-sm-6 paid_people-left">
 	 	<ul class="profile_item">

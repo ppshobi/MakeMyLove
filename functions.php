@@ -22,6 +22,15 @@ function mysqlexec($sql){
 
 
 }
+function searchid(){
+	if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+		$profid=$_POST['profid'];
+		$sql="SELECT * FROM customer WHERE id=$profid";
+		$result = mysqlexec($sql);
+    	return $result;
+	}
+}
+
 function search(){
   if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $agemin=$_POST['agemin'];

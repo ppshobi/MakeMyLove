@@ -257,13 +257,14 @@ while ($row = mysqli_fetch_assoc($result))
     }
     else
     {
-    echo "<div class=\"col-sm-6\">"; //left statrted
+    echo "<div class=\"col-sm-6\">"; //right statrted
     echo "<ul class=\"profile_item\">";
-    echo "<a href=\"view_profile.php\">";
-    echo "<li class=\"profile_item-img\"><img src=\"images/a5.jpg\" class=\"img-responsive\" alt=\"\"/></li>";
+    echo "<a href=\"view_profile.php?id=$profid\">";
+    echo "<li class=\"profile_item-img\"><img src=\"profile/". $profid."/".$pic ."\"" . "class=\"img-responsive\"" ;
+    echo "alt=\"\"/></li>";
     echo "<li class=\"profile_item-desc\">";
-    echo "<h4>" . "2458741" . "</h4>";
-    echo "<p>" . "29 Yrs, 5Ft 5in Christian" . "</p>";
+    echo "<h4>" . $row['firstname'] . " " . $row['lastname'] . "</h4>";
+    echo "<p>" . $row['age']. "Yrs," . $row['religion'] . "</p>";
     echo "<h5>" . "View Full Profile" . "</h5>";
     echo "</li>";
     echo "</a>";
@@ -272,10 +273,11 @@ while ($row = mysqli_fetch_assoc($result))
 
     // end of right side
 
-    echo "</div>"; //row end
+    
     $c_count = '1';
     }
   } //loop end
+  echo "</div>"; //row end
 }//end of if
 ?>
    
