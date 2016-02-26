@@ -46,19 +46,11 @@
 		        <ul class="nav navbar-nav nav_1">
 		            <li><a href="index.php">Home</a></li>
 		            <li><a href="about.php">About</a></li>
-		    		<li class="dropdown">
-		              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Matches<span class="caret"></span></a>
-		              <ul class="dropdown-menu" role="menu">
-		                <li><a href="matches.php">New Matches</a></li>
-		              
-		                <li><a href="shortlisted.php">Shortlisted Profile</a></li>
-		              </ul>
-		            </li>
+		    		
 					<li class="dropdown">
 		              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Search<span class="caret"></span></a>
 		              <ul class="dropdown-menu" role="menu">
 		                <li><a href="search.php">Regular Search</a></li>
-		                
 		                <li><a href="search-id.php">Search By Profile ID</a></li>
 		                <li><a href="faq.php">Faq</a></li>
 		                
