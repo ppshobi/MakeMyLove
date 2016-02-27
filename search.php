@@ -93,31 +93,18 @@ $(document).ready(function(){
             <option value="">Country</option>
             <option value="Japan">Japan</option>
             <option value="Kenya">Kenya</option>
-            <option value="">Dubai</option>
-            <option value="">Italy</option>
-            <option value="">Greece</option> 
-            <option value="">Iceland</option> 
+            <option value="Dubai">Dubai</option>
+            <option value="Italy">Italy</option>
+            <option value="Greece">Greece</option> 
+            <option value="Iceland">Iceland</option> 
             <option value="China">China</option> 
-            <option value="">Doha</option> 
             <option value="India">India</option> 
-            <option value="">Irland</option> 
-            <option value="">Srilanka</option> 
-            <option value="">Russia</option> 
-            <option value="">Hong Kong</option> 
-            <option value="">Germany</option>
-            <option value="">Canada</option>  
-            <option value="">Mexico</option> 
-            <option value="">Nepal</option>
-            <option value="">Norway</option> 
-            <option value="">Oman</option>
-            <option value="">Pakistan</option>  
-            <option value="">Kuwait</option> 
-            <option value="">Indonesia</option>  
-            <option value="">Spain</option>
-            <option value="">Thailand</option>  
-            <option value="">Saudi Arabia</option> 
-            <option value="">Poland</option> 
-        </select>
+            <option value="Irland">Irland</option> 
+            <option value="Srilanka">Srilanka</option> 
+            <option value="Russia">Russia</option> 
+            <option value="Hong Kong">Hong Kong</option> 
+            <option value="Germany">Germany</option>
+          </select>
       </div>
     </div>
     <div class="clearfix"> </div>

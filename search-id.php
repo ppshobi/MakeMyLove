@@ -126,11 +126,7 @@ while ($row = mysqli_fetch_assoc($result))
 	 	
 	   </div>
 	   <div class="clearfix"> </div>
-   </div>
-  
-   
-   
-   
+   </div>   
    <div class="row_2">
 	   <div class="col-sm-6 paid_people-left">
 	 	<ul class="profile_item">

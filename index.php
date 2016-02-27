@@ -115,7 +115,7 @@ $(document).ready(function(){
   <div class="container">
     <div class="banner_info">
       <h3>Millions of verified Members</h3>
-      <a href="view_profile.php" class="hvr-shutter-out-horizontal">Create your Profile</a>
+      <a href="register.php" class="hvr-shutter-out-horizontal">Create your Profile</a>
     </div>
   </div>
   <div class="profile_search">

@@ -99,12 +99,14 @@ function register(){
 	$day=$_POST['day'];
 	$month=$_POST['month'];
 	$year=$_POST['year'];
-	$dob=$day ."-".$month."-" ."$year" ;
+		$day=$_POST['day'];
+		$month=$_POST['month'];
+		$year=$_POST['year'];
+	$dob=$year ."-" . $month . "-" .$day ;
 	$gender=$_POST['gender'];
 	require_once("/includes/dbconn.php");
 
-	$sql = "INSERT INTO users (id, username, password, email, 
-ofbirth, gender) VALUES ('', '$uname', '$pass', '$email', '$dob', '$gender')";
+	$sql = "INSERT INTO users (id, username, password, email, dateofbirth, gender) VALUES ('', '$uname', '$pass', '$email', '$dob', '$gender')";
 
 	if (mysqli_query($conn,$sql)) {
 	  echo "Successfully Registered";
@@ -122,7 +124,7 @@ $directoryURI = $_SERVER['REQUEST_URI'];
 $path = parse_url($directoryURI, PHP_URL_PATH);
 $components = explode('/', $path);
 $url = $components[2];
-if($url=="login.php"){return true;}
+if($url=="login.php"||$url="register.php"){return true;}
 else{
 		if(!isset($_SESSION['username'])){
 	 		header("location:login.php");
