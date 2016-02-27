@@ -20,7 +20,6 @@ writepartnerprefs($id);
 			$agemin=$row['agemin'];
 			$agemax=$row['agemax'];
 			$marital_status=$row['maritalstatus'];
-			$body_type=$row['bodytype'];
 			$complexion=$row['complexion'];
 			$height=$row['height'];
 			$diet=$row['diet'];
@@ -125,18 +124,6 @@ $(document).ready(function(){
 						                </select>
 						                </div>
 									</td>
-								</tr>
-							    <tr class="opened">
-									<td class="day_label">Body Type :</td>
-									<td class="day_value closed">
-										<div class="select-block1">
-							                <select name="bodytype">
-							                    <option value="Slim">Slim</option>
-							                    <option value="Fat">Fat</option> 
-							               		<option value="Average">Average</option> 
-							                </select>
-									    </div>
-								    </td>
 								</tr>
 							    <tr class="opened">
 									<td class="day_label">Complexion :</td>

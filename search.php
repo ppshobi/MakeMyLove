@@ -210,7 +210,6 @@ $(document).ready(function(){
  </form>
  <div class="paid_people">
    <h1>Profiles</h1>
-
 <?php
 //only start display profiles if and only if search is triggered
 if(isset($_POST['search'])){
@@ -263,15 +262,16 @@ while ($row = mysqli_fetch_assoc($result))
     echo "</li>";
     echo "</a>";
     echo "</ul>";
-    echo "</div>"; //right end
+    echo "</div class=\"test\">"; //right end
 
     // end of right side
 
     
     $c_count = '1';
     }
+    echo "</div>"; //row end
   } //loop end
-  echo "</div>"; //row end
+  
 }//end of if
 ?>
    
@@ -287,44 +287,7 @@ while ($row = mysqli_fetch_assoc($result))
 </div>
 
 
-<div class="footer">
-    	<div class="container">
-    		<div class="col-md-4 col_2">
-    			<h4>About Us</h4>
-    			<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris."</p>
-    		</div>
-    		<div class="col-md-2 col_2">
-    			<h4>Help & Support</h4>
-    			<ul class="footer_links">
-    				<li><a href="#">24x7 Live help</a></li>
-    				<li><a href="contact.php">Contact us</a></li>
-    				<li><a href="#">Feedback</a></li>
-    				<li><a href="faq.php">FAQs</a></li>
-    			</ul>
-    		</div>
-    		<div class="col-md-2 col_2">
-    			<h4>Quick Links</h4>
-    			<ul class="footer_links">
-    				<li><a href="privacy.php">Privacy Policy</a></li>
-    				<li><a href="terms.php">Terms and Conditions</a></li>
-    				<li><a href="services.php">Services</a></li>
-    			</ul>
-    		</div>
-    		<div class="col-md-2 col_2">
-    			<h4>Social</h4>
-    			<ul class="footer_social">
-				  <li><a href="#"><i class="fa fa-facebook fa1"> </i></a></li>
-				  <li><a href="#"><i class="fa fa-twitter fa1"> </i></a></li>
-				  <li><a href="#"><i class="fa fa-google-plus fa1"> </i></a></li>
-				  <li><a href="#"><i class="fa fa-youtube fa1"> </i></a></li>
-			    </ul>
-    		</div>
-    		<div class="clearfix"> </div>
-    		<div class="copy">
-		      <p>Copyright © 2015 Marital . All Rights Reserved  | Design by <a href="http://w3layouts.com/" target="_blank">W3layouts</a> </p>
-	        </div>
-    	</div>
-</div>
+<?php include_once("footer.php");?>
 <!-- FlexSlider -->
 <link href="css/flexslider.css" rel='stylesheet' type='text/css' />
   <script defer src="js/jquery.flexslider.js"></script>

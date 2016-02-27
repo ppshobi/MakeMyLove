@@ -91,7 +91,7 @@ $(document).ready(function(){
 	    <div class="form-group col-sm-6">
 			    <div class="age_select">
 			      <label for="edit-pass">
- Of Birth <span class="form-required" title="This field is required.">*</span></label>
+ Date Of Birth <span class="form-required" title="This field is required.">*</span></label>
 			        <div class="age_grid">
 			         <div class="col-sm-4 form_box">
 	                  <div class="select-block1">
@@ -253,10 +253,10 @@ $(document).ready(function(){
 	                   <div class="select-block1">
 	                    <select name="state">
 		                    <option value="">State</option>
-		                    <option value="Latin Catholic">Kerala</option>
-		                    <option value="Penthecost">Tamilnadu</option>
-		                    <option value="Mappila">Karnataka</option>
-		                    <option value="Thiyya">Andra</option>  
+		                    <option value="Kerala">Kerala</option>
+		                    <option value="Taminadu">Tamilnadu</option>
+		                    <option value="Karnataka">Karnataka</option>
+		                    <option value="Andhrapradesh">Andrapradesh</option>  
 	                    </select>
 	                  </div>
 	                 </div>

@@ -17,7 +17,7 @@ function mysqlexec($sql){
 		return $result;
 	}
 	else{
-		return false;
+		echo mysqli_error($conn);
 	}
 
 
@@ -44,8 +44,8 @@ function search(){
 
     $sql="SELECT * FROM customer WHERE 
     sex='$sex' 
-    AND age>'$agemin'
-    AND age<'$agemax'
+    AND age>='$agemin'
+    AND age<='$agemax'
     AND maritalstatus = '$maritalstatus'
     AND country = '$country'
     AND state = '$state'
@@ -63,7 +63,6 @@ function writepartnerprefs($id){
 		$agemin=$_POST['agemin'];
 		$agemax=$_POST['agemax'];
 		$maritalstatus=$_POST['maritalstatus'];
-		$bodytype=$_POST['bodytype'];
 		$complexion=$_POST['colour'];
 		$height=$_POST['height'];
 		$diet=$_POST['diet'];
@@ -75,16 +74,33 @@ function writepartnerprefs($id){
 		$country=$_POST['country'];
 		$descr=$_POST['descr'];
 
-		$sql = "UP
- partnerprefs SET agemin = '$agemin', agemax='$agemax', maritalstatus='$maritalstatus', bodytype='$bodytype', complexion = '$complexion', height = '$height', diet = '$diet', religion='$religion', caste = '$caste', mothertounge = '$mothertounge', education='$education', descr = '$descr', occupation = '$occupation', country = '$country' WHERE custId = '$id'";
+		$sql = "UPDATE
+				   partnerprefs 
+				SET
+				   agemin = '$agemin',
+				   agemax='$agemax',
+				   maritalstatus = '$maritalstatus',
+				   complexion = '$complexion',
+				   height = '$height',
+				   diet = '$diet',
+				   religion='$religion',
+				   caste = '$caste',
+				   mothertounge = '$mothertounge',
+				   education='$education',
+				   descr = '$descr',
+				   occupation = '$occupation',
+				   country = '$country' 
+				WHERE
+				   custId = '$id'";
 
 		$result = mysqlexec($sql);
 		if ($result) {
-			echo "Successfully up
-d Partner Preference";
+			echo "<script>alert(\"Successfully updated Partner Preference\")</script>";
+			echo "<script> window.location=\"userhome.php?id=$id\"</script>";
+
 		}
 		else{
-			mysqli_errno();
+			echo "Error";
 		}
 
 	}
@@ -106,7 +122,12 @@ function register(){
 	$gender=$_POST['gender'];
 	require_once("/includes/dbconn.php");
 
-	$sql = "INSERT INTO users (id, username, password, email, dateofbirth, gender) VALUES ('', '$uname', '$pass', '$email', '$dob', '$gender')";
+	$sql = "INSERT 
+			INTO
+			   users
+			   (id, username, password, email, dateofbirth, gender) 
+			VALUES
+			   ('', '$uname', '$pass', '$email', '$dob', '$gender')";
 
 	if (mysqli_query($conn,$sql)) {
 	  echo "Successfully Registered";
@@ -176,22 +197,34 @@ function processprofile_form($id){
 
 
 	require_once("/includes/dbconn.php");
-	 $sql = "INSERT INTO customer (id, email, age, sex, religion, caste, subcaste, district, state, country, maritalstatus, profilecreatedby, education, education_sub, firstname, lastname, body_type, physical_status, drink, mothertounge, colour, weight, blood_group, diet, smoke, 
-ofbirth, occupation, occupation_descr, annual_income, fathers_occupation, mothers_occupation, no_bro, no_sis, profilecreation
-) VALUES ('', '$email', '$age', '$sex', '$religion', '$caste', '$subcaste', '$district', '$state', '$country', '$maritalstatus', '$profileby', '$education', '$edudescr', '$fname', '$lname', '$bodytype', '$physicalstatus', '$drink', '$mothertounge', '$colour', '$weight', '$bloodgroup', '$diet', '$smoke', '$dob', '$occupation', '$occupationdescr', '$income', '$fatheroccupation', '$motheroccupation', '$bros', '$sis', '$aboutme', CURDATE())";
+	$sql="SELECT cust_id FROM customer";
+	$result=mysqlexec($sql);
+
+if(mysqli_num_rows($result)==5){
+	//there is already a profile in this table for loggedin customer
+	//update the data
+
+}else{
+	//Insert the data
+	$sql = "INSERT INTO customer (id, cust_id, email, age, sex, religion, caste, subcaste, district, state, country, maritalstatus, profilecreatedby, education, education_sub, firstname, lastname, body_type, physical_status, drink, mothertounge, colour, weight, blood_group, diet, smoke, 
+dateofbirth, occupation, occupation_descr, annual_income, fathers_occupation, mothers_occupation, no_bro, no_sis, aboutme, profilecreationdate
+) VALUES ('', '$id','$email', '$age', '$sex', '$religion', '$caste', '$subcaste', '$district', '$state', '$country', '$maritalstatus', '$profileby', '$education', '$edudescr', '$fname', '$lname', '$bodytype', '$physicalstatus', '$drink', '$mothertounge', '$colour', '$weight', '$bloodgroup', '$diet', '$smoke', '$dob', '$occupation', '$occupationdescr', '$income', '$fatheroccupation', '$motheroccupation', '$bros', '$sis', '$aboutme', CURDATE())";
 
 	if (mysqli_query($conn,$sql)) {
-	  echo "Successfully Up
-d profile";
+	  echo "Successfully Updated profile";
 	  echo "<a href=\"userhome.php?id={$id}\">";
 	  echo "Back to home";
 	  echo "</a>";
 	  //creating a slot for partner prefernce table for prefs details with cust id
 	  $sql2="INSERT INTO partnerprefs (id, custId) VALUES('', '$id')";
 	  mysqli_query($conn,$sql2);
+	  $sql2="UPDATE TABLE users SET profilestat=1 WHERE id=$id";
 	} else {
 	  echo "Error: " . $sql . "<br>" . $conn->error;
 	}
+}
+
+	 
 }
 
 //function for upload photo

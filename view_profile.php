@@ -11,7 +11,7 @@ if(isloggedin()){
 $id=$_GET['id'];
 
 //getting profile details from db
-$sql="SELECT * FROM customer WHERE id = $id";
+$sql="SELECT * FROM customer WHERE cust_id = $id";
 $result = mysqlexec($sql);
 $row=mysqli_fetch_assoc($result);
 
@@ -367,7 +367,6 @@ $row= mysqli_fetch_assoc($result);
 $agemin=$row['agemin'];
 $agemax=$row['agemax'];
 $maritalstatus=$row['maritalstatus'];
-$bodytype=$row['bodytype'];
 $complexion=$row['complexion'];
 $height=$row['height'];
 $diet=$row['diet'];
