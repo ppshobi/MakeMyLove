@@ -222,8 +222,9 @@ $c_count = '1';
 
 while ($row = mysqli_fetch_assoc($result))
   {
+    
+    $profid=$row['cust_id'];
     //getting photo for display
-    $profid=$row['id'];
     $sql="SELECT * FROM photos WHERE cust_id=$profid";
     $result2=mysqlexec($sql);
     $photo=mysqli_fetch_assoc($result2);
@@ -236,8 +237,7 @@ while ($row = mysqli_fetch_assoc($result))
     echo "<div class=\"col-sm-6 paid_people-left\">"; //left statrted
     echo "<ul class=\"profile_item\">";
     echo "<a href=\"view_profile.php?id=$profid\">";
-    echo "<li class=\"profile_item-img\"><img src=\"profile/". $profid."/".$pic ."\"" . "class=\"img-responsive\"" ;
-    echo "alt=\"\"/></li>";
+    echo "<li class=\"profile_item-img\"><img src=\"profile/". $profid."/".$pic ."\"" . "class=\"img-responsive\" alt=\"\"/></li>";
     echo "<li class=\"profile_item-desc\">";
     echo "<h4>" . $row['firstname'] . " " . $row['lastname'] . "</h4>";
     echo "<p>" . $row['age']. "Yrs," . $row['religion'] . "</p>";

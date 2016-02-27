@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a4ff74e3-b348-40d8-9085-32abc7ac94be" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/create_profile.php" afterPath="$PROJECT_DIR$/create_profile.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/functions.php" afterPath="$PROJECT_DIR$/functions.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/matchright.php" afterPath="$PROJECT_DIR$/matchright.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/partner_preference.php" afterPath="$PROJECT_DIR$/partner_preference.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/search.php" afterPath="$PROJECT_DIR$/search.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/userhome.php" afterPath="$PROJECT_DIR$/userhome.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view_profile.php" afterPath="$PROJECT_DIR$/view_profile.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Stmary's matrimony.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -32,20 +31,20 @@
       <file leaf-file-name="search.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/search.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.1923075">
-              <caret line="11" column="12" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
+            <state vertical-scroll-proportion="-4.6153846">
+              <caret line="289" column="0" selection-start-line="289" selection-start-column="0" selection-end-line="289" selection-end-column="0" />
               <folding>
-                <marker date="1456592502413" expanded="true" signature="9177:9212" placeholder="SELECT * FRO..photos..." />
+                <marker date="1456594131518" expanded="true" signature="9187:9222" placeholder="SELECT * FRO..photos..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="functions.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="functions.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/functions.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.33116883">
-              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+            <state vertical-scroll-proportion="-6.230769">
+              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
               <folding>
                 <marker date="1456591193858" expanded="true" signature="622:654" placeholder="SELECT * FRO..customer..." />
                 <marker date="1456591193858" expanded="true" signature="1062:1318" placeholder="SELECT * FRO..customer..." />
@@ -58,6 +57,20 @@
                 <marker date="1456591193858" expanded="true" signature="6830:6873" placeholder="SELECT id FR..photos..." />
                 <marker date="1456591193858" expanded="true" signature="7046:7156" placeholder="INSERT INTO ..." />
                 <marker date="1456591193858" expanded="true" signature="7289:7390" placeholder="UPDATE table..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="matchright.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/matchright.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.53592813">
+              <caret line="50" column="16" selection-start-line="32" selection-start-column="5" selection-end-line="50" selection-end-column="16" />
+              <folding>
+                <marker date="1456596791298" expanded="true" signature="956:1011" placeholder="SELECT * FRO..customer..." />
+                <marker date="1456596791298" expanded="true" signature="1181:1216" placeholder="SELECT * FRO..photos..." />
+                <marker date="1456596791298" expanded="true" signature="1181:1223" placeholder="SELECT * FRO..photos..." />
               </folding>
             </state>
           </provider>
@@ -96,6 +109,7 @@
         <option value="$PROJECT_DIR$/view_profile.php" />
         <option value="$PROJECT_DIR$/search.php" />
         <option value="$PROJECT_DIR$/functions.php" />
+        <option value="$PROJECT_DIR$/matchright.php" />
       </list>
     </option>
   </component>
@@ -286,7 +300,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20644216" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32840723" sideWeight="0.49707174" order="6" side_tool="false" content_ui="tabs" />
@@ -299,7 +313,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32840723" sideWeight="0.49707174" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39403453" sideWeight="0.49707174" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39403453" sideWeight="0.49707174" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -434,21 +448,6 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/functions.php</url>
-          <line>11</line>
-          <option name="timeStamp" value="149" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/functions.php</url>
-          <line>13</line>
-          <option name="timeStamp" value="150" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/functions.php</url>
-          <line>15</line>
-          <option name="timeStamp" value="151" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/functions.php</url>
           <line>44</line>
           <option name="timeStamp" value="152" />
         </line-breakpoint>
@@ -492,11 +491,31 @@
           <line>56</line>
           <option name="timeStamp" value="160" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/matchright.php</url>
+          <line>40</line>
+          <option name="timeStamp" value="161" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/matchright.php</url>
+          <line>38</line>
+          <option name="timeStamp" value="162" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/matchright.php</url>
+          <line>39</line>
+          <option name="timeStamp" value="163" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/matchright.php</url>
+          <line>36</line>
+          <option name="timeStamp" value="164" />
+        </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="161" />
+      <option name="time" value="165" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -506,9 +525,9 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1456585059257" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..customer..." />
-            <marker date="1456585059257" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..photos..." />
-            <marker date="1456585059257" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..partnerprefs..." />
+            <marker date="1456594351613" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..customer..." />
+            <marker date="1456594351613" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..photos..." />
+            <marker date="1456594351613" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..partnerprefs..." />
           </folding>
         </state>
       </provider>
@@ -518,9 +537,9 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1456585059257" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..customer..." />
-            <marker date="1456585059257" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..photos..." />
-            <marker date="1456585059257" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..partnerprefs..." />
+            <marker date="1456594351613" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..customer..." />
+            <marker date="1456594351613" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..photos..." />
+            <marker date="1456594351613" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..partnerprefs..." />
           </folding>
         </state>
       </provider>
@@ -801,7 +820,7 @@
         <state vertical-scroll-proportion="-2.6153846">
           <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
           <folding>
-            <marker date="1456582334274" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..partnerprefs..." />
+            <marker date="1456594402173" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..partnerprefs..." />
           </folding>
         </state>
       </provider>
@@ -819,9 +838,9 @@
         <state vertical-scroll-proportion="-43.807693">
           <caret line="67" column="0" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
           <folding>
-            <marker date="1456585059257" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..customer..." />
-            <marker date="1456585059257" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..photos..." />
-            <marker date="1456585059257" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..partnerprefs..." />
+            <marker date="1456594351613" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..customer..." />
+            <marker date="1456594351613" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..photos..." />
+            <marker date="1456594351613" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..partnerprefs..." />
           </folding>
         </state>
       </provider>
@@ -846,18 +865,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/search.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.1923075">
-          <caret line="11" column="12" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
+        <state vertical-scroll-proportion="-4.6153846">
+          <caret line="289" column="0" selection-start-line="289" selection-start-column="0" selection-end-line="289" selection-end-column="0" />
           <folding>
-            <marker date="1456592502413" expanded="true" signature="9177:9212" placeholder="SELECT * FRO..photos..." />
+            <marker date="1456594131518" expanded="true" signature="9187:9222" placeholder="SELECT * FRO..photos..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/functions.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33116883">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        <state vertical-scroll-proportion="-6.230769">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding>
             <marker date="1456591193858" expanded="true" signature="622:654" placeholder="SELECT * FRO..customer..." />
             <marker date="1456591193858" expanded="true" signature="1062:1318" placeholder="SELECT * FRO..customer..." />
@@ -870,6 +889,18 @@
             <marker date="1456591193858" expanded="true" signature="6830:6873" placeholder="SELECT id FR..photos..." />
             <marker date="1456591193858" expanded="true" signature="7046:7156" placeholder="INSERT INTO ..." />
             <marker date="1456591193858" expanded="true" signature="7289:7390" placeholder="UPDATE table..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/matchright.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.53592813">
+          <caret line="50" column="16" selection-start-line="32" selection-start-column="5" selection-end-line="50" selection-end-column="16" />
+          <folding>
+            <marker date="1456596791298" expanded="true" signature="956:1011" placeholder="SELECT * FRO..customer..." />
+            <marker date="1456596791298" expanded="true" signature="1181:1216" placeholder="SELECT * FRO..photos..." />
+            <marker date="1456596791298" expanded="true" signature="1181:1223" placeholder="SELECT * FRO..photos..." />
           </folding>
         </state>
       </provider>

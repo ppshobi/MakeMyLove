@@ -28,57 +28,30 @@
    </section>
 
    <div class="view_profile view_profile2">
-        	<h3>View Similar Profiles</h3>
-        	<ul class="profile_item">
-        	  <a href="view_profile.php">
-        	   <li class="profile_item-img">
-        	   	  <img src="images/p5.jpg" class="img-responsive" alt=""/>
-        	   </li>
-        	   <li class="profile_item-desc">
-        	   	  <h4>2458741</h4>
-        	   	  <p>29 Yrs, 5Ft 5in Christian</p>
-        	   	  <h5>View Full Profile</h5>
-        	   </li>
-        	   <div class="clearfix"> </div>
-        	  </a>
-           </ul>
-           <ul class="profile_item">
-        	  <a href="view_profile.php">
-        	   <li class="profile_item-img">
-        	   	  <img src="images/p6.jpg" class="img-responsive" alt=""/>
-        	   </li>
-        	   <li class="profile_item-desc">
-        	   	  <h4>2458741</h4>
-        	   	  <p>29 Yrs, 5Ft 5in Christian</p>
-        	   	  <h5>View Full Profile</h5>
-        	   </li>
-        	   <div class="clearfix"> </div>
-        	  </a>
-           </ul>
-           <ul class="profile_item">
-        	  <a href="view_profile.php">
-        	   <li class="profile_item-img">
-        	   	  <img src="images/p7.jpg" class="img-responsive" alt=""/>
-        	   </li>
-        	   <li class="profile_item-desc">
-        	   	  <h4>2458741</h4>
-        	   	  <p>29 Yrs, 5Ft 5in Christian</p>
-        	   	  <h5>View Full Profile</h5>
-        	   </li>
-        	   <div class="clearfix"> </div>
-        	  </a>
-           </ul>
-           <ul class="profile_item">
-        	  <a href="view_profile.php">
-        	   <li class="profile_item-img">
-        	   	  <img src="images/p8.jpg" class="img-responsive" alt=""/>
-        	   </li>
-        	   <li class="profile_item-desc">
-        	   	  <h4>2458741</h4>
-        	   	  <p>29 Yrs, 5Ft 5in Christian</p>
-        	   	  <h5>View Full Profile</h5>
-        	   </li>
-        	   <div class="clearfix"> </div>
-        	  </a>
-           </ul>
-       </div>
+        	<h3>View Recent Profiles</h3>
+    <?php
+     $sql="SELECT * FROM customer ORDER BY profilecreationdate ASC";
+      $result=mysqlexec($sql);
+      $count=1;
+      while($row=mysqli_fetch_assoc($result)){
+            $profid=$row['cust_id'];
+          //getting photo
+          $sql="SELECT * FROM photos WHERE cust_id=$profid";
+          $result2=mysqlexec($sql);
+          $photo=mysqli_fetch_assoc($result2);
+          $pic=$photo['pic1'];
+          echo "<ul class=\"profile_item\">";
+            echo"<a href=\"view_profile.php?id={$profid}\">";
+              echo "<li class=\"profile_item-img\"><img src=\"profile/". $profid."/".$pic ."\"" . "class=\"img-responsive\" alt=\"\"/></li>";
+               echo "<li class=\"profile_item-desc\">";
+                  echo "<h4>" . $row['firstname'] . " " . $row['lastname'] . "</h4>";
+                  echo "<p>" . $row['age']. "Yrs," . $row['religion'] . "</p>";
+                  echo "<h5>" . "View Full Profile" . "</h5>";
+               echo "</li>";
+      echo "</a>";
+      echo "</ul>";
+      $count++;
+      }
+     ?>
+           
+</div>
