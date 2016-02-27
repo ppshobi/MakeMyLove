@@ -3,10 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="a4ff74e3-b348-40d8-9085-32abc7ac94be" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/matchright.php" afterPath="$PROJECT_DIR$/matchright.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/partner_preference.php" afterPath="$PROJECT_DIR$/partner_preference.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/search.php" afterPath="$PROJECT_DIR$/search.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/userhome.php" afterPath="$PROJECT_DIR$/userhome.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view_profile.php" afterPath="$PROJECT_DIR$/view_profile.php" />
     </list>
     <ignored path="Stmary's matrimony.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -40,10 +36,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="functions.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="functions.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/functions.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.230769">
+            <state vertical-scroll-proportion="0.48502994">
               <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
               <folding>
                 <marker date="1456591193858" expanded="true" signature="622:654" placeholder="SELECT * FRO..customer..." />
@@ -62,15 +58,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="matchright.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="matchright.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/matchright.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.53592813">
-              <caret line="50" column="16" selection-start-line="32" selection-start-column="5" selection-end-line="50" selection-end-column="16" />
+            <state vertical-scroll-proportion="-4.576923">
+              <caret line="7" column="28" selection-start-line="0" selection-start-column="0" selection-end-line="56" selection-end-column="6" />
               <folding>
-                <marker date="1456596791298" expanded="true" signature="956:1011" placeholder="SELECT * FRO..customer..." />
-                <marker date="1456596791298" expanded="true" signature="1181:1216" placeholder="SELECT * FRO..photos..." />
-                <marker date="1456596791298" expanded="true" signature="1181:1223" placeholder="SELECT * FRO..photos..." />
+                <marker date="1456596960888" expanded="true" signature="953:1008" placeholder="SELECT * FRO..customer..." />
+                <marker date="1456596960888" expanded="true" signature="1184:1219" placeholder="SELECT * FRO..photos..." />
               </folding>
             </state>
           </provider>
@@ -493,22 +488,17 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/matchright.php</url>
-          <line>40</line>
+          <line>41</line>
           <option name="timeStamp" value="161" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/matchright.php</url>
-          <line>38</line>
+          <line>40</line>
           <option name="timeStamp" value="162" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/matchright.php</url>
-          <line>39</line>
-          <option name="timeStamp" value="163" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/matchright.php</url>
-          <line>36</line>
+          <line>38</line>
           <option name="timeStamp" value="164" />
         </line-breakpoint>
       </breakpoints>
@@ -873,9 +863,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/matchright.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.576923">
+          <caret line="7" column="28" selection-start-line="0" selection-start-column="0" selection-end-line="56" selection-end-column="6" />
+          <folding>
+            <marker date="1456596960888" expanded="true" signature="953:1008" placeholder="SELECT * FRO..customer..." />
+            <marker date="1456596960888" expanded="true" signature="1184:1219" placeholder="SELECT * FRO..photos..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/functions.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.230769">
+        <state vertical-scroll-proportion="0.48502994">
           <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding>
             <marker date="1456591193858" expanded="true" signature="622:654" placeholder="SELECT * FRO..customer..." />
@@ -889,18 +890,6 @@
             <marker date="1456591193858" expanded="true" signature="6830:6873" placeholder="SELECT id FR..photos..." />
             <marker date="1456591193858" expanded="true" signature="7046:7156" placeholder="INSERT INTO ..." />
             <marker date="1456591193858" expanded="true" signature="7289:7390" placeholder="UPDATE table..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/matchright.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.53592813">
-          <caret line="50" column="16" selection-start-line="32" selection-start-column="5" selection-end-line="50" selection-end-column="16" />
-          <folding>
-            <marker date="1456596791298" expanded="true" signature="956:1011" placeholder="SELECT * FRO..customer..." />
-            <marker date="1456596791298" expanded="true" signature="1181:1216" placeholder="SELECT * FRO..photos..." />
-            <marker date="1456596791298" expanded="true" signature="1181:1223" placeholder="SELECT * FRO..photos..." />
           </folding>
         </state>
       </provider>
