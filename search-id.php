@@ -1,6 +1,11 @@
 <?php include_once("includes/basic_includes.php");?>
 <?php include_once("functions.php"); ?>
-<?php isloggedin(); ?>
+<?php if(isloggedin()){
+ //do nothing stay here
+} else{
+   header("location:login.php");
+}
+ ?>
 <?php
 $id=$_SESSION['id'];
 $result=search();

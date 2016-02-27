@@ -3,7 +3,12 @@
 <?php
 
 $id=$_GET['id'];
-isloggedin();
+if(isloggedin()){
+ //do nothing stay here
+} else{
+   header("location:login.php");
+}
+
 //calling photo uploader function
 if ($_SERVER['REQUEST_METHOD'] == 'POST'){ uploadphoto($id); }
 ?>

@@ -120,19 +120,13 @@ function register(){
 }
 
 function isloggedin(){
-$directoryURI = $_SERVER['REQUEST_URI'];
-$path = parse_url($directoryURI, PHP_URL_PATH);
-$components = explode('/', $path);
-$url = $components[2];
-if($url=="login.php"||$url="register.php"){return true;}
-else{
-		if(!isset($_SESSION['username'])){
-	 		header("location:login.php");
-		}
-		else{
-			return true;
-		}
+	if(!isset($_SESSION['id'])){
+	 	return false;
 	}
+	else{
+		return true;
+	}
+
 }
 
 

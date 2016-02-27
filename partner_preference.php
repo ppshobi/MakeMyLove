@@ -2,7 +2,12 @@
 <?php include_once("functions.php"); ?>
 <?php require_once("/includes/dbconn.php");?>
 <?php
-isloggedin(); 
+if(isloggedin()){
+ //do nothing stay here
+} else{
+   header("location:login.php");
+}
+ 
 $id=$_GET['id'];
 writepartnerprefs($id);
 
