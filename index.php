@@ -1,7 +1,9 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>Marital an Wedding Category Flat Bootstarp Resposive Website Template | Home :: w3layouts</title>
+<title>Find Your Perfect Partner - Makemylove
+ | Home :: Make My Love
+</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Marital Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
@@ -456,7 +458,9 @@ $(document).ready(function(){
     		</div>
     		<div class="clearfix"> </div>
     		<div class="copy">
-		      <p>Copyright © 2015 Marital . All Rights Reserved  | Design by <a href="http://w3layouts.com/" target="_blank">W3layouts</a> </p>
+		      <p>Copyright © 2015 Marital . All Rights Reserved  | Design by <a href="http://Make My Love
+.com/" target="_blank">Make My Love
+</a> </p>
 	        </div>
     	</div>
     </div>

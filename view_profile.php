@@ -73,7 +73,9 @@ if($result){
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>Marital an Wedding Category Flat Bootstarp Resposive Website Template | View_profile :: w3layouts</title>
+<title>Find Your Perfect Partner - Makemylove
+ | View_profile :: Make My Love
+</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Marital Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
