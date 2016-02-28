@@ -78,8 +78,7 @@ if($result){
 </title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="Marital Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
-Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 <link href="css/bootstrap-3.1.1.min.css" rel='stylesheet' type='text/css' />
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -146,14 +145,13 @@ $(document).ready(function(){
 				<table class="table_working_hours">
 		        	<tbody>
 		        		<tr class="opened_1">
+							<td class="day_label">Name :</td>
+							<td class="day_value"><?php echo $fname . " " .$lname; ?></td>
+						</tr><tr class="opened_1">
 							<td class="day_label">Age / Height :</td>
-							<td class="day_value"><?php echo $age; ?>/<?php echo $height;?> cm</td>
+							<td class="day_value"><?php echo $age . " Years"; ?>/<?php echo $height . " Cm";?> </td>
 						</tr>
-					    <tr class="opened">
-							<td class="day_label">Last Login :</td>
-							<td class="day_value">4 hours ago</td>
-						</tr>
-					    <tr class="opened">
+					  	<tr class="opened">
 							<td class="day_label">Religion :</td>
 							<td class="day_value"><?php echo $religion;?></td>
 						</tr>
@@ -175,11 +173,7 @@ $(document).ready(function(){
 						</tr>
 				    </tbody>
 				</table>
-				<ul class="login_details">
-			      <li>Already a member? <a href="login.php">Login Now</a></li>
-			      <li>If not a member? <a href="register.php">Register Now</a></li>
-			    </ul>
-			</div>
+				</div>
 			<div class="clearfix"> </div>
 		</div>
 		<div class="col_4">
@@ -390,7 +384,7 @@ $descr=$row['descr'];
 				        	<tbody>
 				        		<tr class="opened">
 									<td class="day_label">Age   :</td>
-									<td class="day_value"><?php echo $agemin . "to" . $agemax;?></td>
+									<td class="day_value"><?php echo $agemin . " to " . $agemax;?></td>
 								</tr>
 				        		<tr class="opened">
 									<td class="day_label">Marital Status :</td>
@@ -457,61 +451,34 @@ $descr=$row['descr'];
 			  <input type="submit" value="Go">
 		   </form>
         </div>
-        <div class="view_profile">
-        	<h3>View Similar Profiles</h3>
-        	<ul class="profile_item">
-        	  <a href="#">
-        	   <li class="profile_item-img">
-        	   	  <img src="images/p5.jpg" class="img-responsive" alt=""/>
-        	   </li>
-        	   <li class="profile_item-desc">
-        	   	  <h4>2458741</h4>
-        	   	  <p>29 Yrs, 5Ft 5in Christian</p>
-        	   	  <h5>View Full Profile</h5>
-        	   </li>
-        	   <div class="clearfix"> </div>
-        	  </a>
-           </ul>
-           <ul class="profile_item">
-        	  <a href="#">
-        	   <li class="profile_item-img">
-        	   	  <img src="images/p6.jpg" class="img-responsive" alt=""/>
-        	   </li>
-        	   <li class="profile_item-desc">
-        	   	  <h4>2458741</h4>
-        	   	  <p>29 Yrs, 5Ft 5in Christian</p>
-        	   	  <h5>View Full Profile</h5>
-        	   </li>
-        	   <div class="clearfix"> </div>
-        	  </a>
-           </ul>
-           <ul class="profile_item">
-        	  <a href="#">
-        	   <li class="profile_item-img">
-        	   	  <img src="images/p7.jpg" class="img-responsive" alt=""/>
-        	   </li>
-        	   <li class="profile_item-desc">
-        	   	  <h4>2458741</h4>
-        	   	  <p>29 Yrs, 5Ft 5in Christian</p>
-        	   	  <h5>View Full Profile</h5>
-        	   </li>
-        	   <div class="clearfix"> </div>
-        	  </a>
-           </ul>
-           <ul class="profile_item">
-        	  <a href="#">
-        	   <li class="profile_item-img">
-        	   	  <img src="images/p8.jpg" class="img-responsive" alt=""/>
-        	   </li>
-        	   <li class="profile_item-desc">
-        	   	  <h4>2458741</h4>
-        	   	  <p>29 Yrs, 5Ft 5in Christian</p>
-        	   	  <h5>View Full Profile</h5>
-        	   </li>
-        	   <div class="clearfix"> </div>
-        	  </a>
-           </ul>
-       </div>
+        <div class="view_profile view_profile2">
+        	<h3>View Recent Profiles</h3>
+    <?php
+     $sql="SELECT * FROM customer ORDER BY profilecreationdate ASC";
+      $result=mysqlexec($sql);
+      $count=1;
+      while($row=mysqli_fetch_assoc($result)){
+            $profid=$row['cust_id'];
+          //getting photo
+          $sql="SELECT * FROM photos WHERE cust_id=$profid";
+          $result2=mysqlexec($sql);
+          $photo=mysqli_fetch_assoc($result2);
+          $pic=$photo['pic1'];
+          echo "<ul class=\"profile_item\">";
+            echo"<a href=\"view_profile.php?id={$profid}\">";
+              echo "<li class=\"profile_item-img\"><img src=\"profile/". $profid."/".$pic ."\"" . "class=\"img-responsive\" alt=\"\"/></li>";
+               echo "<li class=\"profile_item-desc\">";
+                  echo "<h4>" . $row['firstname'] . " " . $row['lastname'] . "</h4>";
+                  echo "<p>" . $row['age']. "Yrs," . $row['religion'] . "</p>";
+                  echo "<h5>" . "View Full Profile" . "</h5>";
+               echo "</li>";
+      echo "</a>";
+      echo "</ul>";
+      $count++;
+      }
+     ?>
+           
+</div>
        
         </div>
        <div class="clearfix"> </div>

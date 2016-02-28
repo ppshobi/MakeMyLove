@@ -56,16 +56,6 @@
 		                
 		              </ul>
 		            </li>
-		            <li class="dropdown">
-		              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Messages<span class="caret"></span></a>
-		              <ul class="dropdown-menu" role="menu">
-		                <li><a href="inbox.php">Inbox</a></li>
-		                <li><a href="inbox.php">New</a></li>
-		                <li><a href="inbox.php">Accepted</a></li>
-		                <li><a href="sent.php">Sent</a></li>
-		                <li><a href="upgrade.php">Upgrade</a></li>
-		              </ul>
-		            </li>
 		            <li class="last"><a href="contact.php">Contacts</a></li>
 		        </ul>
 		     </div><!-- /.navbar-collapse -->

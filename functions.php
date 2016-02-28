@@ -197,10 +197,10 @@ function processprofile_form($id){
 
 
 	require_once("/includes/dbconn.php");
-	$sql="SELECT cust_id FROM customer";
+	$sql="SELECT cust_id FROM customer WHERE cust_id=$id";
 	$result=mysqlexec($sql);
 
-if(mysqli_num_rows($result)>1){
+if(mysqli_num_rows($result)>=1){
 	//there is already a profile in this table for loggedin customer
 	//update the data
 	$sql="UPDATE
@@ -255,7 +255,7 @@ if(mysqli_num_rows($result)>1){
 			";
 	
 	if (mysqli_query($conn,$sql)) {
-	  echo "Successfully Updated profile";
+	  echo "Successfully Created profile";
 	  echo "<a href=\"userhome.php?id={$id}\">";
 	  echo "Back to home";
 	  echo "</a>";
