@@ -200,16 +200,60 @@ function processprofile_form($id){
 	$sql="SELECT cust_id FROM customer";
 	$result=mysqlexec($sql);
 
-if(mysqli_num_rows($result)==5){
+if(mysqli_num_rows($result)>1){
 	//there is already a profile in this table for loggedin customer
 	//update the data
-
+	$sql="UPDATE
+   			customer 
+		SET
+		   email = '$email',
+		   age = '$age',
+		   sex = '$sex',
+		   religion = '$religion',
+		   caste = '$caste',
+		   subcaste = '$subcaste',
+		   district = '$district',
+		   state = '$state',
+		   country = '$country',
+		   maritalstatus = '$maritalstatus',
+		   profilecreatedby = '$profileby',
+		   education  = '$education',
+		   education_sub = '$edudescr',
+		   firstname = '$fname',
+		   lastname = '$lname',
+		   body_type = '$bodytype',
+		   physical_status = '$physicalstatus',
+		   drink =  '$drink',
+		   mothertounge = '$mothertounge',
+		   colour = '$colour',
+		   weight = '$weight',
+		   smoke = '$smoke',
+		   dateofbirth = '$dob', 
+		   occupation = '$occupation', 
+		   occupation_descr = '$occupationdescr', 
+		   annual_income = '$income', 
+		   fathers_occupation = '$fatheroccupation',
+		   mothers_occupation = '$motheroccupation',
+		   no_bro = '$bros', 
+		   no_sis = '$sis', 
+		   aboutme = '$aboutme'
+		WHERE cust_id=$id; "
+		   ;
+   $result=mysqlexec($sql);
+   if ($result) {
+   	echo "<script>alert(\"Successfully Updated Profile\")</script>";
+   	echo "<script> window.location=\"userhome.php?id=$id\"</script>";
+   }
 }else{
 	//Insert the data
-	$sql = "INSERT INTO customer (id, cust_id, email, age, sex, religion, caste, subcaste, district, state, country, maritalstatus, profilecreatedby, education, education_sub, firstname, lastname, body_type, physical_status, drink, mothertounge, colour, weight, blood_group, diet, smoke, 
-dateofbirth, occupation, occupation_descr, annual_income, fathers_occupation, mothers_occupation, no_bro, no_sis, aboutme, profilecreationdate
-) VALUES ('', '$id','$email', '$age', '$sex', '$religion', '$caste', '$subcaste', '$district', '$state', '$country', '$maritalstatus', '$profileby', '$education', '$edudescr', '$fname', '$lname', '$bodytype', '$physicalstatus', '$drink', '$mothertounge', '$colour', '$weight', '$bloodgroup', '$diet', '$smoke', '$dob', '$occupation', '$occupationdescr', '$income', '$fatheroccupation', '$motheroccupation', '$bros', '$sis', '$aboutme', CURDATE())";
-
+	$sql = "INSERT 
+				INTO
+				   customer
+				   (id, cust_id, email, age, sex, religion, caste, subcaste, district, state, country, maritalstatus, profilecreatedby, education, education_sub, firstname, lastname, body_type, physical_status, drink, mothertounge, colour, weight, blood_group, diet, smoke,   dateofbirth, occupation, occupation_descr, annual_income, fathers_occupation, mothers_occupation, no_bro, no_sis, aboutme, profilecreationdate  ) 
+				VALUES
+				   ('', '$id','$email', '$age', '$sex', '$religion', '$caste', '$subcaste', '$district', '$state', '$country', '$maritalstatus', '$profileby', '$education', '$edudescr', '$fname', '$lname', '$bodytype', '$physicalstatus', '$drink', '$mothertounge', '$colour', '$weight', '$bloodgroup', '$diet', '$smoke', '$dob', '$occupation', '$occupationdescr', '$income', '$fatheroccupation', '$motheroccupation', '$bros', '$sis', '$aboutme', CURDATE())
+			";
+	
 	if (mysqli_query($conn,$sql)) {
 	  echo "Successfully Updated profile";
 	  echo "<a href=\"userhome.php?id={$id}\">";
@@ -260,7 +304,7 @@ if(mysqli_num_rows($result) == 0) {
 		
 } else {
     // There is a photo for customer so up
-     $sql="UPDATE table photos SET pic1 = '$pic1', pic2 = '$pic2', pic3 = '$pic3', pic4 = '$pic4' WHERE cust_id=$id";
+     $sql="UPDATE photos SET pic1 = '$pic1', pic2 = '$pic2', pic3 = '$pic3', pic4 = '$pic4' WHERE cust_id=$id";
 		// Writes the information to the database
 	mysqlexec($sql);
 }
