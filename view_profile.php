@@ -9,6 +9,8 @@ if(isloggedin()){
 }
  
 $id=$_GET['id'];
+//safty purpose copy the get id
+$profileid=$id;
 
 //getting profile details from db
 $sql="SELECT * FROM customer WHERE cust_id = $id";
@@ -59,7 +61,7 @@ $row=mysqli_fetch_assoc($result);
 	$pic3="";
 	$pic4="";
 //getting image filenames from db
-$sql="SELECT * FROM photos WHERE cust_id = $id";
+$sql="SELECT * FROM photos WHERE cust_id = $profileid";
 $result = mysqlexec($sql);
 if($result){
 	$row=mysqli_fetch_array($result);
@@ -121,22 +123,22 @@ $(document).ready(function(){
    </div>
    <div class="profile">
    	 <div class="col-md-8 profile_left">
-   	 	<h2>Profile Id : <?php echo $id;?></h2>
+   	 	<h2>Profile Id : <?php echo $profileid;?></h2>
    	 	<div class="col_3">
    	        <div class="col-sm-4 row_2">
 				<div class="flexslider">
 					 <ul class="slides">
-						<li data-thumb="profile/<?php echo $id;?>/<?php echo $pic1;?>">
-							<img src="profile/<?php echo $id;?>/<?php echo $pic1;?>" />
+						<li data-thumb="profile/<?php echo $profileid;?>/<?php echo $pic1;?>">
+							<img src="profile/<?php echo $profileid;?>/<?php echo $pic1;?>" />
 						</li>
-						<li data-thumb="profile/<?php echo $id;?>/<?php echo $pic2;?>">
-							<img src="profile/<?php echo $id;?>/<?php echo $pic2;?>" />
+						<li data-thumb="profile/<?php echo $profileid;?>/<?php echo $pic2;?>">
+							<img src="profile/<?php echo $profileid;?>/<?php echo $pic2;?>" />
 						</li>
-						<li data-thumb="profile/<?php echo $id;?>/<?php echo $pic3;?>">
-							<img src="profile/<?php echo $id;?>/<?php echo $pic3;?>" />
+						<li data-thumb="profile/<?php echo $profileid;?>/<?php echo $pic3;?>">
+							<img src="profile/<?php echo $profileid;?>/<?php echo $pic3;?>" />
 						</li>
-						<li data-thumb="profile/<?php echo $id;?>/<?php echo $pic4;?>">
-							<img src="profile/<?php echo $id;?>/<?php echo $pic4;?>" />
+						<li data-thumb="profile/<?php echo $profileid;?>/<?php echo $pic4;?>">
+							<img src="profile/<?php echo $profileid;?>/<?php echo $pic4;?>" />
 						</li>
 					 </ul>
 				  </div>

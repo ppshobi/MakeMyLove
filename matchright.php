@@ -30,7 +30,7 @@
    <div class="view_profile view_profile2">
         	<h3>View Recent Profiles</h3>
     <?php
-     $sql="SELECT * FROM customer ORDER BY profilecreationdate ASC";
+     $sql="SELECT * FROM customer ORDER BY profilecreationdate DESC";
       $result=mysqlexec($sql);
       $count=1;
       while($row=mysqli_fetch_assoc($result)){
