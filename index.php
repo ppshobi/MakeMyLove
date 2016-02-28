@@ -47,7 +47,6 @@ $(document).ready(function(){
 					<ul>
 						<li><a href="login.php">Login</a></li>
 					    <li><a href="register.php">Register</a></li>
-					    <li><a href="index.php">Logout</a></li>
 					</ul>
 				</li>
 			   </ul>
@@ -71,34 +70,11 @@ $(document).ready(function(){
 		        <ul class="nav navbar-nav nav_1">
 		            <li><a href="index.php">Home</a></li>
 		            <li><a href="about.php">About</a></li>
-		    		<li class="dropdown">
-		              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Matches<span class="caret"></span></a>
-		              <ul class="dropdown-menu" role="menu">
-		                <li><a href="matches.php">New Matches</a></li>
-		                <li><a href="viewed-profile.php">Who Viewed my Profile</a></li>
-		                <li><a href="viewed-not_contacted.php">Viewed & not Contacted</a></li>
-		                <li><a href="members.php">Premium Members</a></li>
-		                <li><a href="shortlisted.php">Shortlisted Profile</a></li>
-		              </ul>
-		            </li>
 					<li class="dropdown">
 		              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Search<span class="caret"></span></a>
 		              <ul class="dropdown-menu" role="menu">
 		                <li><a href="search.php">Regular Search</a></li>
-		                <li><a href="profile.php">Recently Viewed Profiles</a></li>
-		                <li><a href="search-id.php">Search By Profile ID</a></li>
 		                <li><a href="faq.php">Faq</a></li>
-		                <li><a href="shortcodes.php">Shortcodes</a></li>
-		              </ul>
-		            </li>
-		            <li class="dropdown">
-		              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Messages<span class="caret"></span></a>
-		              <ul class="dropdown-menu" role="menu">
-		                <li><a href="inbox.php">Inbox</a></li>
-		                <li><a href="inbox.php">New</a></li>
-		                <li><a href="inbox.php">Accepted</a></li>
-		                <li><a href="sent.php">Sent</a></li>
-		                <li><a href="upgrade.php">Upgrade</a></li>
 		              </ul>
 		            </li>
 		            <li class="last"><a href="contact.php">Contacts</a></li>
@@ -118,70 +94,7 @@ $(document).ready(function(){
       <a href="register.php" class="hvr-shutter-out-horizontal">Create your Profile</a>
     </div>
   </div>
-  <div class="profile_search">
-  	<div class="container wrap_1">
-	  <form action="">
-	  	<div class="search_top">
-		 <div class="inline-block">
-		  <label class="gender_1">I am looking for :</label>
-			<div class="age_box1" style="max-width: 100%; display: inline-block;">
-				<select>
-					<option value="">* Select Gender</option>
-					<option value="Male">Bride</option>
-					<option value="Female">Groom</option>
-				</select>
-		   </div>
-	    </div>
-        <div class="inline-block">
-		  <label class="gender_1">Located In :</label>
-			<div class="age_box1" style="max-width: 100%; display: inline-block;">
-				<select>
-					<option value="">* Select State</option>
-					<option value="Washington">Washington</option>
-					<option value="Texas">Texas</option>
-					<option value="Georgia">Georgia</option>
-					<option value="Virginia">Virginia</option>
-					<option value="Colorado">Colorado</option>
-               </select>
-          </div>
-        </div>
-        <div class="inline-block">
-		  <label class="gender_1">Interested In :</label>
-			<div class="age_box1" style="max-width: 100%; display: inline-block;">
-				<select><option value="">* Select Interest</option>
-					<option value="Sports &amp; Adventure">Sports &amp; Adventure</option>
-					<option value="Movies &amp; Entertainment">Movies &amp; Entertainment</option>
-					<option value="Arts &amp; Science">Arts &amp; Science</option>
-					<option value="Technology">Technology</option>
-					<option value="Fashion">Fashion</option>
-               </select>
-          </div>
-       </div>
-     </div>
-	 <div class="inline-block">
-	   <div class="age_box2" style="max-width: 220px;">
-	   	<label class="gender_1">Age :</label>
-	    <input class="transparent" placeholder="From:" style="width: 34%;" type="text" value="">&nbsp;-&nbsp;<input class="transparent" placeholder="To:" style="width: 34%;" type="text" value="">
-	   </div>
-	 </div>
-       <div class="inline-block">
-		  <label class="gender_1">Status :</label>
-			<div class="age_box1" style="max-width: 100%; display: inline-block;">
-				<select>
-					<option value="">* Select Status</option>
-					<option value="Single">Single</option>
-					<option value="Married">Married</option>
-					<option value="In a Relationship">In a Relationship</option>
-					<option value="It's Complicated">It's Complicated</option>
-				</select>
-		  </div>
-	    </div>
-		<div class="submit inline-block">
-		   <input id="submit-btn" class="hvr-wobble-vertical" type="submit" value="Find Matches">
-		</div>
-     </form>
-    </div>
-  </div> 
+ 
 </div> 
 <div class="grid_1">
       <div class="container">
@@ -508,9 +421,7 @@ $(document).ready(function(){
             <div class="clearfix"> </div>
 		</div>
 	</div>
-	<div class="map">
-	   <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3150859.767904157!2d-96.62081048651531!3d39.536794757966845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1408111832978"> </iframe>
-    </div>
+	
     <div class="footer">
     	<div class="container">
     		<div class="col-md-4 col_2">
