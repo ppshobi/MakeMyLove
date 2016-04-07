@@ -65,8 +65,14 @@ $(document).ready(function(){
 		<label class="col-sm-5 control-lable1" for="Prof id">Profile ID : </label>
 		<div class="col-sm-7 form_radios">
 		  <div class="input-group1">
-	        <input type="text" value="" name="profid" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}">
-	        <input type="submit" value="search">
+	        <input type="text" value="" id="profid" name="profid" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}">
+	        <input type="button" onclick="viewprofile();"  value="search">
+          <script type="text/javascript">
+            function viewprofile(){
+              var profid=document.getElementById("profid").value;
+              window.location.href="view_profile.php?id="+profid;
+            }
+          </script>
 	      </div>
 	    </div>
 		<div class="clearfix"> </div>
@@ -75,97 +81,65 @@ $(document).ready(function(){
  <div class="paid_people">
    <h1>Profiles</h1>
    <div class="row_1">
-	   <?php
-//only start display profiles if and only if search is triggered
-if(isset($_POST['search'])){
+<?php
+  //only start display profiles if and only if search is triggered
+  // if(isset($_POST['search'])){
 
-//code to print matching profiles
+  // //code to print matching profiles
 
-// couloumn count
+  // // couloumn count
 
-$c_count = '1';
+  // $c_count = '1';
 
-while ($row = mysqli_fetch_assoc($result))
-  {
-    //getting photo for display
-    $profid=$row['id'];
-    $sql="SELECT * FROM photos WHERE cust_id=$profid";
-    $result2=mysqlexec($sql);
-    $photo=mysqli_fetch_assoc($result2);
-    $pic=$photo['pic1'];
-  // printing left side profile
-    
-  if ($c_count == '1')
-    {
-    echo "<div class=\"row_1\">"; //starting row
-    echo "<div class=\"col-sm-6 paid_people-left\">"; //left statrted
-    echo "<ul class=\"profile_item\">";
-    echo "<a href=\"view_profile.php?id=$profid\">";
-    echo "<li class=\"profile_item-img\"><img src=\"profile/". $profid."/".$pic ."\"" . "class=\"img-responsive\"" ;
-    echo "alt=\"\"/></li>";
-    echo "<li class=\"profile_item-desc\">";
-    echo "<h4>" . $row['firstname'] . " " . $row['lastname'] . "</h4>";
-    echo "<p>" . $row['age']. "Yrs," . $row['religion'] . "</p>";
-    echo "<h5>" . "View Full Profile" . "</h5>";
-    echo "</li>";
-    echo "</a>";
-    echo "</ul>";
-    echo "</div>"; //left end
-    $c_count++;
-    }
-    else
-    {
-    echo "<div class=\"col-sm-6\">"; //right statrted
-    
-    echo "</div>"; //right end
+  // while ($row = mysqli_fetch_assoc($result))
+  //   {
+  //     //getting photo for display
+  //     $profid=$row['id'];
+  //     $sql="SELECT * FROM photos WHERE cust_id=$profid";
+  //     $result2=mysqlexec($sql);
+  //     $photo=mysqli_fetch_assoc($result2);
+  //     $pic=$photo['pic1'];
+  //   // printing left side profile
+      
+  //   if ($c_count == '1')
+  //     {
+  //     echo "<div class=\"row_1\">"; //starting row
+  //     echo "<div class=\"col-sm-6 paid_people-left\">"; //left statrted
+  //     echo "<ul class=\"profile_item\">";
+  //     echo "<a href=\"view_profile.php?id=$profid\">";
+  //     echo "<li class=\"profile_item-img\"><img src=\"profile/". $profid."/".$pic ."\"" . "class=\"img-responsive\"" ;
+  //     echo "alt=\"\"/></li>";
+  //     echo "<li class=\"profile_item-desc\">";
+  //     echo "<h4>" . $row['firstname'] . " " . $row['lastname'] . "</h4>";
+  //     echo "<p>" . $row['age']. "Yrs," . $row['religion'] . "</p>";
+  //     echo "<h5>" . "View Full Profile" . "</h5>";
+  //     echo "</li>";
+  //     echo "</a>";
+  //     echo "</ul>";
+  //     echo "</div>"; //left end
+  //     $c_count++;
+  //     }
+  //     else
+  //     {
+  //     echo "<div class=\"col-sm-6\">"; //right statrted
+      
+  //     echo "</div>"; //right end
 
-    // end of right side
+  //     // end of right side
 
-    
-    $c_count = '1';
-    }
-  } //loop end
-  echo "</div>"; //row end
-}//end of if
+      
+  //     $c_count = '1';
+  //     }
+  //   } //loop end
+  //   echo "</div>"; //row end
+  // }//end of if
 ?>
-	   <div class="col-sm-6">
+	
+  <div class="col-sm-6">
 	 	
 	   </div>
 	   <div class="clearfix"> </div>
    </div>   
-   <div class="row_2">
-	   <div class="col-sm-6 paid_people-left">
-	 	<ul class="profile_item">
-		  <a href="#">
-		   <li class="profile_item-img">
-		   	  <img src="images/a7.jpg" class="img-responsive" alt=""/>
-		   </li>
-		   <li class="profile_item-desc">
-		   	  <h4>2458741</h4>
-		   	  <p>29 Yrs, 5Ft 5in Christian</p>
-		   	  <h5>View Full Profile</h5>
-		   </li>
-		   <div class="clearfix"> </div>
-		  </a>
-	     </ul>
-	   </div>
-	   <div class="col-sm-6">
-	 	<ul class="profile_item">
-		  <a href="#">
-		   <li class="profile_item-img">
-		   	  <img src="images/a6.jpg" class="img-responsive" alt=""/>
-		   </li>
-		   <li class="profile_item-desc">
-		   	  <h4>2458741</h4>
-		   	  <p>29 Yrs, 5Ft 5in Christian</p>
-		   	  <h5>View Full Profile</h5>
-		   </li>
-		   <div class="clearfix"> </div>
-		  </a>
-	     </ul>
-	   </div>
-	   <div class="clearfix"> </div>
-    </div>
   </div>
 </div>
 <div class="col-md-3 match_right">

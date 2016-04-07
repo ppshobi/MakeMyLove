@@ -15,6 +15,7 @@ $profileid=$id;
 //getting profile details from db
 $sql="SELECT * FROM customer WHERE cust_id = $id";
 $result = mysqlexec($sql);
+if($result){
 $row=mysqli_fetch_assoc($result);
 
 	$fname=$row['firstname'];
@@ -61,14 +62,17 @@ $row=mysqli_fetch_assoc($result);
 	$pic3="";
 	$pic4="";
 //getting image filenames from db
-$sql="SELECT * FROM photos WHERE cust_id = $profileid";
-$result = mysqlexec($sql);
-if($result){
-	$row=mysqli_fetch_array($result);
-	$pic1=$row['pic1'];
-	$pic2=$row['pic2'];
-	$pic3=$row['pic3'];
-	$pic4=$row['pic4'];
+$sql2="SELECT * FROM photos WHERE cust_id = $profileid";
+$result2 = mysqlexec($sql2);
+if($result2){
+	$row2=mysqli_fetch_array($result2);
+	$pic1=$row2['pic1'];
+	$pic2=$row2['pic2'];
+	$pic3=$row2['pic3'];
+	$pic4=$row2['pic4'];
+}
+}else{
+	echo "<script>alert(\"Invalid Profile ID\")</script>";
 }
 
 ?>
@@ -447,12 +451,12 @@ $descr=$row['descr'];
 	   </div>
    	 </div>
      <div class="col-md-4 profile_right">
-     	<div class="newsletter">
+     <!-- 	<div class="newsletter">
 		   <form>
 			  <input type="text" name="ne" size="30" required="" placeholder="Enter Profile ID :">
 			  <input type="submit" value="Go">
 		   </form>
-        </div>
+        </div> -->
         <div class="view_profile view_profile2">
         	<h3>View Recent Profiles</h3>
     <?php

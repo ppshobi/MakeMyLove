@@ -231,10 +231,10 @@ while ($row = mysqli_fetch_assoc($result))
     $photo=mysqli_fetch_assoc($result2);
     $pic=$photo['pic1'];
   // printing left side profile
-    
+  echo "<div class=\"row_1\">"; //starting row  
   if ($c_count == '1')
     {
-    echo "<div class=\"row_1\">"; //starting row
+    
     echo "<div class=\"col-sm-6 paid_people-left\">"; //left statrted
     echo "<ul class=\"profile_item\">";
     echo "<a href=\"view_profile.php?id=$profid\">";
