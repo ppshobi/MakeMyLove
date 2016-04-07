@@ -58,49 +58,41 @@ $(document).ready(function(){
 			<span class="grey-line"></span>
         </div>
         <ul id="flexiselDemo3">
-	      <li><div class="col_1"><a href="view_profile.php">
-			<img src="images/1.jpg" alt="" class="hover-animation image-zoom-in img-responsive"/>
-             <div class="layer m_1 hidden-link hover-animation delay1 fade-in">
-                <div class="center-middle">About Him</div>
-             </div>
-             <h3><span class="m_3">Profile ID : MI-387412</span><br>28, Christian, Australia<br>Corporate</h3></a></div>
-          </li>
-		  <li><div class="col_1"><a href="view_profile.php">
-			<img src="images/2.jpg" alt="" class="hover-animation image-zoom-in img-responsive"/>
-             <div class="layer m_1 hidden-link hover-animation delay1 fade-in">
-                <div class="center-middle">About Her</div>
-             </div>
-             <h3><span class="m_3">Profile ID : MI-387412</span><br>28, Christian, Australia<br>Corporate</h3></a></div>
-          </li>
-		  <li><div class="col_1"><a href="view_profile.php">
-			<img src="images/3.jpg" alt="" class="hover-animation image-zoom-in img-responsive"/>
-             <div class="layer m_1 hidden-link hover-animation delay1 fade-in">
-                <div class="center-middle">About Him</div>
-             </div>
-             <h3><span class="m_3">Profile ID : MI-387412</span><br>28, Christian, Australia<br>Corporate</h3></a></div>
-          </li>
-		  <li><div class="col_1"><a href="view_profile.php">
-			<img src="images/4.jpg" alt="" class="hover-animation image-zoom-in img-responsive"/>
-             <div class="layer m_1 hidden-link hover-animation delay1 fade-in">
-                <div class="center-middle">About Her</div>
-             </div>
-             <h3><span class="m_3">Profile ID : MI-387412</span><br>28, Christian, Australia<br>Corporate</h3></a></div>
-          </li>
-		  <li><div class="col_1"><a href="view_profile.php">
-			<img src="images/5.jpg" alt="" class="hover-animation image-zoom-in img-responsive"/>
-             <div class="layer m_1 hidden-link hover-animation delay1 fade-in">
-                <div class="center-middle">About Him</div>
-             </div>
-             <h3><span class="m_3">Profile ID : MI-387412</span><br>28, Christian, Australia<br>Corporate</h3></a></div>
-          </li>
-		  <li><div class="col_1"><a href="view_profile.php">
-			<img src="images/6.jpg" alt="" class="hover-animation image-zoom-in img-responsive"/>
-             <div class="layer m_1 hidden-link hover-animation delay1 fade-in">
-                <div class="center-middle">About Her</div>
-             </div>
-             <h3><span class="m_3">Profile ID : MI-387412</span><br>28, Christian, Australia<br>Corporate</h3></a></div>
-          </li>
-	    </ul>
+        <?php
+        	$sql="SELECT * FROM customer";
+        	$result=mysqlexec($sql);
+        	if($result){
+        		while($row=mysqli_fetch_assoc($result)){
+        			$name=$row['firstname'] . " " . $row['lastname'];
+        			$profileid=$row['cust_id'];
+        			$age=$row['age'];
+        			$place=$row['state'] . "," . $row['district'];
+        			$job=$row['occupation'];
+
+        				//getting profilepic
+        				$pic1='';
+						$sql2="SELECT * FROM photos WHERE cust_id = $profileid";
+						$result2 = mysqlexec($sql2);
+						if($result2){
+							$row2=mysqli_fetch_array($result2);
+							$pic1=$row2['pic1'];
+						}
+						//got profilepic
+						//
+					//Printing the html
+					echo "<li><div class=\"col_1\"><a href=\"view_profile.php?id={$profileid}\">";
+					echo "<img src=\"profile/{$profileid}\/{$pic1}\" alt=\"\" class=\"hover-animation image-zoom-in img-responsive\"/>";
+					echo "<div class=\"layer m_1 hidden-link hover-animation delay1 fade-in\">";
+					echo "<div class=\"center-middle\">About {$name}</div>";
+					echo "</div>";
+					echo "<h3><span class=\"m_3\">Profile ID : {$profileid}</span><br>{$age}, {$place}<br>{$job}</h3></a></div>";
+					echo "</li>";
+				
+        		}
+        	}
+
+        ?>
+          </ul>
 	    <script type="text/javascript">
 		 $(window).load(function() {
 			$("#flexiselDemo3").flexisel({
