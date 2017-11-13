@@ -1,8 +1,7 @@
 <?php include_once("includes/basic_includes.php");?>
 <?php include_once("functions.php"); ?>
-<?php if(isloggedin()){
- //do nothing stay here
-} else{
+<?php 
+if(! isloggedin()){
    header("location:login.php");
 }
  ?>
@@ -509,7 +508,7 @@ $(document).ready(function(){
 		    	<label for="about me">About Me<span class="form-required" title="This field is required.">*</span></label>
 		    	<textarea rows="5" name="aboutme" placeholder="Write about you" class="form-text"></textarea>
 		    </div>
-		    <div class="form-actions">
+		    <div class="form-actions">} else{
 			    <input type="submit" id="edit-submit" name="op" value="Submit" class="btn_1 submit">
 			  </div>
 			  </div>

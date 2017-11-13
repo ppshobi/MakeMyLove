@@ -2,8 +2,8 @@
 <?php 
 
 $host="localhost"; // Host name 
-$username="root"; // Mysql username 
-$password=""; // Mysql password 
+$username="homestead"; // Mysql username 
+$password="secret"; // Mysql password 
 $db_name="matrimony"; // Database name 
 
 // Connect to server and select databse.

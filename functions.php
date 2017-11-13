@@ -1,11 +1,8 @@
 <?php
-// include_once('/includes/dbconn.php');
- ?>
-<?php
 function mysqlexec($sql){
 	$host="localhost"; // Host name
-	$username="root"; // Mysql username
-	$password=""; // Mysql password
+	$username="homestead"; // Mysql username
+	$password="secret"; // Mysql password
 	$db_name="matrimony"; // Database name
 
 // Connect to server and select databse.
@@ -120,14 +117,14 @@ function register(){
 		$year=$_POST['year'];
 	$dob=$year ."-" . $month . "-" .$day ;
 	$gender=$_POST['gender'];
-	require_once("/includes/dbconn.php");
+	require_once("includes/dbconn.php");
 
 	$sql = "INSERT 
 			INTO
 			   users
-			   (id, username, password, email, dateofbirth, gender) 
+			   ( profilestat, username, password, email, dateofbirth, gender, userlevel) 
 			VALUES
-			   ('', '$uname', '$pass', '$email', '$dob', '$gender')";
+			   (0, '$uname', '$pass', '$email', '$dob', '$gender', 0)";
 
 	if (mysqli_query($conn,$sql)) {
 	  echo "Successfully Registered";
@@ -196,7 +193,7 @@ function processprofile_form($id){
 	
 
 
-	require_once("/includes/dbconn.php");
+	require_once("includes/dbconn.php");
 	$sql="SELECT cust_id FROM customer WHERE cust_id=$id";
 	$result=mysqlexec($sql);
 
@@ -249,11 +246,10 @@ if(mysqli_num_rows($result)>=1){
 	$sql = "INSERT 
 				INTO
 				   customer
-				   (id, cust_id, email, age, sex, religion, caste, subcaste, district, state, country, maritalstatus, profilecreatedby, education, education_sub, firstname, lastname, body_type, physical_status, drink, mothertounge, colour, weight, blood_group, diet, smoke,   dateofbirth, occupation, occupation_descr, annual_income, fathers_occupation, mothers_occupation, no_bro, no_sis, aboutme, profilecreationdate  ) 
+				   (cust_id, email, age, sex, religion, caste, subcaste, district, state, country, maritalstatus, profilecreatedby, education, education_sub, firstname, lastname, body_type, physical_status, drink, mothertounge, colour, weight, height, blood_group, diet, smoke,   dateofbirth, occupation, occupation_descr, annual_income, fathers_occupation, mothers_occupation, no_bro, no_sis, aboutme, profilecreationdate  ) 
 				VALUES
-				   ('', '$id','$email', '$age', '$sex', '$religion', '$caste', '$subcaste', '$district', '$state', '$country', '$maritalstatus', '$profileby', '$education', '$edudescr', '$fname', '$lname', '$bodytype', '$physicalstatus', '$drink', '$mothertounge', '$colour', '$weight', '$bloodgroup', '$diet', '$smoke', '$dob', '$occupation', '$occupationdescr', '$income', '$fatheroccupation', '$motheroccupation', '$bros', '$sis', '$aboutme', CURDATE())
+				   ('$id','$email', '$age', '$sex', '$religion', '$caste', '$subcaste', '$district', '$state', '$country', '$maritalstatus', '$profileby', '$education', '$edudescr', '$fname', '$lname', '$bodytype', '$physicalstatus', '$drink', '$mothertounge', '$colour', '$weight', '$height', '$bloodgroup', '$diet', '$smoke', '$dob', '$occupation', '$occupationdescr', '$income', '$fatheroccupation', '$motheroccupation', '$bros', '$sis', '$aboutme', CURDATE())
 			";
-	
 	if (mysqli_query($conn,$sql)) {
 	  echo "Successfully Created profile";
 	  echo "<a href=\"userhome.php?id={$id}\">";
